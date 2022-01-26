@@ -1,0 +1,275 @@
+html{
+    width:100%;
+    max-width:100vw;
+    max-height:100vh;
+    height:100%;
+    margin-right:-500px;
+    padding:0;
+
+    overflow:hidden;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=IBM+Plex+Serif:ital,wght@0,500;0,600;1,100;1,400;1,500;1,600&display=swap');
+
+body{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+
+}
+
+
+    
+    .floatingwrapper {
+    width:auto;
+    max-width:2000px;
+    height:auto;
+    background-color:none;
+    /*margin:0 auto 0; float div centre of page*/
+    position:fixed;
+
+        }
+.header{
+    width:100%;
+    background-color:none;
+    padding-left:20px;
+    padding-bottom:10px;
+    border-bottom:none;
+    /*position:relative;*/
+    display:inline-block;
+    /*overflow:hidden;
+    top:0;
+    /* left:0; */
+    
+}
+        .name
+    {
+        font-family:'IBM Plex Serif', serif;
+        font-style:italic;
+        font-weight:bolder;
+        font-size:50pt;
+        letter-spacing:-2.5pt;
+        position:relative;
+        display:inline-block;
+        overflow:hidden;
+        transform:translate(0,13px);
+    }
+        .description
+     {
+
+        position:relative;
+        display:inline-block;
+        overflow:hidden;
+    }
+
+       .aboutme, .description,.folio{
+        font-size:13pt;
+        letter-spacing:.25pt;
+        font-style:regular;
+        font-family:'DM Sans', sans-serif;
+}
+
+
+.container{
+    
+    background-color:none;
+    width:100vw;
+    display:flex; 
+    flex-flow: row;
+
+ height:calc(100vh - 90px);  /*90px from height of header*/
+
+    /*position:relative;*/
+
+}
+
+
+.left{
+   /* display: inline-block;*/
+    width:33vw;
+    /*max-width:517;*/
+    background-color:none;
+    top:0;
+    overflow:auto;
+    padding:0;
+    margin:0;
+    flex:1;/*gives column width of 1 unit*/
+    width:33%;
+    display:fit-content;
+    /*position:absolute;*/
+}
+
+.folio {  margin-left:10px;
+    text-align:left;
+    border-spacing: 0;
+    border-collapse: collapse;
+    background-color:transparent;
+       
+  }
+  table{border-collapse:collapse;}
+
+  .folio thead th {
+
+    padding-top:20px;
+    padding-right:5px;
+    padding-left:10px;
+}
+.folio thead td {
+    padding-right:10px;
+    padding-left:10px;
+    
+}
+
+.folio tbody td {
+    padding-left:10px;
+    padding-right:0px;
+
+    
+}
+.folio-highlight tbody tr:hover {
+    border-top:solid black 1px;
+    border-bottom:solid black 1px;
+    z-index:10000;
+
+}
+
+.folio-highlight tbody tr {
+    border-top:dotted transparent 1px;
+    border-bottom:dotted transparent 1px;
+
+
+}
+.me:hover {
+    border-top:solid black 1px;
+    border-bottom:solid black 1px;
+    z-index:10000;
+    
+}
+.me{
+    border-top:dotted transparent 1px;
+    border-bottom:dotted transparent 1px;
+
+    
+}
+
+
+  #type{
+    font-family: DM sans, sans-serif;
+  }
+
+  .spaceraboutmewrapper{
+      flex-flow:column;
+      display:flex;
+      overflow:auto;
+      flex:1;
+  }
+.spacer{
+    background-color:none;
+    overflow:auto;
+    width:100%;
+    flex: 1 1 auto;
+    position:static;
+    display:flex;
+    height:30px;
+    border-bottom:1px black solid;}
+    
+
+  .aboutme{
+    width:auto;
+    hyphens: manual;
+    background-color:none;
+    height:auto;
+    
+    
+}
+.aboutme{
+    padding-left:20px;/*same as the table's*/
+}
+
+.right{
+    padding-left:10px;
+    height:97%;
+    background-color:none;
+    width:auto;
+    flex: 2;
+    overflow:auto;
+    position:relative;
+}
+
+.composition{
+    display:none;
+}
+/*#myImageportrait{
+    position:absolute;
+    max-height:calc(100% - 20px);
+    max-width: calc(70vw);
+    margin:0 auto;
+    left: 0; right: 0;
+
+}*/
+
+img[src="forum_posts-gif.gif"],img[src="alpha.png"], img[src="hwajinportrait.png"]{
+    position:absolute;
+    max-height:calc(100% - 20px);
+    max-width: calc(70vw);
+    margin:0 auto;
+    left: 0; right: 0;
+    top:40px;
+}
+img[src="plumblossom.gif"]{
+    position:absolute;
+    height:110vh;
+    top:-100px;
+    margin:0 auto;
+    left: 0; right: 0;
+
+}
+img[src="website.gif"]{
+    position:absolute;
+    max-width: 100%;
+    margin:0 auto;
+    left: 0; right: 0;
+    top:40px;
+}
+img[src="awards.png"]{
+    position:absolute;
+    max-height:calc(100% - 20px);
+    max-width: calc(60vw);
+    margin:0 auto;
+    left: 0; right: 0;
+    top:40px;
+}
+
+img[src="xpacespreadssample-01.png"]{
+    position:absolute;
+    max-width: calc(60vw);
+    margin:0 auto;
+    left: 0; right: 0;
+    top:40px;
+    overflow-y:scroll;
+    
+}
+.one {z-index:0;}
+.two {z-index:0;}
+.three {z-index:0;}
+.four {z-index:0;}
+
+#myDIV{background-color:white;
+width:100px;height:100px;}
+#myDIVme{background-color:white;
+    width:100px;height:100px;}
+
+.top {z-index: 2; position: relative}
+.bottom {z-index: 1; position: relative}
+
+button{height:auto;width:auto;position:absolute;}
+
+.crossout{background-color:black;color:white;}
+ 
+
+
+@media screen and (min-width: 600px) and (max-width:1440px){
+   
+  }

@@ -1,0 +1,165 @@
+<html>
+    <head>
+         <link rel="stylesheet" href="style.css"> 
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=IBM+Plex+Serif:ital,wght@0,500;0,600;1,100;1,400;1,500;1,600&display=swap" rel="stylesheet">
+        
+
+</head>
+<body>
+    <script   src="https://code.jquery.com/jquery-3.6.0.js"   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="   crossorigin="anonymous"></script>
+<script>$(function(){
+    //Hover and click colors
+    var table = $('table').on('click', 'td', function(){
+        $('.table-bordered tr td').removeClass('active');
+        $(this).addClass('active');
+    });
+    
+    //Adding Class Needed
+    $(table).find('tr td').on('click',function(){
+        //Add Class to First TD in ROW
+        table.find('.crossout').removeClass('crossout');
+        $(this).closest('tr').find("td").addClass('crossout');
+ 
+    });
+});
+
+ </script>
+    
+    <script>$(function(){
+        //Hover and click colors
+        var table = $('table').on('click', 'td', function(){
+            $('.table-bordered tr td').removeClass('active');
+            $(this).addClass('active');
+        });
+        
+        //Adding Class Needed
+        $(table).find('tr td').on('click',function(){
+            //Add Class to First TD in ROW
+            table.find('.crossout').removeClass('crossout');
+            $(this).closest('tr').find("td").addClass('crossout');
+     
+        });
+    });
+    
+     </script>
+<script>
+function change_text_me(){
+    document.getElementById("comp-text").innerHTML = "<br>Hwa&#8209;Jin Jun<!--use &#8209; to make a non-breaking hyphen for name!!--> is a visual designer born in the year of the dog. She is a consummate hiking am&shy;ateur, and enjoys spending her time out&shy;doors ten&shy;ding to her budding backyard veg&shy;etable garden. At her core, she is a tenacious explorer and constant learner; Hwa&#8209;Jin adeptly translates her unabashed curiosity and uncon&shy;ventional style into her practice involving inter&shy;active digital exper&shy;iences and process-driven, collage-like designs";
+}
+function change_text_flower(){
+    document.getElementById("comp-text").innerHTML = "<br>A plum blossom deconstructed and reconstructed to create a new yet recognizable form. As a zine, it is a bendable cut-out which creates a 3D bouquet. <br><a href=“https://hwajn.github.io/interface/“>CLICK HERE TO SCROLL THROUGH THE WIP DIGITAL INTERFACE.</a><br>Created with Blender and After Effects.";
+}
+function change_text_book(){
+    document.getElementById("comp-text").innerHTML = "<br>VOLUME, a 8 x 10 inch print book showcasing the art exhibited at Xpace Cultural Centre during ’20-’21.  Being fully immersed in the pandemic, many artists have had to make do with economic & physical limitations. This situation resonates with 70s punk culture where creative DIY methods were an economic necessity. Thus, subtle, inspired elements included images treated with ‘roughly-cut’ borders and ball pen-inspired digital brushes created for underlines. The end result is a clean VOLUME that allows the work of Xpace’s artists to stand out, whilst having a quiet and cohesive theme of its own.";
+}
+function change_text_alpha(){
+    document.getElementById("comp-text").innerHTML = "This exercise aims to explore the beauty that a computer can create with code. using the package p5.js, sine-waves, and a lot of elbow grease, these analog-esque images came fourth from the input of Liberation Sans letters.";
+}
+function change_text_forum(){
+    document.getElementById("comp-text").innerHTML = "the curated dining-out experience has disappeared during the pandemic. hot becomes cold, and crispy becomes soggy, thanks to delivery and takeout. a forum topic about dental appliances causing taste changes evokes a similar sentiment. though these two experiences are uncontrollable, allowing the user to create their own poem of the experience is a way to reclaim agency via a fun web interface.";
+}
+function change_text(){
+    document.getElementById("comp-text").innerHTML = "You clicked the button, I am new paragraph.";
+}
+function change_text(){
+    document.getElementById("comp-text").innerHTML = "You clicked the button, I am new paragraph.";
+}
+</script>
+<div class="floatingwrapper">
+    
+    
+
+    <div class="header"> <div class="name">hwa-jin jun</div><!--&nbsp; &nbsp; &nbsp;<div class="description"> junior designer @aftermodern.lab ('19-present); 3rd year @OCAD U (BDes)</div>--></div>
+
+<div class="container">
+<div class="left">
+    <table class="folio folio-highlight">
+        <thead>
+            <tr class="me crossout" onclick="document.getElementById('myImageportrait').src='hwajinportrait.png';change_text_me();" >
+                <td>b.1994</td>
+                <td>Hwa-Jin Jun</td>
+                <td>me @ hwajn.com</td>
+    
+            </tr>
+            <tr>
+                <br>
+                <th>date</th>
+                <th>client</th>
+                <th>type</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr class="one" onclick="document.getElementById('myImageportrait').src='awards.png';change_text();">
+                
+                <td>12/21</td>
+                <td>Design TO</td>
+                <td>lightbox ad</td>
+    
+            </tr>
+            <tr class="two" onclick="document.getElementById('myImageportrait'); change_text();">
+                <td>12/21</td>
+                <td>Design TO</td>
+                <td>award placards</td>
+    
+            </tr>
+            <tr class="three" onclick="document.getElementById('myImageportrait').src='xpacespreadssample-01.png'; change_text_book();">
+                <td>11/21</td>
+                <td>Xpace Cultural Centre</td>
+                <td>printed art book</td></a>
+    
+            </tr>
+            <tr class="four" onclick="document.getElementById('myImageportrait').src='website.gif'; change_text_web();">
+                <td><a href="#">09/21</a></td>
+                <td>OCAD U Design Dept</td>
+                <td>poster & website concept</td>
+    
+            </tr>
+            <tr class="five" onclick="document.getElementById('myImageportrait').src='plumblossom.gif'; change_text_flower();">
+                <td><a href="#">08/21</a></td>
+                <td>Xpace Cultural Centre</td>
+                <td>concept and print zine</td>
+    
+            </tr>
+            <tr class="six" onclick="document.getElementById('myImageportrait').src='alpha.png'; change_text_alpha();">
+                <td>06/21</td>
+                <td>personal</td>
+                <td>print poster</td></a>
+    
+            </tr>
+            <tr class="seven" onclick="document.getElementById('myImageportrait').src='awards.png'; change_text();">
+                <td>11/20</td>
+                <td>personal</td>
+                <td>digital output </td></a>
+    
+            </tr>
+        </tbody>
+    </table>
+
+
+<div class="spaceraboutmewrapper">
+<div class="spacer"></div>
+    <div class="aboutme" id="comp-text"><br>Hwa&#8209;Jin Jun<!--use &#8209; to make a non-breaking hyphen for name!!--> is a visual designer born in the year of the dog. She is a consummate hiking am&shy;ateur, and enjoys spending her time out&shy;doors ten&shy;ding to her budding backyard veg&shy;etable garden. At her core, she is a tenacious explorer and constant learner; Hwa&#8209;Jin adeptly translates her unabashed curiosity and uncon&shy;ventional style into her practice involving inter&shy;active digital exper&shy;iences and process-driven, collage-like designs.</div>
+
+</div>
+
+
+
+</div>
+
+
+<div class="right">
+
+    
+    
+    <img id="myImageportrait" src="hwajinportrait.png" onclick="change_textme()"></div>
+</div>
+
+</div>
+
+</div>
+    </body>
+</html>
+
