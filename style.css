@@ -194,7 +194,7 @@ body{
     background-color:none;
     width:auto;
     flex: 2;
-    overflow:auto;
+    overflow:scroll;
     position:relative;
 }
 
@@ -210,7 +210,7 @@ body{
 
 }*/
 
-img[src="forum_posts-gif.gif"],img[src="alpha.png"], img[src="hwajinportrait.png"]{
+img[src="forum_posts-gif.gif"], img[src="hwajinportrait.png"]{
     position:absolute;
     max-height:calc(100% - 20px);
     max-width: calc(70vw);
@@ -218,31 +218,56 @@ img[src="forum_posts-gif.gif"],img[src="alpha.png"], img[src="hwajinportrait.png
     left: 0; right: 0;
     top:40px;
 }
-img[src="plumblossom.gif"]{
+img[src="alpha.png"]{
     position:absolute;
-    height:110vh;
-    top:-100px;
+    max-height:calc(100% - 40px);
+    max-width: calc(70vw);
     margin:0 auto;
     left: 0; right: 0;
+    top:40px;  
+}
 
-}
-img[src="website.gif"]{
+img[src="dto-ads.png"]{
     position:absolute;
-    max-width: 100%;
-    margin:0 auto;
-    left: 0; right: 0;
-    top:40px;
-}
-img[src="awards.png"]{
-    position:absolute;
-    max-height:calc(100% - 20px);
     max-width: calc(60vw);
     margin:0 auto;
     left: 0; right: 0;
     top:40px;
+    overflow-y:scroll; 
+}
+img[src="social.gif"]{
+    position:absolute;
+    max-width: calc(60vw);
+    margin:0 auto;
+    left: 0; right: 0;
+    top:40px;
+    overflow-y:scroll; 
+}
+img[src="poster1.png"]{
+    position:absolute;
+    max-height:calc(100% - 20px);
+    max-width: calc(70vw);
+    margin:0 auto;
+    left: 0; right: 0;
+
+}
+img[src="plumblossom.gif"]{
+    position:absolute;
+    max-width: 90%;
+    margin:0 auto;
+    left: 0; right: 0;
+    top:-100px;
+}
+img[src="website2.gif"]{
+    position:absolute;
+    max-width: 97%;
+    margin:0 auto;
+    left: 0; right: 0;
+    top:40px;
 }
 
-img[src="xpacespreadssample-01.png"]{
+
+img[src="xpacespreadssample-01.png"], img[src=""]{
     position:absolute;
     max-width: calc(60vw);
     margin:0 auto;
@@ -269,7 +294,3 @@ button{height:auto;width:auto;position:absolute;}
 .crossout{background-color:black;color:white;}
  
 
-
-@media screen and (min-width: 600px) and (max-width:1440px){
-   
-  }

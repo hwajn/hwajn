@@ -52,19 +52,28 @@ function change_text_flower(){
     document.getElementById("comp-text").innerHTML = "<br>A plum blossom deconstructed and reconstructed to create a new yet recognizable form. As a zine, it is a bendable cut-out which creates a 3D bouquet. <br><a href=“https://hwajn.github.io/interface/“>CLICK HERE TO SCROLL THROUGH THE WIP DIGITAL INTERFACE.</a><br>Created with Blender and After Effects.";
 }
 function change_text_book(){
-    document.getElementById("comp-text").innerHTML = "<br>VOLUME, a 8 x 10 inch print book showcasing the art exhibited at Xpace Cultural Centre during ’20-’21.  Being fully immersed in the pandemic, many artists have had to make do with economic & physical limitations. This situation resonates with 70s punk culture where creative DIY methods were an economic necessity. Thus, subtle, inspired elements included images treated with ‘roughly-cut’ borders and ball pen-inspired digital brushes created for underlines. The end result is a clean VOLUME that allows the work of Xpace’s artists to stand out, whilst having a quiet and cohesive theme of its own.";
+    document.getElementById("comp-text").innerHTML = "<br><i>CURRENTLY IN PRINT PRODUCTION</i><br>VOLUME, a 8 x 10 inch print book showcasing the art exhibited at Xpace Cultural Centre during ’20-’21.  Being immersed in the pandemic, many artists have had to make do with economic & physical limitations. This situation resonates with 70s punk culture where creative DIY methods were an economic necessity. Thus, subtle, inspired elements included images treated with ‘roughly-cut’ borders and ball pen-inspired digital brushes created for underlines. The result is a clean VOLUME that allows the work of Xpace’s artists to stand out, whilst having a quiet and cohesive theme of its own.<br><br><br>";
 }
 function change_text_alpha(){
-    document.getElementById("comp-text").innerHTML = "This exercise aims to explore the beauty that a computer can create with code. using the package p5.js, sine-waves, and a lot of elbow grease, these analog-esque images came fourth from the input of Liberation Sans letters.";
+    document.getElementById("comp-text").innerHTML = "<br>This exercise aims to explore the beauty that a computer can create with code. Using the package p5.js, sine-waves, and a lot of elbow grease, these analog-esque images came fourth from the input of Liberation Sans letters into my custom code.";
 }
 function change_text_forum(){
     document.getElementById("comp-text").innerHTML = "the curated dining-out experience has disappeared during the pandemic. hot becomes cold, and crispy becomes soggy, thanks to delivery and takeout. a forum topic about dental appliances causing taste changes evokes a similar sentiment. though these two experiences are uncontrollable, allowing the user to create their own poem of the experience is a way to reclaim agency via a fun web interface.";
 }
-function change_text(){
-    document.getElementById("comp-text").innerHTML = "You clicked the button, I am new paragraph.";
+function change_text_designto(){
+    document.getElementById("comp-text").innerHTML = "<br>Design TO is a non-profit arts organization who holds Canada's leading annual design festival.<br>I was responsible for typography and layout of a variety of pieces, including a bus shelter lightbox, social media gifs, web advertisements, and award placard (last two shown here). I had creative freedom when making the playful backdrops for the gifs, award placards, and web ads, whilst ensuring type and background contrasted well for accessibility standards.";
 }
-function change_text(){
-    document.getElementById("comp-text").innerHTML = "You clicked the button, I am new paragraph.";
+
+function change_text_designto2(){
+    document.getElementById("comp-text").innerHTML = "<br>Design TO is a non-profit arts organization who holds Canada's leading annual design festival.<br>I was responsible for typography and layout of a variety of pieces, including a bus shelter lightbox, web advertisements, award placard, and social media gifs (gifs shown). I had creative freedom when making the playful backdrops for the gifs, award placards, and web ads, whilst ensuring type and background contrasted well for accessibility standards.";
+}
+
+function change_text_edcposter(){
+    document.getElementById("comp-text").innerHTML = "<br>With the pandemic requiring isolation, my daily-use items have changed. These objects are translated into 2D forms that can be assembled into 3D paper duplicates. In doing so, the audience can attempt to quarantine as i do. With their artefact-riddled textures, simplified geometry, and the inevitable mistakes of assembly, the resulting paper models vaguely resemble their original forms.";
+}
+
+function change_text_web(){
+    document.getElementById("comp-text").innerHTML = "<br>OCAD U’s ’21 Research Methods for Graphic Design course hosted a lecture series with four accomplished designers-Mindy Seu, Danielle Aubert, Kelly Walters, & Cem Eskinazi. I created digital posters that also acted as the concept for an interactive website (coded by Ali Qadeer). As you move your mouse on the screen, colours paint the display. Clicking the mouse cleans up the display such that you may see the underlying information.";
 }
 </script>
 <div class="floatingwrapper">
@@ -92,17 +101,17 @@ function change_text(){
         </thead>
         <tbody>
 
-            <tr class="one" onclick="document.getElementById('myImageportrait').src='awards.png';change_text();">
+            <tr class="one" onclick="document.getElementById('myImageportrait').src='dto-ads.png';change_text_designto();">
                 
                 <td>12/21</td>
                 <td>Design TO</td>
-                <td>lightbox ad</td>
+                <td>award cards & web ads</td>
     
             </tr>
-            <tr class="two" onclick="document.getElementById('myImageportrait'); change_text();">
+            <tr class="two" onclick="document.getElementById('myImageportrait').src='social.gif'; change_text_designto2();">
                 <td>12/21</td>
                 <td>Design TO</td>
-                <td>award placards</td>
+                <td>social media gifs</td>
     
             </tr>
             <tr class="three" onclick="document.getElementById('myImageportrait').src='xpacespreadssample-01.png'; change_text_book();">
@@ -111,14 +120,14 @@ function change_text(){
                 <td>printed art book</td></a>
     
             </tr>
-            <tr class="four" onclick="document.getElementById('myImageportrait').src='website.gif'; change_text_web();">
-                <td><a href="#">09/21</a></td>
+            <tr class="four" onclick="document.getElementById('myImageportrait').src='website2.gif'; change_text_web();">
+                <td>09/21</td>
                 <td>OCAD U Design Dept</td>
                 <td>poster & website concept</td>
     
             </tr>
             <tr class="five" onclick="document.getElementById('myImageportrait').src='plumblossom.gif'; change_text_flower();">
-                <td><a href="#">08/21</a></td>
+                <td>08/21</td>
                 <td>Xpace Cultural Centre</td>
                 <td>concept and print zine</td>
     
@@ -126,13 +135,13 @@ function change_text(){
             <tr class="six" onclick="document.getElementById('myImageportrait').src='alpha.png'; change_text_alpha();">
                 <td>06/21</td>
                 <td>personal</td>
-                <td>print poster</td></a>
+                <td>digital output</td></a>
     
             </tr>
-            <tr class="seven" onclick="document.getElementById('myImageportrait').src='awards.png'; change_text();">
+            <tr class="seven" onclick="document.getElementById('myImageportrait').src='poster1.png'; change_text_edcposter();">
                 <td>11/20</td>
                 <td>personal</td>
-                <td>digital output </td></a>
+                <td>24" x 36" print poster </td></a>
     
             </tr>
         </tbody>
