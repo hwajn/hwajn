@@ -170,7 +170,7 @@ br.smlsml{display:none;}}
     br.sml{display:none;}
     br.smlsml{display:none;}
   } 
-  @media (min-width:1425px) and (max-width: 1440px) { 
+  @media (min-width:1426px) and (max-width: 1440px) { 
     br.biggest{display:none;}
     br.bigbig{display:none;}
     br.big{display:none;}
@@ -315,7 +315,7 @@ br.smallest{display:none;}
 br.sml{display:none;}
 br.smlsml{display:none;}
 }
-@media (min-width:1779px) and (max-width:1826px){ 
+@media (min-width:1779px) and (max-width:1794px){ 
     br.biggest{display:none;}
     br.bigbig{display:inline;}
     br.big{display:none;}
@@ -336,7 +336,7 @@ br.sml{display:none;}
 br.smlsml{display:none;}
 }
 
-@media (min-width:1827px) { 
+@media (min-width:1795px) { 
     br.biggest{display:none;}
     br.bigbig {display:none;}
     br.big{display:none;}
@@ -417,6 +417,8 @@ body{
         letter-spacing:.25pt;
         font-style:regular;
         font-family:'DM Sans', sans-serif;
+        line-height:22px;
+        transform:scale(.9);
 }
 
 
@@ -443,10 +445,12 @@ body{
     top:0;
     overflow:auto;
     padding:0;
+    transform:translate(-20px);
     margin:0;
     flex:1;/*gives column width of 1 unit*/
     width:33%;
     display:fit-content;
+
     /*position:absolute;*/
 }
 
@@ -569,7 +573,7 @@ img[src="forum_posts-gif.gif"], img[src="hwajinportrait.png"]{
     max-width: calc(70vw);
     margin:0 auto;
     left: 0; right: 0;
-    top:40px;
+    top:0px;
 }
 img[src="alpha.png"]{
     position:absolute;
@@ -613,7 +617,7 @@ img[src="plumblossom.gif"]{
 }
 img[src="website2.gif"]{
     position:absolute;
-    max-width: 97%;
+    max-width: 70%;
     margin:0 auto;
     left: 0; right: 0;
     top:40px;
