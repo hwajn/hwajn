@@ -4,167 +4,49 @@
          <link rel="preconnect" href="https://fonts.googleapis.com">
          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=IBM+Plex+Serif:ital,wght@0,500;0,600;1,100;1,400;1,500;1,600&display=swap" rel="stylesheet">
+      
         
+        <!-- address munging script by Steve Clay http://mrclay.org/2010/11/14/tiny-email-munging-script/-->
+        <script>(function(){
+            var a, i = 0, o = this.onload;
+            onload = function(){
+              o && o(); // run the old window.onload if existed
+              while (a = document.getElementsByTagName("a").item(i++))
+                if (0 == a.href.indexOf("mailto:")) {
+                  a.href = a.href.replace(/[{}]/g, "");
+                  a.innerHTML = a.innerHTML.replace(/{(.)}/g, "$1");
+                }
+            };
+          })();</script>
 
-</head>
+
+
+    </head>
+
 <body>
-    <script   src="https://code.jquery.com/jquery-3.6.0.js"   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="   crossorigin="anonymous"></script>
-<script>$(function(){
-    //Hover & click colors
-    var table = $('table').on('click', 'td', function(){
-        $('.table-bordered tr td').removeClass('active');
-        $(this).addClass('active');
-    });
-    
-    //Adding Class Needed
-    $(table).find('tr td').on('click',function(){
-        //Add Class to First TD in ROW
-        table.find('.crossout').removeClass('crossout');
-        $(this).closest('tr').find("td").addClass('crossout');
- 
-    });
-});
 
- </script>
-    
-    <script>$(function(){
-        //Hover & click colors
-        var table = $('table').on('click', 'td', function(){
-            $('.table-bordered tr td').removeClass('active');
-            $(this).addClass('active');
-        });
-        
-        //Adding Class Needed
-        $(table).find('tr td').on('click',function(){
-            //Add Class to First TD in ROW
-            table.find('.crossout').removeClass('crossout');
-            $(this).closest('tr').find("td").addClass('crossout');
-     
-        });
-    });
-    
-     </script>
-<script>
-function change_text_me(){
-    document.getElementById("comp-text").innerHTML = "<br>Hwa&#8209;Jin Jun<!--use &#8209; to make a non-&breaking hyphen for name!!--> is a visual designer born in the year of the dog. She is a consummate hiking am&shy;ateur, & enjoys spending her time out&shy;doors ten&shy;ding to her budding backyard veg&shy;etable garden. At her core, she is a tenacious explorer & constant learner; Hwa&#8209;Jin adeptly translates her unabashed curiosity & uncon&shy;ventional style into her practice involving inter&shy;active digital exper&shy;iences & process-driven, collage-like designs";
-}
-function change_text_flower(){
-    document.getElementById("comp-text").innerHTML = "<br>A plum blossom deconstructed & re&shy;cons&shy;tructed to create a new yet rec&shy;ogn&shy;iz&shy;able form. As a zine, it is a bend&shy;able cut-&shy;out which creates a 3D bouquet. <a href=“https://hwajn.github.io/interface/“>CLICK HERE TO SCROLL THR&shy;OUGH THE WIP DIGITAL INTER&shy;FACE.</a><br>Created with Blender & After Effects.";
-}
-function change_text_book(){
-    document.getElementById("comp-text").innerHTML = "<br><i>CURRENTLY IN PRINT PRODUCTION</i><br>VOLUME, a 8 x 10 inch print book show&shy;casing the art ex&shy;hibited at Xpace Cultural Centre during ’20-’21.  Being immersed in the pandemic, many artists have had to make do with economic & physical limitations. This situation resonates with 70s punk culture where creative DIY methods were an eco&shy;nomic necessity. Thus, subtle, ins&shy;pired elements included images treated with ‘roughly-cut’ borders & ball pen-inspired digital brushes created for underlines. The result is a clean VOLUME that allows the work of Xpace’s artists to stand out, whilst having a quiet & cohesive theme of its own.<br><br><br>";
-}
-function change_text_alpha(){
-    document.getElementById("comp-text").innerHTML = "<br>This exercise aims to explore the beauty that a computer can create with code. Using the package p5.js, sine-waves, & a lot of elbow grease, these analog-esque images came fourth from the input of Liberation Sans letters into my custom code.";
-}
-function change_text_forum(){
-    document.getElementById("comp-text").innerHTML = "the curated dining-out experience has disappeared during the pandemic. hot becomes cold, & crispy becomes soggy, thanks to delivery & takeout. a forum topic about dental appliances causing taste changes evokes a similar sentiment. though these two experiences are uncontrollable, allowing the user to create their own poem of the experience is a way to reclaim agency via a fun web interface.";
-}
-function change_text_designto(){
-    document.getElementById("comp-text").innerHTML = "<br>Design TO is a non-profit arts organization who holds Canada's leading annual design festival. <br><br>I was independently responsible for a number of pieces from ideation to completed & well-designed product, under art direction of colour palette & project requirements. These pieces include a bus shelter light box advertisement, social media gifs, web advert&shy;isements, & award placards (last two shown here). Aside from typesetting and layout, I also had the responsibility of ideating and illustrating the playful visual backdrops of these web ads and award placards shown here.";
-}
-
-function change_text_designto2(){
-    document.getElementById("comp-text").innerHTML = "<br>Design TO is a non-profit arts organization who holds Canada's leading annual design festival. <br><br>I was independently responsible for a number of pieces from ideation to completed & well-designed product, under art direction of colour palette & project requirements. These pieces include a bus shelter light box advertisement, web advert&shy;isements, award placards, & social media gifs (latter displayed). I was tasked with independently ideating, drafting, & executing a variety of motion graphic pieces from start to finished project, under art direction of colour palette & project requirements.";
-}
-
-function change_text_edcposter(){
-    document.getElementById("comp-text").innerHTML = "<br>With the pandemic requiring isolation, my daily-use items have changed. These objects are translated into 2D forms that can be assembled into 3D paper duplicates. In doing so, the audience can attempt to quarantine as i do. With their artefact-riddled textures, simplified geometry, & the inevitable mistakes of assembly, the resulting paper models vaguely resemble their original forms.";
-}
-
-function change_text_web(){
-    document.getElementById("comp-text").innerHTML = "<br>OCAD U’s ’21 Research Methods for Graphic Design course hosted a lecture series with four accomplished designers-Mindy Seu, Danielle Aubert, Kelly Walters, & Cem Eskinazi. I created digital posters that also acted as the concept for an interactive website (coded by Ali Qadeer). As you move your mouse on the screen, colours paint the display. Clicking the mouse cleans up the display such that you may see the underlying information.";
-}
-</script>
-<div class="floatingwrapper">
-    
-    
-
-    <div class="header"> <div class="name">hwa-jin jun</div><!--&nbsp; &nbsp; &nbsp;<div class="description"> junior designer @aftermodern.lab ('19-present); 3rd year @OCAD U (BDes)</div>--></div>
-
-<div class="container">
-<div class="left">
-    <table class="folio folio-highlight">
-        <thead>
-            <tr class="me crossout" onclick="document.getElementById('myImageportrait').src='hwajinportrait.png';change_text_me();" >
-                <td>b.1994</td>
-                <td>Hwa-Jin Jun</td>
-                <td>me @ hwajn.com</td>
-    
-            </tr>
-            <tr>
-                <br>
-                <th>date</th>
-                <th>client</th>
-                <th>type</th>
-            </tr>
-        </thead>
-        <tbody>
-
-            <tr class="one" onclick="document.getElementById('myImageportrait').src='dto-ads.png';change_text_designto();">
-                
-                <td>12/21</td>
-                <td>Design TO</td>
-                <td>award cards & web ads</td>
-    
-            </tr>
-            <tr class="two" onclick="document.getElementById('myImageportrait').src='social.gif'; change_text_designto2();">
-                <td>12/21</td>
-                <td>Design TO</td>
-                <td>social media gifs</td>
-    
-            </tr>
-            <tr class="three" onclick="document.getElementById('myImageportrait').src='xpacespreadssample-01.png'; change_text_book();">
-                <td>11/21</td>
-                <td>Xpace Cultural Centre</td>
-                <td>printed art book</td></a>
-    
-            </tr>
-            <tr class="four" onclick="document.getElementById('myImageportrait').src='website2.gif'; change_text_web();">
-                <td>09/21</td>
-                <td>OCAD U Design Dept</td>
-                <td>poster & website concept</td>
-    
-            </tr>
-            <tr class="five" onclick="document.getElementById('myImageportrait').src='plumblossom.gif'; change_text_flower();">
-                <td>08/21</td>
-                <td>Xpace Cultural Centre</td>
-                <td>concept & print zine</td>
-    
-            </tr>
-            <tr class="six" onclick="document.getElementById('myImageportrait').src='alpha.png'; change_text_alpha();">
-                <td>06/21</td>
-                <td>personal</td>
-                <td>digital output</td></a>
-    
-            </tr>
-            <tr class="seven" onclick="document.getElementById('myImageportrait').src='poster1.png'; change_text_edcposter();">
-                <td>11/20</td>
-                <td>personal</td>
-                <td>24" x 36" print poster </td></a>
-    
-            </tr>
-        </tbody>
-    </table>
+<div class=grid>
 
 
-<div class="spaceraboutmewrapper">
-<div class="spacer"></div><!--use &#8209; to make a non-breaking hyphen for name!!-->
- <div class="aboutme" id="comp-text"><br>Hwa&#8209;Jin Jun is a visual designer born in the<br class="lesslesslessthantwelve"> year of <br class="smlsml">the<br class="thirteeninch"><br class="twelveinch"> dog.<br class="moremorethanthirteen"> She is<br class="exexlarger"><br class="big"> a cons&shy;um&shy;mate hiking am&shy;ateur, & enjoys spend&shy;ing<br class="morethanthirteen"> her time<br class="larger"><br class="exlarger"> out&shy;doors ten&shy;ding to <br class="sml">her budding<br class="smlsml"> ba&shy;ck&shy;yard <br class="thirteeninch">veg&shy;e&shy;<br class="morethanthirteen">table gard&shy;en.<br class="small"> At her core, she<br class="big"> is a  <br class="lesslessthantwelve">ten&shy;aci&shy;ous explor&shy;er &<br class="morethanthirteen"> co&shy;nstant learner; Hwa&#8209;Jin adept&shy;ly<br class="smlsml"> trans&shy;lates her<br class="small"> un&shy;abash&shy;ed cur&shy;iosity & uncon&shy;ventional<br class="smlsml"> st&shy;yle into her prac&shy;tice involving inter&shy;active digital<br class="lesslessthantwelve"> <br class="small">exp&shy;er&shy;iences & process-driven, collage-like designs.</div>
-</div>
+<div class="index"><div class="name"><a href="/index.html">hwa-jin jun</a></div><div class="born">b. '94</div><div class="aboutme">...is a vis&shy;ual des&shy;ig&shy;ner born in the year of the dog. She is a con&shy;s­um&shy;­mate hik&shy;ing am­&shy;ateur, & enjoys spend­&shy;ing her time out­&shy;doors ten­d&shy;ing to her budd&shy;ing ba­ck&shy;­yard veg­&shy;e­table gar&shy;d­en. At her core, she is a ten&shy;­aci­ous exp&shy;lor­er & co­ns&shy;tant learn&shy;er; Hwa‑Jin ad&shy;ept­&shy;ly trans­&shy;lates her un­&shy;abash­ed cur­&shy;iosity & uncon­v&shy;entional st­yle into her prac­&shy;tice inv&shy;olving inter&shy;­active dig&shy;ital exp­er­&shy;iences & pro&shy;cess-&shy;driven, col&shy;lage-like designs.</div></div>
 
-</div>
+<br><br>
 
+<!--select work-->
+<div class="index"><div class="work">Select Work</div></div>
+<div class="index strike"onclick='location.href = "/designto.html";'><div class="year">01/22</div><div class="client">Design TO</div><div class="project">awards, ads, & motion graphics</div></div>
+<div class="index strike" onclick='location.href = "/volume.html";'><div class="year">01/22</div><div class="client">Xpace Cultural Centre</div><div class="project">print book</div></div>
+<div class="index strike"onclick='location.href = "/ocad.html";'><div class="year">09/21</div><div class="client">OCAD U</div><div class="project">website concept & poster</div></div>
+<div class="index strike"onclick='location.href = "/zineposium.html";'><div class="year">08/21</div><div class="client">Xpace Cultural Centre</div><div class="project">print zine</div></div>
+<div class="index strike"onclick='location.href = "/forum.html";'><div class="year">06/21</div><div class="client">Personal</div><div class="project">website concept & poster</div></div>
+<div class="index strike"onclick='location.href = "alpha.html";'><div class="year">11/21</div><div class="client">Personal</div><div class="project">digital output</div></div>
+</div>  
+<!--email, script for selecting text on click from https://css-tricks.com/click-once-select-all-click-again-select-normally/-->
+<div class="email"><div style="display:inline-block;-webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */">say&nbsp;</div><a class="nolink" href="mailto:lo{&commat;}h n{&period;}" style= "font-family:A130; letter-spacing:-.75;">h<div class="noshow">@hwa</div>el<div class="noshow">lion</div>lo{&commat;}h<div class="noshow">art</div>w<div class="noshow">an</div>ajn{&period;}co<div class="noshow">old</div>m</a></li> </div>
 
-<div class="right">
-
-    
-    <img id="myImageportrait" src="hwajinportrait.png" onclick="change_textme()"></div>
-</div>
-
-</div>
-
-</div>
-    </body>
+</body>
 </html>
 
