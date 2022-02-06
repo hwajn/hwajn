@@ -4,6 +4,7 @@ html{
     max-height:100vh;
     height:100%;
     padding:0;
+    margin:0;
     overflow-y:scroll;
 }
 
@@ -18,60 +19,26 @@ body {
 
 @font-face {
   font-family: A60;
-  src: url('/AUTHENTICSans-60.otf'), url('/AUTHENTICSans-60.woff'), url('/AUTHENTICSans-60.woff2');
+  src: url('/fonts/AUTHENTICSans-60.otf'), url('/fonts/AUTHENTICSans-60.woff'), url('/fonts/AUTHENTICSans-60.woff2');
 }
 @font-face {
   font-family:A90;
-  src: url('/AUTHENTICSans-90.otf'), url('/AUTHENTICSans-90.woff'), url('/AUTHENTICSans-90.woff2');
+  src: url('/fonts/AUTHENTICSans-90.otf'), url('/fonts/AUTHENTICSans-90.woff'), url('/fonts/AUTHENTICSans-90.woff2');
 }
 
 @font-face {
   font-family: A130;
-  src: url('/AUTHENTICSans-130.otf'), url('/AUTHENTICSans-130.woff'), url('/AUTHENTICSans-130.woff2');
+  src: url('/fonts/AUTHENTICSans-130.otf'), url('/fonts/AUTHENTICSans-130.woff'), url('/fonts/AUTHENTICSans-130.woff2');
 }
 
 @font-face {
   font-family: A150;
-  src: url('/AUTHENTICSans-150.otf'), url('/AUTHENTICSans-150.woff'), url('/AUTHENTICSans-150.woff2');
+  src: url('/fonts/AUTHENTICSans-150.otf'), url('/fonts/AUTHENTICSans-150.woff'), url('/fonts/AUTHENTICSans-150.woff2');
 }
 
 
-@font-face {
-  font-family: A60C;
-  src: url('/AUTHENTICSans-Condensed-60.otf'), url('/AUTHENTICSans-Condensed-60.woff'), url('/AUTHENTICSans-Condensed-60.woff2');
-}
-@font-face {
-  font-family:A90C;
-  src: url('/AUTHENTICSans-Condensed-90.otf'), url('/AUTHENTICSans-Condensed-90.woff'), url('/AUTHENTICSans-Condensed-90.woff2');
-}
 
-@font-face {
-  font-family: A130C;
-  src: url('/AUTHENTICSans-Condensed-130.otf'), url('/AUTHENTICSans-Condensed-130.woff'), url('/AUTHENTICSans-Condensed-130.woff2');
-}
-
-@font-face {
-  font-family: A150C;
-  src: url('/AUTHENTICSans-Condensed-150.otf'), url('/AUTHENTICSans-Condensed-150.woff'), url('/AUTHENTICSans-Condensed-150.woff2');
-}
-
-@font-face {
-  font-family: LBB;
-  src: url('/LibreBaskerville-Bold.ttf');
-}
-
-@font-face {
-  font-family: LBI;
-  src: url('/LibreBaskerville-Italic.ttf');
-}
-
-@font-face {
-  font-family: LBR;
-  src: url('/LibreBaskerville-Regular.ttf');
-}
-
-
-@media only screen and (max-width:1440px){
+@media only screen and (min-width:1000px){
   body{
 
    /* to make hwa-jin jun and profile side by side
@@ -144,7 +111,10 @@ body {
   display: grid;
   grid-template-columns:1fr 1fr 1fr 237px 2fr;
   font-size: 30px;
-  padding: 10px; 
+  padding-top: 10px; 
+  padding-bottom: 10px; 
+  padding-right: 10px; 
+  padding-left:0;
   font-family:A90;
   /*background-color:rgba(255, 255, 255, 0.75);
   -webkit-box-shadow:0px 1px 1px rgba(255, 255, 255, 1);
@@ -274,7 +244,7 @@ text-align:left;
   color: black;
   text-align: right;
   font-size:15px;
-  width:calc(100vw - 2fr + 237px);
+  width:100%;
   letter-spacing:.25px;
   line-height:20px;
   top:-20px; 
@@ -285,7 +255,7 @@ padding-bottom:40px;
   .hr-text:before {
     font-family:A90;
     content: '';
-    width:15px;
+    width:1vw;
     background:black;
     position: absolute;
     height: 1px;  
@@ -300,16 +270,16 @@ padding-bottom:40px;
    font-family:A90;
     content: attr(data-content);
     position: absolute;
-    display: inline-block;
+   
     color: black;  letter-spacing:.25px;
     line-height:20px;
-    padding-left:20px;
+    padding-left:calc(1.16vw);
   
   }
 
   
     
-.checkoutmore{font-family:A90;font-size:30px;grid-column:5/6;}
+.checkoutmore{font-family:A90;font-size:30px;padding-left:0;grid-column:5/6;}
 
 }
 
@@ -338,16 +308,15 @@ padding-bottom:40px;
     position:fixed;width:100%;height:auto;padding-bottom:5px;padding-top:0;padding-right:10px;padding-left:0;z-index:1000;background-color:white;box-shadow: 0px 3px 10px white;
   }
 
-
+.headspacer{
+  width:100%;height:100px;
+}
 
   .namehead{
     padding-top:10px;padding-left:10px;
   }
 
   .headerspacer{height:1px;width:70px;display:inline-block;}
-
-
-.indexdesc{padding-right:10px;padding-left:10px;}
 
 
 .descspacer{width:100%;height:20px;}
