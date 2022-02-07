@@ -1,3 +1,25 @@
+RewriteCond %{REQUEST_URI} /index\.html?$ [NC]
+RewriteRule ^(.*)index\.html?$ "/$1" [NC,R=301,NE,L]
+
+RewriteCond %{REQUEST_URI} /index\.html?$ [NC]
+RewriteRule ^(.*)index\.html?$ "/$1" [NC,R=301,NE,L]
+
+Options +FollowSymlinks -MultiViews
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteCond %{REQUEST_URI} ^(.*/)index\.html$ [NC]
+RewriteRule . http://www.%{HTTP_HOST}%1 [R=301,NE,L]
+
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule . http://www.%{HTTP_HOST}%{REQUEST_URI} [NE,R=301,L]
+
+RewriteCond %{REQUEST_URI} ^(.*/)index\.html$ [NC]
+RewriteRule . %1 [R=301,NE,L]
+
+
+
+
 
 
 # Sources:
@@ -57,10 +79,6 @@ Header append Vary User-Agent env=!dont-vary
 </IfModule>
 
 </IfModule>
-
-
-
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
 # mod_gzip is an external extension and last updated 2015, so
 # if available please use mod_deflate instead
