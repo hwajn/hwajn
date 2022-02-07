@@ -19,21 +19,21 @@ body {
 
 @font-face {
   font-family: A60;
-  src: url('/fonts/AUTHENTICSans-60.otf'), url('/fonts/AUTHENTICSans-60.woff'), url('/fonts/AUTHENTICSans-60.woff2');
+  src: url('fonts/AUTHENTICSans-60.otf'), url('fonts/AUTHENTICSans-60.woff'), url('fonts/AUTHENTICSans-60.woff2');
 }
 @font-face {
   font-family:A90;
-  src: url('/fonts/AUTHENTICSans-90.otf'), url('/fonts/AUTHENTICSans-90.woff'), url('/fonts/AUTHENTICSans-90.woff2');
+  src: url('fonts/AUTHENTICSans-90.otf'), url('fonts/AUTHENTICSans-90.woff'), url('fonts/AUTHENTICSans-90.woff2');
 }
 
 @font-face {
   font-family: A130;
-  src: url('/fonts/AUTHENTICSans-130.otf'), url('/fonts/AUTHENTICSans-130.woff'), url('/fonts/AUTHENTICSans-130.woff2');
+  src: url('fonts/AUTHENTICSans-130.otf'), url('fonts/AUTHENTICSans-130.woff'), url('fonts/AUTHENTICSans-130.woff2');
 }
 
 @font-face {
   font-family: A150;
-  src: url('/fonts/AUTHENTICSans-150.otf'), url('/fonts/AUTHENTICSans-150.woff'), url('/fonts/AUTHENTICSans-150.woff2');
+  src: url('fonts/AUTHENTICSans-150.otf'), url('fonts/AUTHENTICSans-150.woff'), url('fonts/AUTHENTICSans-150.woff2');
 }
 
 
