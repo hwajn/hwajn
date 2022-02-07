@@ -1,9 +1,5 @@
 
 
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
-
-
-
 # Sources:
 # http://stackoverflow.com/questions/7704624/how-can-i-use-gzip-compression-for-css-and-js-files-on-my-websites
 # http://codex.wordpress.org/Output_Compression
@@ -61,6 +57,10 @@ Header append Vary User-Agent env=!dont-vary
 </IfModule>
 
 </IfModule>
+
+
+
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
 # mod_gzip is an external extension and last updated 2015, so
 # if available please use mod_deflate instead
