@@ -17,18 +17,15 @@ body {
   overflow-y:scroll;
 }
 
-@font-face {
-  font-family: A60;
-  src: url('fonts/AUTHENTICSans-60.otf'), url('fonts/AUTHENTICSans-60.woff'), url('fonts/AUTHENTICSans-60.woff2');
-}
+
 @font-face {
   font-family:A90;
-  src: url('fonts/AUTHENTICSans-90.otf'), url('fonts/AUTHENTICSans-90.woff'), url('fonts/AUTHENTICSans-90.woff2');
+  src: url('AUTHENTICSans-90.otf'), url('AUTHENTICSans-90.woff'), url('AUTHENTICSans-90.woff2');
 }
 
 @font-face {
   font-family: A130;
-  src: url('fonts/AUTHENTICSans-130.otf'), url('fonts/AUTHENTICSans-130.woff'), url('fonts/AUTHENTICSans-130.woff2');
+  src: url('AUTHENTICSans-130.otf'), url('AUTHENTICSans-130.woff'), url('AUTHENTICSans-130.woff2');
 }
 
 
