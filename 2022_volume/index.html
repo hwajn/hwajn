@@ -8,16 +8,16 @@
         
         <!-- address munging script by Steve Clay http://mrclay.org/2010/11/14/tiny-email-munging-script/-->
         <script>(function(){
-            var a, i = 0, o = this.onload;
-            onload = function(){
-              o && o(); // run the old window.onload if existed
-              while (a = document.getElementsByTagName("a").item(i++))
-                if (0 == a.href.indexOf("mailto:")) {
-                  a.href = a.href.replace(/[{}]/g, "");
-                  a.innerHTML = a.innerHTML.replace(/{(.)}/g, "$1");
-                }
-            };
-          })();</script>
+          var a, i = 0, o = this.onload;
+          onload = function(){
+            o && o(); // run the old window.onload if existed
+            while (a = document.getElementsByTagName("a").item(i++))
+              if (0 == a.href.indexOf("mailto:")) {
+                a.href = a.href.replace(/[{}]/g, "");
+                a.innerHTML = a.innerHTML.replace(/{(.)}/g, "$1");
+              }
+          };
+        })();</script>
 
 
 
