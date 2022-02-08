@@ -199,6 +199,7 @@ text-align:left;
   grid-column:3/6;
   bottom:0;
   padding-bottom:20px;
+  padding-left:5px;
 
 }
 
@@ -290,8 +291,6 @@ padding-bottom:40px;
 .designtop{
   background-image:url("/index.html");
 }
-
-
 
 
 
