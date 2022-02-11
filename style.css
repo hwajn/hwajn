@@ -30,7 +30,7 @@ body {
 
 
 
-@media only screen and (max-width: 999px) {
+@media only screen and (max-width: 599px) {
 
 
   body{
@@ -90,10 +90,10 @@ body {
   
   img{padding:0;width:100%;left:0;margin:0;}
   
-  }
+  
   
   .index:active{text-decoration:line-through;}
-
+}
 @media only screen and (min-width:600px){
   body{
 
@@ -133,12 +133,13 @@ body {
     bottom:0;
     font-size:30px;
     font-family:A90;
-    padding-top:5px;
-    padding-right:10px;
+
     padding-left:10px;
     padding-bottom:5px;
     -webkit-user-select: all;
     user-select: all;
+
+    z-index:100;
     /* unnecessary for the email
     box-shadow: 0px 0px 10px white;*/
     
@@ -149,9 +150,10 @@ body {
     .email:focus{
       border: 2px dashed #31808c;
       outline: none;
+  
       animation: select 100ms step-end forwards;
-        -webkit-user-select: all;
-  user-select: all;
+      -webkit-user-select: all;
+      user-select: all;
     }
     
   
@@ -183,16 +185,27 @@ body {
 a {text-decoration:none;color:black;display:inline-block;}
 a:hover {color:black;text-decoration:line-through;display:inline-block;}
 
-.strike:hover{text-decoration:line-through;width:auto;cursor:pointer;}
+.destoimg  {
+  display: none;
+}
+
+.show {
+  display: contents;
+}
+
+
+
+.strike:hover{text-decoration:line-through;width:auto;cursor:pointer;color:black;}
 .name{
   grid-column-start:1;
   grid-column-end:1;
+  letter-spacing:-1px;
 }
 .born{
   grid-column-start:2;
   grid-column-end:2;
 }
-
+.noclick{background-color:none;width:60vw;height:90vh;position:fixed;z-index:99;bottom:0;left:0;}
 
 .aboutme, .comp_bolddescription{  
   grid-column-start:3;
@@ -204,9 +217,11 @@ a:hover {color:black;text-decoration:line-through;display:inline-block;}
 
 .year{
   grid-column-start:4;
-  grid-column-end:4;
+  grid-column-end:5;
   text-align:right;
   padding-left:0;
+  padding-right:60px;
+  float:right;
   
 
   
@@ -216,7 +231,7 @@ a:hover {color:black;text-decoration:line-through;display:inline-block;}
 }
 .client{grid-column-start:5;
   grid-column-end:6;
-  padding-left:60px;}
+  }
 
 .project{
   display:none;
