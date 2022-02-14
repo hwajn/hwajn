@@ -1,0 +1,96 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="/style.css"> 
+       
+      <meta name="HandheldFriendly" content="true" />
+      <meta name="MobileOptimized" content="320" />
+      <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no" />
+      
+            
+
+<script>function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "read less"; 
+    moreText.style.display = "inline";
+  }
+}</script>
+
+
+    </head>
+
+<body>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<div class="index compheadindex"><div class="name namehead"><a href="../../">Hwa-Jin Jun</a></div><div class="email hide"style="padding-top:10px;position:absolute;right:0;padding-right:10px;"><a class="nolink mail" href="mailto:lo{&commat;}h n{&period;}">h<div class="noshow">@hwa</div>el<div class="noshow">lion</div>lo{&commat;}h<div class="noshow">art</div>w<div class="noshow">an</div>ajn{&period;}co<div class="noshow">old</div>m</a></li> </div><div class="comp_details">09/21<div class="spaceradjust"></div><a href="xpace.info">OCAD U</a>&mdash;website concept & digital posters</div></div></div>
+<div class="headspacer"></div>
+
+<div class="index"><div class="comp_bolddescription">Hired by the OCAD U Graphic Design Department, I was responsible for conceptualizing a website & creating several digital posters for a lecture series.
+
+  <span id="dots">...</span><span id="more">
+    My intent was to create a concept that would be equally as interesting as email posters & as a website (coded by Ali Qadeer). All speakers are present on each poster, blurred to give focus to the upcoming event­­—done just enough such that all type is still legible. As you move your mouse on the screen, colours paint the display, hiding details for events not currently the focus; clicking erases all paint. Because the posters are not interactive, how the strokes interacted with the type was adjusted such that information was still legible despite any overlaying strokes.
+<button onclick="myFunction()" id="myBtn">read more</button>
+</div>
+
+<div class="descspacer"></div>
+
+<!--images of work-->
+
+<div class="images">
+
+<img src="website.gif" style="width:100%;">
+<hr class="hr-text" data-content="interactive&nbsp;website&nbsp;&&nbsp;its&nbsp;variations">
+<div class="alternatehrtext">interactive website & its variations</div>
+<img id="gif1"src="Poster_ResearchMethods_guests_final.png" style="width:100%;">
+<hr class="hr-text" data-content="poster&nbsp;for&nbsp;Mindy&nbsp;Seu's&nbsp;Talk">
+<div class="alternatehrtext"> poster for Mindy Seu's talk</div>
+<img id="gif1"src="Poster_ResearchMethods_guests_final2.png" style="width:100%;">
+<hr class="hr-text" data-content="poster&nbsp;for&nbsp;Danielle&nbsp;Aubert's&nbsp;Talk">
+<div class="alternatehrtext"> poster for Danielle Aubert's talk</div>
+<img id="gif1"src="Poster_ResearchMethods_guests_final2.png" style="width:100%;">
+<hr class="hr-text" data-content="poster&nbsp;for&nbsp;Danielle&nbsp;Aubert's&nbsp;Talk">
+<div class="alternatehrtext"> poster for Danielle Aubert's talk</div>
+</div>
+
+  <div class="comp_description">
+    My intent was to create a concept that would be equally as interesting as email posters & as a website (coded by Ali Qadeer). All speakers are present on each poster, blurred to give focus to the upcoming event­­—done just enough such that all type is still legible. As you move your mouse on the screen, colours paint the display, hiding details for events not currently the focus; clicking erases all paint. Because the posters are not interactive, how the strokes interacted with the type was adjusted such that information was still legible despite any overlaying strokes.
+    <!-- spacer element between comp description & email-->
+  
+  </div>
+
+  
+  
+</div>
+
+
+<!--email, script for selecting text on click from https://css-tricks.com/click-once-select-all-click-again-select-normally/-->
+
+
+<div class="email"><a class="nolink" href="mailto:lo{&commat;}h n{&period;}" style= "font-family:A90; letter-spacing:-.75;">h<div class="noshow">@hwa</div>el<div class="noshow">lion</div>lo{&commat;}h<div class="noshow">art</div>w<div class="noshow">an</div>ajn{&period;}co<div class="noshow">old</div>m</a></li> </div>
+
+
+<div class="index checkfooter"><div class="checkoutmore"><a href="../..">check out more</a></div></div>
+        <!-- address munging script by Steve Clay http://mrclay.org/2010/11/14/tiny-email-munging-script/-->
+        <script>(function(){
+          var a, i = 0, o = this.onload;
+          onload = function(){
+            o && o(); // run the old window.onload if existed
+            while (a = document.getElementsByTagName("a").item(i++))
+              if (0 == a.href.indexOf("mailto:")) {
+                a.href = a.href.replace(/[{}]/g, "");
+                a.innerHTML = a.innerHTML.replace(/{(.)}/g, "$1");
+              }
+          };
+        })();</script>
+</body>
+</html>
+
