@@ -31,17 +31,18 @@ a, button{color:RGB(150,150,150);text-decoration-color:black;
 }
 
 
-@media only screen and (max-width: 679px) {
+@media only screen and (max-width: 888px) {
 
 html{  -webkit-text-size-adjust: none; 
   -ms-text-size-adjust:none;}
   body{   
     font-family:A90;
-    font-size:18.5px;
-    letter-spacing:.25px;
-    line-height:28px;
+    font-size:15px;
+    letter-spacing:.2px;
+    line-height:20px;
     width:100vw;
     overflow-x:hidden;
+    hyphens:auto;
   }
   .name{display:inline-block;padding-bottom:0;}
   .mainhead{padding:0;height:auto;}
@@ -87,6 +88,8 @@ padding-right:10px;
       -webkit-user-select: all;
   user-select: all;
   }
+.headerspacer{display:inline;padding-left:30px;width:100%;word-wrap:break-word;}
+
 
   a{text-decoration:none;color:RGB(150,150,150);}
   .descspacer{display:none;}
@@ -95,18 +98,18 @@ padding-right:10px;
   .checkfooter{position:absolute;float:bottom;}
   .checkoutmore{position:absolute;grid-column:1/3;float:bottom;padding-left:10px;}
 
-
-.comp_details{grid-column:1/6;padding-left:10px;padding-top:10px;padding-bottom:15px;}
+.client{float:right;}
+.comp_details{grid-column:1/6;padding-left:10px;padding-top:10px;padding-bottom:15px;height:auto;display:block;}
 .comp_bolddescription{grid-column:1/6;padding-left:10px;padding-right:10px;}
 .comp_description{display:none;}
-#more{display:none;    font-size:18.5px;}
+#more{display:none;    font-size:15px;}
 
-button{margin-bottom:80px;font-family:A90;font-size:18.5px;background-color:white;border:none;padding-left:0;margin-left:0;}
+button{margin-bottom:80px;font-family:A90;font-size:15px;background-color:white;border:none;padding-left:0;margin-left:0;}
 button:hover{text-decoration:line-through;}
 .alternatehrtext{
-  font-size:18.5px;
-  letter-spacing:.25px;
-  line-height:28px;
+  font-size:15px;
+  letter-spacing:.2px;
+  line-height:20px;
 
   left:0;
   z-index:1000;
@@ -117,17 +120,20 @@ button:hover{text-decoration:line-through;}
 
 .hr-text {
   display:none;
-    font-size:30px;
-  letter-spacing:.25px;
-  line-height:28px;
+  font-size:15px;
+  letter-spacing:.2px;
+  line-height:20px;
 }
 
-.spaceradjust{padding-right:20px;display:inline-block;    font-size:18.5px;}
+.spaceradjust{padding-right:20px;display:inline-block;    font-size:15px;}
 
 .always{display:none;z-index:-999;color:transparent;}
+
+.shorten{display:none;}
+.images{width:100vw;}
 }
 
-@media only screen and (min-width:680px) and (max-width:1091px){body{
+@media only screen and (min-width:889px) and (max-width:1091px){body{
 
   /* to make hwa-jin jun and profile side by side
    display:inline-flex;*/
@@ -428,8 +434,10 @@ padding-bottom:40px;
 .hide{display:none;}
 .mainhead{padding-top:10px;}
 .hideformobile{display:inline-block;}
-#dots,#myBtn{display:none;}
-.spaceradjust{display:none;}}
+#dots,#myBtn,#more{display:none;}
+.spaceradjust{display:none;}
+.shorten{display:contents;}
+}
 
 /* for width that the captions are tucked underneath the images / photos */
 @media only screen and (min-width:1092px) and (max-width:1412px){
@@ -740,8 +748,11 @@ padding-bottom:40px;
 .hide{display:none;}
 .mainhead{padding-top:10px;}
 .hideformobile{display:inline-block;}
-#dots,#myBtn{display:none;}
+#dots{color:transparent;}
+#dots,#myBtn,#more{display:none;}
 .spaceradjust{display:none;}
+.shorten{display:none;}
+
 }
 
 
@@ -990,7 +1001,7 @@ padding-bottom:40px;
     background:black;
     position: absolute;
     height: 1px;  
-    top:6px;
+    top:4px;
     color:black;
     letter-spacing:.25px;
 
@@ -1049,6 +1060,7 @@ padding-bottom:40px;
 .alternatehrtext{display:none;}
 #dots,#myBtn,#more{display:none;}
 .spaceradjust{height:1px;width:70px;display:inline-block;}
+.shorten{display:none;}
 }
 
 
@@ -1292,7 +1304,7 @@ padding-bottom:40px;
     background:black;
     position: absolute;
     height: 1px;  
-    top:6px;
+    top:9px;
     color:black;
     font-size:30px;
     letter-spacing: .25px;
@@ -1354,4 +1366,5 @@ padding-bottom:40px;
 .alternatehrtext{display:none;}
 #dots,#myBtn,#more{display:none;}
 .spaceradjust{height:1px;width:70px;display:inline-block;}
+.shorten{display:contents;}
 }
