@@ -17,13 +17,20 @@ body {
   overflow-y:scroll;
   -webkit-text-size-adjust: none; 
   -ms-text-size-adjust:none;
-}
 
+}
+.comp_bolddescription,.comp_descriptionm,aboutme {  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;}
 a, button{color:RGB(150,150,150);text-decoration-color:black;
 }
 
 .strike{color:RGB(150,150,150);text-decoration-color:black;}
+
 .always{display:none;}
+#more:hover{color:black;}
 
 @font-face {
   font-family:A90;
@@ -42,13 +49,13 @@ html{  -webkit-text-size-adjust: none;
     line-height:20px;
     width:100vw;
     overflow-x:hidden;
-    hyphens:auto;
+
   }
   .name{display:inline-block;padding-bottom:0;}
   .mainhead{padding:0;height:auto;}
 .index{height:auto;}
-.born, .aboutme, .name,  .say{display:inline;grid-column:1/3;padding:10px;}
-.aboutme{padding-bottom:80px;}
+.born, .aboutme, .name,  .say{display:inline;grid-column:1/3;padding-left:10px;padding-right:10px;padding-top:10px;padding-bottom:20px;}
+.aboutme{padding-bottom:50px;}
   .name a{text-decoration:none;color:RGB(150,150,150);}
   a:hover{text-decoration:line-through;}
   a:active, .strike:active{text-decoration:line-through;}
@@ -100,11 +107,11 @@ padding-right:10px;
 
 .client{float:right;}
 .comp_details{grid-column:1/6;padding-left:10px;padding-top:10px;padding-bottom:15px;height:auto;display:block;}
-.comp_bolddescription{grid-column:1/6;padding-left:10px;padding-right:10px;}
+.comp_bolddescription{grid-column:1/6;padding-left:10px;padding-right:10px;padding-bottom:0px;}
 .comp_description{display:none;}
 #more{display:none;    font-size:15px;}
 
-button{margin-bottom:80px;font-family:A90;font-size:15px;background-color:white;border:none;padding-left:0;margin-left:0;}
+button{margin-bottom:50px;font-family:A90;font-size:15px;background-color:white;border:none;padding-left:0;margin-left:0;}
 button:hover{text-decoration:line-through;}
 .alternatehrtext{
   font-size:15px;
@@ -131,7 +138,10 @@ button:hover{text-decoration:line-through;}
 
 .shorten{display:none;}
 .images{width:100vw;}
+a:hover {color:black;}
+
 }
+
 
 @media only screen and (min-width:889px) and (max-width:1091px){body{
 
@@ -169,6 +179,8 @@ button:hover{text-decoration:line-through;}
    .email{ position:fixed; 
    left:0;
    bottom:0;
+   line-height:27px;
+   letter-spacing: .25px;
    font-size:18.5px;
    font-family:A90;
 
@@ -240,7 +252,7 @@ a:hover {color:black;text-decoration:line-through;display:inline-block;}
  grid-column-end:4;
  letter-spacing:.5px;
 }
-.born{padding-left:70px;display:inline-block;
+.born{padding-left:5px;display:inline-block;
 
 }
 .noclick{background-color:none;width:60vw;height:90vh;position:fixed;z-index:99;bottom:0;left:0;}
@@ -250,7 +262,7 @@ a:hover {color:black;text-decoration:line-through;display:inline-block;}
  grid-column-end:13;
  line-height:27px;
  letter-spacing: .25px;
- hyphens:manual;
+ 
  padding-right:10px;}
 
 .aboutme{font-size:18.5px;}
@@ -310,11 +322,10 @@ a:hover {color:black;text-decoration:line-through;display:inline-block;}
 .comp_description{
  position:relative;
  font-family:A90;
- letter-spacing: .25px;
  line-height:27px;
- font-size: 18.5px;
+ letter-spacing: .25px;
  background-color:none;
- hyphens:manual;
+ 
  padding-right:10px;
  grid-column:8/13;
  bottom:0;
@@ -435,6 +446,8 @@ padding-bottom:40px;
 .mainhead{padding-top:10px;}
 .hideformobile{display:inline-block;}
 #dots,#myBtn,#more{display:none;}
+
+
 .spaceradjust{display:none;}
 .shorten{display:contents;}
 }
@@ -443,15 +456,15 @@ padding-bottom:40px;
 @media only screen and (min-width:1092px) and (max-width:1412px){
   body{
 
-   /* to make hwa-jin jun and profile side by side
-    display:inline-flex;*/
-      width:100%;
+  /* to make hwa-jin jun and profile side by side
+   display:inline-flex;*/
+   width:100%;
   }
-
-
-
-
-
+ 
+ 
+ 
+ 
+ 
    li {
           display: inline;
         }
@@ -461,37 +474,39 @@ padding-bottom:40px;
         .noshow{
           display:none;
         }
-
+ 
         .nolink{
           color: currentColor;
           pointer-events: none;
            text-decoration: none;
            
         }
-
-
-
-
-
+ 
+ 
+ 
+ 
+ 
     
     .email{ position:fixed; 
     left:0;
     bottom:0;
-    font-size:30px;
+    font-size:25px;
+    line-height:33px;
+    letter-spacing:.4px;
     font-family:A90;
-
+ 
     padding-left:10px;
     padding-bottom:5px;
     -webkit-user-select: all;
     user-select: all;
-
+ 
     z-index:100;
     /* unnecessary for the email
     box-shadow: 0px 0px 10px white;*/
     
     }
-
-
+ 
+ 
     
     .email:focus{
       border: 2px dashed #31808c;
@@ -505,181 +520,192 @@ padding-bottom:40px;
   
    /* color:rgb(30, 30, 30);*/
     
-
-
-.grid {
+ 
+ 
+ .grid {
   background-color:none;
   display:grid;
-}
-.index{
+ }
+ .index{
   display: grid;
   grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 150px 1fr 1fr 1fr 1fr 1fr;
-  font-size: 30px;
+ 
   padding-top: 10px; 
   padding-bottom: 10px; 
   padding-right: 10px; 
   padding-left:0;
   font-family:A90;
-  line-height:43px;
+
+  font-size:25px;
+  line-height:33px;
+  letter-spacing:.4px;
   /*background-color:rgba(255, 255, 255, 0.75);
   -webkit-box-shadow:0px 1px 1px rgba(255, 255, 255, 1);
  -moz-box-shadow:0px 1px 1px rgba(255, 255, 255, 1);
  box-shadow:0px 1px 5px rgba(255, 255, 255, 1);*/
-
+ 
   
-
-}
-a {text-decoration:none;display:inline-block;}
-a:hover {color:black;text-decoration:line-through;display:inline-block;}
-
-.destoimg  {
+ 
+ }
+ a {text-decoration:none;display:inline-block;}
+ a:hover {color:black;text-decoration:line-through;display:inline-block;}
+ 
+ .destoimg  {
   display: none;
-}
-
-.show {
+ }
+ 
+ .show {
   display: contents;
-}
-
-.spaceradjustclient{text-align:right;display:inline-block;float:right;padding-right:10px;}
-
-.strike:hover{text-decoration:line-through;width:auto;cursor:pointer;color:black;}
-.name{
+ }
+ 
+ .spaceradjustclient{text-align:right;display:inline-block;float:right;padding-right:10px;}
+ 
+ .strike:hover{text-decoration:line-through;width:auto;cursor:pointer;color:black;}
+ .name{
   grid-column-start:1;
   grid-column-end:4;
-  letter-spacing:.5px;
-}
-.born{padding-left:70px;display:inline-block;
 
-}
-.noclick{background-color:none;width:60vw;height:90vh;position:fixed;z-index:99;bottom:0;left:0;}
-
-.aboutme, .comp_bolddescription{  
+  letter-spacing:.4px;
+ }
+ .born{padding-left:5px;display:inline-block;
+ 
+ }
+ .noclick{background-color:none;width:60vw;height:90vh;position:fixed;z-index:99;bottom:0;left:0;}
+ 
+ .aboutme, .comp_bolddescription{  
   grid-column-start:5;
   grid-column-end:13;
-  line-height:40px;
-  letter-spacing:.1px;
-  hyphens:manual;
+  
   padding-right:10px;}
-
-.year{
+ 
+ .aboutme{
+  font-size:25px;
+  line-height:33px;
+  letter-spacing:.4px;}
+ 
+ .year{
   grid-column-start:7;
   grid-column-end:7;
   padding-left:30px;
-
-
  
-}
-.client{grid-column:8/13;
+  font-size:25px;
+  line-height:33px;
+  letter-spacing:.4px;
+ 
+ 
+ }
+ .client{grid-column:8/13;
+  font-size:25px;
+  line-height:33px;
+  letter-spacing:.4px;
   }
-
-.project{
-  display:none;
-font-size:13pt;
-grid-column-start:5;
-  grid-column-end:5;
-text-align:left;
-
-}
-
-.index > div {
+ .year,.name{
+  font-size:25px;
+  line-height:33px;
+  letter-spacing:.4px;}
+ 
+ 
+ .index > div {
   background-color: none;
   
   
   
-}
-
-
-.client{display:inline-block;}
-
-
-
-/*design to page*/
-
-
-
-.comp_details{grid-column:5/13;  padding-top:10px;
-  padding-left:0px;display:inline-block;}
-
-
-
-
-
-.comp_bolddescription{
+ }
+ 
+ 
+ .client{display:inline-block;}
+ 
+ 
+ 
+ /*design to page*/
+ 
+ 
+ 
+ .comp_details{grid-column:5/13;  padding-top:10px;
+  padding-left:0px;display:inline-block;font-size:18.5px;}
+ 
+ 
+ 
+ 
+ 
+ .comp_bolddescription{
   position:relative;
   font-family:A90;
-  font-size:30px;
+  font-size:25px;
+  line-height:33px;
+  letter-spacing:.4px;
   background-color:none;
   grid-column:5/14;
   bottom:0;
-  padding-bottom:20px;
+  padding-bottom:10px;
   padding-right:0;
   
-
-}
-
-
-.work{
+ 
+ }
+ 
+ .work{
   width:200px;color:black;background-color:none;grid-column:5/7;padding-top:30px;}
-.aboutme{padding-bottom:10px;}
-.comp_description{
+ .aboutme{padding-bottom:10px;}
+ .comp_description{
   position:relative;
   font-family:A90;
-  font-size:18.5px;
   letter-spacing: .25px;
   line-height:27px;
-  font-size: 25px;
-
-  
+  font-size: 18.5px;
   background-color:none;
-  hyphens:manual;
+  
   padding-right:10px;
   grid-column:8/13;
   bottom:0;
-
-}
-
-.images{
+ 
+ }
+ 
+ .comp_description{font-size:18.5px;}
+ 
+ .images{
   position:relative;
   float:left top;
   padding-left:0;
   grid-column:1/8;
-  width:98%;
+  width:95%;
   top:5px;
+ 
+ 
+ 
+ }
+ 
+ #gif2{width:100%;}
+ #busshel{width:100%;}
+ #gif1{width:100%;}
+ #vinylposter{width:70%;}
+ #award1{width:100%;}
+ #ad1{width:100%;}
+ #ad2{width:100%;padding-top:0px;}
+ 
+ 
+ 
+ .alternatehrtext{
+  font-size:25px;
+  line-height:33px;
+  letter-spacing:.4px;
+ padding-bottom:30px;
+ padding-top:5px;
+ padding-left:10px;display:none;}
+ 
 
-
-}
-
-#gif2{width:100%;}
-#busshel{width:100%;}
-#gif1{width:100%;}
-#vinylposter{width:70%;}
-#award1{width:100%;}
-#ad1{width:100%;}
-#ad2{width:100%;padding-top:0px;}
-
-
-
-.alternatehrtext{font-size:30px;
-  letter-spacing: .25px;
-  line-height:27px;
-padding-bottom:30px;
-padding-top:5px;
-padding-left:10px;}
 .hr-text {
-  display:none;
   line-height: 1px;
   position: relative;
   outline: 0;
   border: 0;
   padding:0;
-  color: rgb(150,150,150);
   text-align: right;
   
   width:100%;
-  font-size:18.5px;
-  letter-spacing: .25px;
-  line-height:27px;
-  top:-20px; 
+  font-size:25px;
+  line-height:33px;
+  letter-spacing:.4px;
+  top:-18px; 
 padding-bottom:40px;
 }
   
@@ -687,76 +713,87 @@ padding-bottom:40px;
   .hr-text:before {
     font-family:A90;
     content: '';
-    width:1vw;
+    width:2vw;
     background:black;
     position: absolute;
     height: 1px;  
-    top:6px;
+    top:4px;
     color:black;
-    letter-spacing:.25px;
-    display:none;
+    font-size:25px;
+    line-height:33px;
+    letter-spacing:.4px;
+
     
   }
   .hr-text:after {
     font-family:A90;
-   font-family:A90;
+
     content: attr(data-content);
     position: absolute;
-   
-    color: rgb(150,150,150); letter-spacing:.25px;
+    font-size:25px;
+    line-height:33px;
+    letter-spacing:.4px;
     line-height:3px;
-    padding-left:calc(1.16vw);
-    display:none;
+    padding-left:calc(2.8vw);
+  
   }
 
   
+ 
+  
     
-.checkoutmore{font-family:A90;font-size:30px;padding-left:0;grid-column:8/13;}
-
-
-
-
-.designtop{
+ .checkoutmore{font-family:A90;
+  font-size:25px;
+  line-height:33px;
+  letter-spacing:.4px;padding-left:0;grid-column:8/13;}
+ 
+ 
+ 
+ 
+ .designtop{
   background-image:url("/index.html");
-}
-
-
+ }
+ 
+ 
   .mail{
-    font-family:A90; letter-spacing:-.75;
+    font-family:A90; 
+    font-size:25px;
+    line-height:33px;
+    letter-spacing:.4px;
   }
-
+ 
   .compheadindex{
     position:fixed;width:100%;height:auto;padding-bottom:5px;padding-top:0;padding-right:10px;padding-left:0;z-index:1000;background-color:white;box-shadow: 0px 3px 10px white;
   }
   .mainhead{padding-left:10px;}
-
-.headspacer{
-  width:100%;height:100px;
-}
-
+ 
+ .headspacer{
+  width:100%;height:80px;
+ }
+ 
   .namehead{
     padding-top:10px;padding-left:10px;
   }
-
+ 
   .headerspacer{height:1px;width:70px;display:inline-block;}
+ 
+ 
+ .descspacer{width:100%;height:20px;}
+ 
+ .checkfooter{padding-bottom:5px;}
+ 
+ .hide{display:none;}
+ .mainhead{padding-top:10px;}
+ .hideformobile{display:inline-block;}
+ #dots,#myBtn,#more{display:none;}
+ 
+ 
+ .spaceradjust{display:none;}
+ .shorten{display:contents;}
+ }
 
 
-.descspacer{width:100%;height:20px;}
-
-.checkfooter{padding-bottom:5px;}
-
-.hide{display:none;}
-.mainhead{padding-top:10px;}
-.hideformobile{display:inline-block;}
-#dots{color:transparent;}
-#dots,#myBtn,#more{display:none;}
-.spaceradjust{display:none;}
-.shorten{display:none;}
-
-}
-
-
-@media only screen and (min-width:1413px) and (max-width:2000px){
+@media only screen and (min-width:1417px) and (max-width:2000px){
   body{
 
    /* to make hwa-jin jun and profile side by side
@@ -874,7 +911,7 @@ a:hover {color:black;text-decoration:line-through;display:inline-block;}
   grid-column-end:13;
   line-height:40px;
   letter-spacing:.1px;
-  hyphens:manual;
+  
   padding-right:10px;}
 .aboutme{padding-bottom:30px;}
 .year{
@@ -948,7 +985,7 @@ text-align:left;
   line-height:27px;
   
   background-color:none;
-  hyphens:manual;
+  
   padding-right:10px;
   grid-column:8/13;
   bottom:0;
@@ -1137,7 +1174,7 @@ padding-bottom:40px;
 }
 .index{
   display: grid;
-  grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 150px 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 80px 1fr 1fr 1fr 1fr 1fr;
   font-size: 40px;
   padding-top: 10px; 
   padding-bottom: 10px; 
@@ -1182,16 +1219,16 @@ a:hover {color:black;text-decoration:line-through;display:inline-block;}
   grid-column-end:13;
   line-height:55px;
   letter-spacing:.5px;
-  hyphens:manual;
+  
   padding-right:10px;}
 
   .aboutme{padding-bottom:20px;}
 .year{
   grid-column-start:8;
   grid-column-end:8;
-
 letter-spacing:-.5px;
-  float:right;
+text-align:right;padding-right:100px;
+
   
 
   
@@ -1199,7 +1236,8 @@ letter-spacing:-.5px;
 
  
 }
-.client{grid-column:9/13;
+.client{grid-column:9/14;
+
   }
 
 
@@ -1251,7 +1289,7 @@ letter-spacing:-.5px;
   line-height:42px;
   
   background-color:none;
-  hyphens:manual;
+  
   padding-right:10px;
   grid-column:9/13;
   bottom:0;
