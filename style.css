@@ -74,11 +74,12 @@ html{  -webkit-text-size-adjust: none;
     color: currentColor;
     pointer-events: none;
      text-decoration: none;
+     letter-spacing:.2px;
     
   }
   .spaceradjustclient{text-align:right;float:right;padding-right:10px;}
   .strike:hover{text-decoration:line-through;}
-  .email{
+  .email{letter-spacing:.2px;
     -webkit-user-select: all;
     user-select: all;
     font-family:A90;
@@ -1364,7 +1365,7 @@ padding-bottom:40px;
 
   
     
-.checkoutmore{font-family:A90;font-size:40px;padding-left:0;grid-column:8/13;}
+.checkoutmore{font-family:A90;font-size:40px;padding-left:0;grid-column:9/13;}
 
 
 
