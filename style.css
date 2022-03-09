@@ -31,7 +31,7 @@ a, button{color:RGB(150,150,150);text-decoration-color:black;
 
 .always{display:none;}
 #more:hover{color:black;}
-
+.bottom{padding-bottom:0;}
 @font-face {
   font-family:A90;
   src: url('AUTHENTICSans-90.otf'), url('AUTHENTICSans-90.woff'), url('AUTHENTICSans-90.woff2');
@@ -51,6 +51,8 @@ html{  -webkit-text-size-adjust: none;
     overflow-x:hidden;
 
   }
+
+
   .name{display:inline-block;padding-bottom:0;}
   .mainhead{padding:0;height:auto;}
 .index{height:auto;}
@@ -108,7 +110,7 @@ padding-right:10px;
   .groupmobileonly{padding-left:10px;}
   .checkfooter{position:absolute;float:bottom;}
   .checkoutmore{position:absolute;grid-column:1/3;float:bottom;padding-left:10px;}
-
+.bottom{padding-bottom:20px;}
 .client{float:right;}
 .comp_details{grid-column:1/6;padding-left:10px;padding-top:10px;padding-bottom:15px;height:auto;display:block;}
 .comp_bolddescription{grid-column:1/6;padding-left:10px;padding-right:10px;padding-bottom:0px;}
