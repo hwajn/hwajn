@@ -38,7 +38,7 @@ a, button{color:RGB(150,150,150);text-decoration-color:black;
 }
 
 
-@media only screen and (max-width: 888px) {
+@media only screen and (max-width: 904px) {
 
 html{  -webkit-text-size-adjust: none; 
   -ms-text-size-adjust:none;}
@@ -149,7 +149,7 @@ a:hover {color:black;}
 }
 
 
-@media only screen and (min-width:889px) and (max-width:1091px){body{
+@media only screen and (min-width:905px) and (max-width:1197px){body{
 
   /* to make hwa-jin jun and profile side by side
    display:inline-flex;*/
@@ -424,7 +424,7 @@ padding-bottom:40px;
 
 
  .mail{
-   font-family:A90; letter-spacing:-.75;
+   font-family:A90; 
  }
 
  .compheadindex{
@@ -458,7 +458,7 @@ padding-bottom:40px;
 }
 
 /* for width that the captions are tucked underneath the images / photos */
-@media only screen and (min-width:1092px) and (max-width:1416px){
+@media only screen and (min-width:1198px) and (max-width:1416px){
   body{
 
   /* to make hwa-jin jun and profile side by side
@@ -497,9 +497,7 @@ padding-bottom:40px;
     bottom:0;
     font-size:25px;
     line-height:33px;
-    letter-spacing:.4px;
     font-family:A90;
- 
     padding-left:10px;
     padding-bottom:5px;
     -webkit-user-select: all;
@@ -764,7 +762,7 @@ padding-bottom:40px;
     font-family:A90; 
     font-size:25px;
     line-height:33px;
-    letter-spacing:.4px;
+
   }
  
   .compheadindex{
@@ -1073,7 +1071,7 @@ padding-bottom:40px;
 
 
   .mail{
-    font-family:A90; letter-spacing:-.75;
+    font-family:A90; 
   }
 
   .compheadindex{
@@ -1380,7 +1378,7 @@ padding-bottom:40px;
 
 
   .mail{
-    font-family:A90; letter-spacing:-.75;
+    font-family:A90; 
   }
 
   .compheadindex{
