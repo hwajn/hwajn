@@ -14,7 +14,7 @@ body {
   width:auto;
   height:auto;
   background-color:white;
-  overflow-y:scroll;
+  /*overflow-y:scroll;*/
   -webkit-text-size-adjust: none; 
   -ms-text-size-adjust:none;
 
@@ -532,7 +532,7 @@ padding-bottom:40px;
  .index{
   display: grid;
   grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 150px 1fr 1fr 1fr 1fr 1fr;
- 
+
   padding-top: 10px; 
   padding-bottom: 10px; 
   padding-right: 10px; 
