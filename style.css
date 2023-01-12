@@ -41,7 +41,7 @@ a, button{color:RGB(150,150,150);text-decoration-color:black;
   src: url('AUTHENTICSans-90.otf'), url('AUTHENTICSans-90.woff'), url('AUTHENTICSans-90.woff2');
 }
 
-
+mark:hover, mark:active {background-color:white;}
 
 
 @media only screen and (max-width: 904px) {
