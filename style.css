@@ -19,6 +19,7 @@ body {
   -ms-text-size-adjust:none;
 
 }
+
 .comp_bolddescription,.comp_descriptionm,aboutme {  overflow-wrap: break-word;
   word-wrap: break-word;
   -webkit-hyphens: auto;
@@ -39,6 +40,8 @@ a, button{color:RGB(150,150,150);text-decoration-color:black;
   font-family:A90;
   src: url('AUTHENTICSans-90.otf'), url('AUTHENTICSans-90.woff'), url('AUTHENTICSans-90.woff2');
 }
+
+
 
 
 @media only screen and (max-width: 904px) {
@@ -70,11 +73,11 @@ html{  -webkit-text-size-adjust: none;
   .noshow{display:none;}
   
   .born{display:none;}
-  .index{display:grid;grid-template-columns:50px auto;width:100%;}
+  .index{display:grid;grid-template-columns:50px auto;width:100%;padding-left:10px;}
   .work{float:left;}
   .year{padding-left:10px;display:inline-block;}
   .work{padding-left:10px;display:none;}
-  .client{text-align:right;padding-right:10px;width: calc(100% - 60px); letter-spacing:0px!important;
+  .client{text-align:right;transform:translate(-40px);width: calc(100% - 60px); letter-spacing:0px!important;
   }
   .nolink{
     color: currentColor;
@@ -120,7 +123,7 @@ padding-right:10px;
 .comp_description{display:none;}
 #more{display:none;    font-size:15px;}
 
-button{margin-bottom:50px;font-family:A90;font-size:15px;background-color:white;border:none;padding-left:0;margin-left:0;}
+button{margin-bottom:38px;font-family:A90;font-size:15px;background-color:white;border:none;padding-left:0;margin-left:0;}
 button:hover{text-decoration:line-through;}
 .alternatehrtext{
   font-size:15px;
@@ -148,7 +151,7 @@ button:hover{text-decoration:line-through;}
 .shorten{display:none;}
 .images{width:100vw;}
 a:hover {color:black;}
-
+.compheadindex {padding-top:0;}
 }
 
 
@@ -241,9 +244,9 @@ box-shadow:0px 1px 5px rgba(255, 255, 255, 1);*/
 
 
 }
-#first{
+/*#first{
   padding-top:17px;
- }
+ }*/
 a {text-decoration:none;display:inline-block;}
 a:hover {color:black;text-decoration:line-through;display:inline-block;}
 
@@ -321,14 +324,14 @@ a:hover {color:black;text-decoration:line-through;display:inline-block;}
  background-color:none;
  grid-column:5/14;
  bottom:0;
- padding-bottom:10px;
+ 
  padding-right:0;
  
 
 }
 
 .work{
- width:200px;color:black;background-color:none;grid-column:5/7;padding-top:30px;}
+ width:200px;color:black;background-color:none;grid-column:5/7;padding-top:0px;}
 .aboutme{padding-bottom:10px;}
 .comp_description{
  position:relative;
@@ -436,7 +439,7 @@ padding-bottom:40px;
  .compheadindex{
    position:fixed;width:100%;height:auto;padding-bottom:5px;padding-top:0;padding-right:10px;padding-left:0;z-index:1000;background-color:white;
  }
- .mainhead{padding-left:10px;}
+ .mainhead{/*padding-left:10px;*/padding:0;}
 
 .headspacer{
  width:100%;height:80px;
@@ -454,7 +457,7 @@ padding-bottom:40px;
 .checkfooter{padding-bottom:5px;}
 
 .hide{display:none;}
-.mainhead{padding-top:10px;}
+.mainhead{padding-top:0px;}
 .hideformobile{display:inline-block;}
 #dots,#myBtn,#more{display:none;}
 
@@ -646,14 +649,14 @@ padding-bottom:40px;
   background-color:none;
   grid-column:5/14;
   bottom:0;
-  padding-bottom:10px;
+  
   padding-right:0;
   
  
  }
  
  .work{
-  width:200px;color:black;background-color:none;grid-column:5/7;padding-top:30px;}
+  width:200px;color:black;background-color:none;grid-column:5/7;padding-top:0px;}
  .aboutme{padding-bottom:10px;}
  .comp_description{
   position:relative;
@@ -774,7 +777,7 @@ padding-bottom:40px;
   .compheadindex{
     position:fixed;width:100%;height:auto;padding-bottom:5px;padding-top:0;padding-right:10px;padding-left:0;z-index:1000;background-color:white;
   }
-  .mainhead{padding-left:10px;}
+  .mainhead{padding-left:/*10px*/0;}
  
  .headspacer{
   width:100%;height:80px;
@@ -792,7 +795,7 @@ padding-bottom:40px;
  .checkfooter{padding-bottom:5px;}
  
  .hide{display:none;}
- .mainhead{padding-top:10px;}
+ .mainhead{padding-left:/*10px*/0;}
  .hideformobile{display:inline-block;}
  #dots,#myBtn,#more{display:none;}
  
@@ -867,7 +870,7 @@ padding-bottom:40px;
   
    /* color:rgb(30, 30, 30);*/
     
-   .aboutme{padding-bottom:10px;}
+   .aboutme{padding-bottom:0;}
 
 .grid {
   background-color:none;
@@ -922,7 +925,7 @@ a:hover {color:black;text-decoration:line-through;display:inline-block;}
   letter-spacing:.1px;
   
   padding-right:10px;}
-.aboutme{padding-bottom:30px;}
+.aboutme{padding-bottom:/*30px*/0;}
 .year{
   grid-column-start:7;
   grid-column-end:7;
@@ -956,7 +959,7 @@ text-align:left;
 }
   
 .work{
-  width:1000px;color:black;background-color:none;grid-column:5/7;padding-top:50px;}
+  width:1000px;color:black;background-color:none;grid-column:5/7;padding-top:0px;}
 
 
 .client{display:inline-block;}
@@ -981,7 +984,7 @@ text-align:left;
   background-color:none;
   grid-column:5/13;
   bottom:0;
-  padding-bottom:20px;
+  
   padding-left:5px;
 
 }
@@ -1083,7 +1086,7 @@ padding-bottom:40px;
   .compheadindex{
     position:fixed;width:100%;height:auto;padding-bottom:5px;padding-top:0;padding-right:10px;padding-left:0;z-index:1000;background-color:white;
   }
-  .mainhead{padding-left:10px;}
+  .mainhead{padding-left:/*10px*/0;}
 
 .headspacer{
   width:100%;height:100px;
@@ -1101,7 +1104,7 @@ padding-bottom:40px;
 .checkfooter{padding-bottom:5px;}
 
 .hide{display:none;}
-.mainhead{padding-top:10px;}
+.mainhead{padding-left:/*10px*/0;}
 .hideformobile{display:inline-block;}
 .alternatehrtext{display:none;}
 #dots,#myBtn,#more{display:none;}
@@ -1257,11 +1260,12 @@ text-align:right;padding-right:100px;
   
   
 }
-  
+
 .work{
-color:black;background-color:none;padding-top:36px;
+color:black;background-color:none;padding-top:0;
 position:absolute;
 }
+
 .client{display:inline-block;}
 
 
@@ -1390,7 +1394,7 @@ padding-bottom:40px;
   .compheadindex{
     position:fixed;width:100%;height:auto;padding-bottom:5px;padding-top:0;padding-right:10px;padding-left:0;z-index:1000;background-color:white;
   }
-  .mainhead{padding-left:10px;}
+  .mainhead{padding-left:/*10px*/0;}
 
 .headspacer{
   width:100%;height:100px;
@@ -1408,10 +1412,12 @@ padding-bottom:40px;
 .checkfooter{padding-bottom:5px;}
 
 .hide{display:none;}
-.mainhead{padding-top:10px;}
+.mainhead{padding-left:/*10px*/0;}
 .hideformobile{display:inline-block;}
 .alternatehrtext{display:none;}
 #dots,#myBtn,#more{display:none;}
 .spaceradjust{height:1px;width:70px;display:inline-block;}
 .shorten{display:contents;}
+#first{padding-top:50px !important;}
+
 }
