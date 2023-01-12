@@ -119,7 +119,7 @@ padding-right:10px;
 .bottom{padding-bottom:20px;}
 .client{float:right;}
 .comp_details{grid-column:1/6;padding-left:10px;padding-top:10px;padding-bottom:15px;height:auto;display:block;}
-.comp_bolddescription{grid-column:1/6;padding-left:10px;padding-right:30px;padding-bottom:0px;}
+.comp_bolddescription{grid-column:1/6;padding-left:20px;padding-right:40px;padding-bottom:0px;}
 .comp_description{display:none;}
 #more{display:none;    font-size:15px;}
 
