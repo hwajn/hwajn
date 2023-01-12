@@ -63,7 +63,7 @@ html{  -webkit-text-size-adjust: none;
   .mainhead{padding:0;height:auto;}
 .index{height:auto;}
 .born, .aboutme, .name,  .say{display:inline;grid-column:1/3;padding-left:10px;padding-right:10px;padding-top:10px;padding-bottom:20px;}
-.aboutme{padding-bottom:50px;}
+.aboutme{padding-bottom:0px;padding-right:30px;hyphens:manual !important;}
   .name a{text-decoration:none;color:RGB(150,150,150);}
   a:hover{text-decoration:line-through;}
   a:active, .strike:active{text-decoration:line-through;}
@@ -119,11 +119,11 @@ padding-right:10px;
 .bottom{padding-bottom:20px;}
 .client{float:right;}
 .comp_details{grid-column:1/6;padding-left:10px;padding-top:10px;padding-bottom:15px;height:auto;display:block;}
-.comp_bolddescription{grid-column:1/6;padding-left:10px;padding-right:10px;padding-bottom:0px;}
+.comp_bolddescription{grid-column:1/6;padding-left:10px;padding-right:30px;padding-bottom:0px;}
 .comp_description{display:none;}
 #more{display:none;    font-size:15px;}
 
-button{margin-bottom:38px;font-family:A90;font-size:15px;background-color:white;border:none;padding-left:0;margin-left:0;}
+button{margin-bottom:20px;font-family:A90;font-size:15px;background-color:white;border:none;padding-left:0;margin-left:0;}
 button:hover{text-decoration:line-through;}
 .alternatehrtext{
   font-size:15px;
