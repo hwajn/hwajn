@@ -76,8 +76,8 @@ html{  -webkit-text-size-adjust: none;
   .index{display:grid;grid-template-columns:50px auto;width:100%;padding-left:0;}
   .work{float:left;}
   .year{padding-left:20px;display:inline-block;}
-  .work{padding-left:10px;display:none;}
-  .client{text-align:right;transform:translate(-30px);width: calc(100% - 60px); letter-spacing:0px!important;
+  .work{padding-left:0px;display:none;}
+  .client{text-align:right;transform:translate(-35px);width: calc(100% - 60px); letter-spacing:0px!important;
   }
   .nolink{
     color: currentColor;
@@ -94,8 +94,7 @@ html{  -webkit-text-size-adjust: none;
     font-family:A90;
     /* unnecessary for the email
     box-shadow: 0px 0px 10px white;*/
-padding-right:10px;
-    float:right;
+    float:right;margin-right:15px;
     
     }
   .email:focus{
@@ -119,7 +118,7 @@ padding-right:10px;
 .bottom{padding-bottom:20px;}
 .client{float:right;}
 .comp_details{grid-column:1/6;padding-left:10px;padding-top:10px;padding-bottom:15px;height:auto;display:block;}
-.comp_bolddescription{grid-column:1/6;padding-left:20px;padding-right:40px;padding-bottom:0px;}
+.comp_bolddescription{grid-column:1/6;padding-left:20px;padding-right:30px;padding-bottom:0px;}
 .comp_description{display:none;}
 #more{display:none;    font-size:15px;}
 
