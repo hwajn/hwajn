@@ -6,6 +6,7 @@ html{
     padding:0;
     margin:0;
     overflow-y:scroll;
+    
 }
 
 body {
@@ -44,6 +45,18 @@ a, button{color:RGB(150,150,150);text-decoration-color:black;
 mark:hover, mark:active {background-color:white;}
 .black {background-color:black;color:white;border:black 2px solid;}
 .black:hover, .black:active {background-color:white!important;color:black!important;border:white 2px solid!important;}
+
+
+::-moz-selection { /* Code for Firefox */
+  color: blueviolet;
+  background: yellow;
+}
+::selection {
+  color: blueviolet;
+  background: yellow;
+}
+
+
 @media only screen and (max-width: 904px) {
 
 html{  -webkit-text-size-adjust: none; 
@@ -463,6 +476,11 @@ padding-bottom:40px;
 
 .spaceradjust{display:none;}
 .shorten{display:contents;}
+
+
+
+
+
 }
 
 /* for width that the captions are tucked underneath the images / photos */
@@ -801,6 +819,10 @@ padding-bottom:40px;
  
  .spaceradjust{display:none;}
  .shorten{display:contents;}
+
+
+
+
  }
 
 
@@ -1109,6 +1131,24 @@ padding-bottom:40px;
 #dots,#myBtn,#more{display:none;}
 .spaceradjust{height:1px;width:70px;display:inline-block;}
 .shorten{display:none;}
+
+
+
+img{
+  display: none;
+  z-index:100000000000;
+}
+
+
+.index:hover img.homepage{
+  display: block;
+  z-index:1000002;
+position:fixed;
+z-index:10000;
+top:0;
+left:0;
+width:45vw;}
+
 }
 
 
@@ -1418,5 +1458,21 @@ padding-bottom:40px;
 .spaceradjust{height:1px;width:70px;display:inline-block;}
 .shorten{display:contents;}
 #first{padding-top:50px !important;}
+
+
+img{
+  display: none;
+  z-index:100000000000;
+}
+
+
+.index:hover img.homepage{
+  display: block;
+  z-index:1000002;
+position:fixed;
+z-index:10000;
+top:0;
+left:0;
+width:45vw;}
 
 }
