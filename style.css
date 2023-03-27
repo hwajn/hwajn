@@ -164,6 +164,13 @@ button:hover{text-decoration:line-through;}
 .images{width:100vw;}
 a:hover {color:black;}
 .compheadindex {padding-top:0;}
+
+
+
+img.homepage{
+  display: none;
+}
+
 }
 
 
@@ -478,8 +485,25 @@ padding-bottom:40px;
 .shorten{display:contents;}
 
 
+img{
+  display: none;
+  z-index:100000000000;
+}
 
 
+.index:hover img.homepage{
+  display: block;
+  z-index:1000002;
+position:fixed;
+z-index:10000;
+top:0;
+left:0;
+width:45vw;}
+
+
+img.homepage{
+  display: none;
+}
 
 }
 
@@ -819,6 +843,23 @@ padding-bottom:40px;
  
  .spaceradjust{display:none;}
  .shorten{display:contents;}
+
+
+ img{
+  display: none;
+  z-index:100000000000;
+}
+
+
+.index:hover img.homepage{
+  display: block;
+  z-index:1000002;
+position:fixed;
+z-index:10000;
+top:0;
+left:0;
+width:45vw;}
+
 
 
 
