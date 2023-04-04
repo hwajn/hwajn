@@ -388,7 +388,7 @@ padding-bottom:40px;
    font-family:A90;
    content: '';
    width:1vw;
-   background:black;
+
    position: absolute;
    height: 1px;  
    top:6px;
@@ -682,7 +682,7 @@ padding-bottom:40px;
     font-family:A90;
     content: '';
     width:2vw;
-    background:black;
+
     position: absolute;
     height: 1px;  
     top:4px;
@@ -981,7 +981,7 @@ padding-bottom:40px;
     font-family:A90;
     content: '';
     width:1vw;
-    background:black;
+
     position: absolute;
     height: 1px;  
     top:4px;
@@ -1266,7 +1266,7 @@ padding-bottom:40px;
     font-family:A90;
     content: '';
     width:1vw;
-    background:black;
+
     position: absolute;
     height: 1px;  
     top:9px;
