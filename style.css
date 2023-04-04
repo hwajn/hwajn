@@ -20,14 +20,25 @@ body {
 
 }
 
-.comp_bolddescription,.comp_descriptionm,aboutme {  overflow-wrap: break-word;
+.comp_bolddescription,.comp_bolddescription,.aboutme {  overflow-wrap: break-word;
   word-wrap: break-word;
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;}
-a, button{color:RGB(150,150,150);text-decoration-color:black;
+a, button{color:RGB(150,150,150);font-family:A90;
+
 }
 
+a {   text-decoration:none;}
+button{text-decoration:line-through;}
+button:hover{text-decoration:none;}
+
+
+.mail{
+  font-family:A90; 
+}
+
+.spaceradjustclient{text-align:right;float:right;padding-right:10px;}
 .strike{color:RGB(150,150,150);text-decoration-color:black;}
 
 .always{display:none;}
@@ -36,11 +47,26 @@ a, button{color:RGB(150,150,150);text-decoration-color:black;
 .work{
   pointer-events:none;
 }
+
+ .email{
+  -webkit-user-select: all;
+  user-select: all;
+  font-family:A90;
+}
+
+.grid {
+  background-color:none;
+  display:grid;
+}
+
+.index {font-family:A90;display:grid;}
+
 @font-face {
   font-family:A90;
   src: url('AUTHENTICSans-90.otf'), url('AUTHENTICSans-90.woff'), url('AUTHENTICSans-90.woff2');
 }
-
+ a:hover, a:active, .strike:active, .strike:hover {text-decoration:line-through;cursor:pointer;color:black;}
+  
 mark:hover, mark:active {background-color:white;}
 .black {background-color:black;color:white;border:black 2px solid;}
 .black:hover, .black:active {background-color:white!important;color:black!important;border:white 2px solid!important;}
@@ -65,18 +91,17 @@ html{  -webkit-text-size-adjust: none;
 .born, .aboutme, .name,  .say{display:inline;grid-column:1/3;padding-left:10px;padding-right:0;padding-top:10px;padding-bottom:20px;}
 .aboutme{padding-bottom:0px;padding-right:30px;hyphens:manual !important;}
   .name a{text-decoration:none;color:RGB(150,150,150);}
-  a:hover{text-decoration:line-through;}
-  a:active, .strike:active{text-decoration:line-through;}
+  
   .hideformobile{display:none;}
   .hideformobile,.hide{padding-left:0;padding-right:0;}
   .hide{display:inline}
   .noshow{display:none;}
   
   .born{display:none;}
-  .index{display:grid;grid-template-columns:50px auto;width:100%;padding-left:0;}
-  .work{float:left;}
+  .index{grid-template-columns:50px auto;width:100%;padding-left:0;}
+
   .year{padding-left:20px;display:inline-block;}
-  .work{padding-left:0px;display:none;}
+  .work{padding-left:0px;display:none;float:left;}
   .client{text-align:right;transform:translate(-35px);width: calc(100% - 60px); letter-spacing:0px!important;
   }
   .nolink{
@@ -86,24 +111,14 @@ html{  -webkit-text-size-adjust: none;
      letter-spacing:.2px;
     
   }
-  .spaceradjustclient{text-align:right;float:right;padding-right:10px;}
-  .strike:hover{text-decoration:line-through;}
+  
+
   .email{
-    -webkit-user-select: all;
-    user-select: all;
-    font-family:A90;
-    /* unnecessary for the email
-    box-shadow: 0px 0px 10px white;*/
+
     float:right;margin-right:15px;
     
     }
-  .email:focus{
-    border: 2px dashed #31808c;
-    outline: none;
-    animation: select 100ms step-end forwards;
-      -webkit-user-select: all;
-  user-select: all;
-  }
+
 .headerspacer{display:none;}
 
 .index > .client{width:100%;}
@@ -122,8 +137,8 @@ html{  -webkit-text-size-adjust: none;
 .comp_description{display:none;}
 #more{display:none;    font-size:15px;}
 
-button{margin-bottom:20px;font-family:A90;font-size:15px;background-color:white;border:none;padding-left:0;margin-left:0;}
-button:hover{text-decoration:line-through;}
+button{margin-bottom:20px;font-size:15px;background-color:white;border:none;padding-left:0;margin-left:0;}
+
 .alternatehrtext{
   font-size:15px;
   letter-spacing:.2px;
@@ -149,7 +164,7 @@ button:hover{text-decoration:line-through;}
 
 .shorten{display:none;}
 .images{width:100vw;}
-a:hover {color:black;}
+
 .compheadindex {padding-top:0;}
 }
 
@@ -192,38 +207,19 @@ a:hover {color:black;}
    bottom:0;
    line-height:27px;
    font-size:18.5px;
-   font-family:A90;
 
    padding-left:10px;
    padding-bottom:5px;
-   -webkit-user-select: all;
-   user-select: all;
+
 
    z-index:100;
-   /* unnecessary for the email
-   box-shadow: 0px 0px 10px white;*/
+
    
    }
 
 
    
-   .email:focus{
-     border: 2px dashed #31808c;
-     outline: none;
- 
-     animation: select 100ms step-end forwards;
-     -webkit-user-select: all;
-     user-select: all;
-   }
-   
- 
-  /* color:rgb(30, 30, 30);*/
-   
 
-
-.grid {
- background-color:none;
- display:grid;}
  
 
 .index{
@@ -234,20 +230,14 @@ a:hover {color:black;}
  padding-bottom: 5px; 
  padding-right: 10px; 
  padding-left:0;
- font-family:A90;
- line-height:25px;
- /*background-color:rgba(255, 255, 255, 0.75);
- -webkit-box-shadow:0px 1px 1px rgba(255, 255, 255, 1);
--moz-box-shadow:0px 1px 1px rgba(255, 255, 255, 1);
-box-shadow:0px 1px 5px rgba(255, 255, 255, 1);*/
 
+ line-height:25px;
+ 
 
 }
-/*#first{
-  padding-top:17px;
- }*/
-a {text-decoration:none;display:inline-block;}
-a:hover {color:black;text-decoration:line-through;display:inline-block;}
+
+
+
 
 .destoimg  {
  display: none;
@@ -257,9 +247,9 @@ a:hover {color:black;text-decoration:line-through;display:inline-block;}
  display: contents;
 }
 
-.spaceradjustclient{text-align:right;display:inline-block;float:right;padding-right:10px;}
 
-.strike:hover{text-decoration:line-through;width:auto;cursor:pointer;color:black;}
+
+
 .name{
  grid-column-start:1;
  grid-column-end:4;
@@ -330,7 +320,7 @@ a:hover {color:black;text-decoration:line-through;display:inline-block;}
 }
 
 .work{
- width:200px;color:black;background-color:none;grid-column:5/7;padding-top:0px;}
+ width:200px;grid-column:5/7;padding-top:0px;}
 .aboutme{padding-bottom:10px;}
 .comp_description{
  position:relative;
@@ -431,13 +421,8 @@ padding-bottom:40px;
 }
 
 
- .mail{
-   font-family:A90; 
- }
 
- .compheadindex{
-   position:fixed;width:100%;height:auto;padding-bottom:5px;padding-top:0;padding-right:10px;padding-left:0;z-index:1000;background-color:white;
- }
+
  .mainhead{/*padding-left:10px;*/padding:0;}
 
 .headspacer{
@@ -505,61 +490,34 @@ padding-bottom:40px;
     bottom:0;
     font-size:25px;
     line-height:33px;
-    font-family:A90;
     padding-left:10px;
     padding-bottom:5px;
-    -webkit-user-select: all;
-    user-select: all;
+
  
     z-index:100;
-    /* unnecessary for the email
-    box-shadow: 0px 0px 10px white;*/
+
     
     }
  
  
     
-    .email:focus{
-      border: 2px dashed #31808c;
-      outline: none;
-  
-      animation: select 100ms step-end forwards;
-      -webkit-user-select: all;
-      user-select: all;
-    }
-    
-  
-   /* color:rgb(30, 30, 30);*/
-    
- 
- 
- .grid {
-  background-color:none;
-  display:grid;
- }
  .index{
-  display: grid;
+  
   grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 150px 1fr 1fr 1fr 1fr 1fr;
 
   padding-top: 10px; 
   padding-bottom: 10px; 
   padding-right: 10px; 
   padding-left:0;
-  font-family:A90;
-
   font-size:25px;
   line-height:33px;
   letter-spacing:.4px;
-  /*background-color:rgba(255, 255, 255, 0.75);
-  -webkit-box-shadow:0px 1px 1px rgba(255, 255, 255, 1);
- -moz-box-shadow:0px 1px 1px rgba(255, 255, 255, 1);
- box-shadow:0px 1px 5px rgba(255, 255, 255, 1);*/
  
   
  
  }
- a {text-decoration:none;display:inline-block;}
- a:hover {color:black;text-decoration:line-through;display:inline-block;}
+
+
  
  .destoimg  {
   display: none;
@@ -569,9 +527,8 @@ padding-bottom:40px;
   display: contents;
  }
  
- .spaceradjustclient{text-align:right;display:inline-block;float:right;padding-right:10px;}
  
- .strike:hover{text-decoration:line-through;width:auto;cursor:pointer;color:black;}
+ 
  .name{
   grid-column-start:1;
   grid-column-end:4;
@@ -655,7 +612,7 @@ padding-bottom:40px;
  }
  
  .work{
-  width:200px;color:black;background-color:none;grid-column:5/7;padding-top:0px;}
+  width:200px;grid-column:5/7;padding-top:0px;}
  .aboutme{padding-bottom:10px;}
  .comp_description{
   position:relative;
@@ -767,7 +724,6 @@ padding-bottom:40px;
  
  
   .mail{
-    font-family:A90; 
     font-size:25px;
     line-height:33px;
 
@@ -794,7 +750,7 @@ padding-bottom:40px;
  .checkfooter{padding-bottom:5px;}
  
  .hide{display:none;}
- .mainhead{padding-left:/*10px*/0;}
+ .mainhead{padding-left:0;}
  .hideformobile{display:inline-block;}
  #dots,#myBtn,#more{display:none;}
  
@@ -807,8 +763,6 @@ padding-bottom:40px;
 @media only screen and (min-width:1417px) and (max-width:2000px){
   body{
 
-   /* to make hwa-jin jun and profile side by side
-    display:inline-flex;*/
       width:100%;
   }
 
@@ -842,39 +796,25 @@ padding-bottom:40px;
     left:0;
     bottom:0;
     font-size:30px;
-    font-family:A90;
-
     padding-left:10px;
     padding-bottom:5px;
-    -webkit-user-select: all;
-    user-select: all;
+
 
     z-index:100;
-    /* unnecessary for the email
-    box-shadow: 0px 0px 10px white;*/
+    
     
     }
 
 
     
-    .email:focus{
-      border: 2px dashed #31808c;
-      outline: none;
-  
-      animation: select 100ms step-end forwards;
-      -webkit-user-select: all;
-      user-select: all;
-    }
+
     
   
-   /* color:rgb(30, 30, 30);*/
+
     
    .aboutme{padding-bottom:0;}
 
-.grid {
-  background-color:none;
-  display:grid;
-}
+
 .index{
   display: grid;
   grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 150px 1fr 1fr 1fr 1fr 1fr;
@@ -885,16 +825,13 @@ padding-bottom:40px;
   padding-left:0;
   font-family:A90;
   line-height:43px;
-  /*background-color:rgba(255, 255, 255, 0.75);
-  -webkit-box-shadow:0px 1px 1px rgba(255, 255, 255, 1);
- -moz-box-shadow:0px 1px 1px rgba(255, 255, 255, 1);
- box-shadow:0px 1px 5px rgba(255, 255, 255, 1);*/
+
 
   
 
 }
-a {text-decoration:none;display:inline-block;}
-a:hover {color:black;text-decoration:line-through;display:inline-block;}
+
+
 
 .destoimg  {
   display: none;
@@ -906,7 +843,7 @@ a:hover {color:black;text-decoration:line-through;display:inline-block;}
 
 
 
-.strike:hover{text-decoration:line-through;width:auto;cursor:pointer;color:black;}
+
 .name{
   grid-column-start:1;
   grid-column-end:4;
@@ -924,7 +861,7 @@ a:hover {color:black;text-decoration:line-through;display:inline-block;}
   letter-spacing:.1px;
   
   padding-right:10px;}
-.aboutme{padding-bottom:/*30px*/0;}
+.aboutme{padding-bottom:0;}
 .year{
   grid-column-start:7;
   grid-column-end:7;
@@ -958,14 +895,12 @@ text-align:left;
 }
   
 .work{
-  width:1000px;color:black;background-color:none;grid-column:5/7;padding-top:0px;}
+  width:1000px;grid-column:5/7;padding-top:0px;}
 
 
 .client{display:inline-block;}
 
 
-
-/*design to page*/
 
 
 
@@ -1078,14 +1013,11 @@ padding-bottom:40px;
 }
 
 
-  .mail{
-    font-family:A90; 
-  }
 
   .compheadindex{
     position:fixed;width:100%;height:auto;padding-bottom:5px;padding-top:0;padding-right:10px;padding-left:0;z-index:1000;background-color:white;
   }
-  .mainhead{padding-left:/*10px*/0;}
+  .mainhead{padding-left:0;}
 
 .headspacer{
   width:100%;height:100px;
@@ -1103,7 +1035,7 @@ padding-bottom:40px;
 .checkfooter{padding-bottom:5px;}
 
 .hide{display:none;}
-.mainhead{padding-left:/*10px*/0;}
+.mainhead{padding-left:0;}
 .hideformobile{display:inline-block;}
 .alternatehrtext{display:none;}
 #dots,#myBtn,#more{display:none;}
@@ -1115,8 +1047,7 @@ padding-bottom:40px;
 @media only screen and (min-width:2001px) {
   body{
 
-   /* to make hwa-jin jun and profile side by side
-    display:inline-flex;*/
+
       width:100%;
   }
 
@@ -1150,39 +1081,24 @@ padding-bottom:40px;
     left:0;
     bottom:0;
     font-size:40px;
-    font-family:A90;
-
     padding-left:10px;
     padding-bottom:5px;
-    -webkit-user-select: all;
-    user-select: all;
+
 
     z-index:100;
-    /* unnecessary for the email
-    box-shadow: 0px 0px 10px white;*/
+
     letter-spacing:-.5px;
     }
 
 
     
-    .email:focus{
-      border: 2px dashed #31808c;
-      outline: none;
-  
-      animation: select 100ms step-end forwards;
-      -webkit-user-select: all;
-      user-select: all;
-    }
-    
+
   
    /* color:rgb(30, 30, 30);*/
     
 
 
-.grid {
-  background-color:none;
-  display:grid;
-}
+
 .index{
   display: grid;
   grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 80px 1fr 1fr 1fr 1fr 1fr;
@@ -1201,8 +1117,8 @@ padding-bottom:40px;
   
 
 }
-a {text-decoration:none;display:inline-block;}
-a:hover {color:black;text-decoration:line-through;display:inline-block;}
+
+
 
 .destoimg  {
   display: none;
@@ -1214,7 +1130,6 @@ a:hover {color:black;text-decoration:line-through;display:inline-block;}
 
 
 
-.strike:hover{text-decoration:line-through;width:auto;cursor:pointer;color:black;}
 .name{
   grid-column-start:1;
   grid-column-end:4;
@@ -1261,7 +1176,7 @@ text-align:right;padding-right:100px;
 }
 
 .work{
-color:black;background-color:none;padding-top:0;
+padding-top:0;
 position:absolute;
 }
 
@@ -1386,9 +1301,6 @@ padding-bottom:40px;
 }
 
 
-  .mail{
-    font-family:A90; 
-  }
 
   .compheadindex{
     position:fixed;width:100%;height:auto;padding-bottom:5px;padding-top:0;padding-right:10px;padding-left:0;z-index:1000;background-color:white;
