@@ -14,6 +14,7 @@ body {
   width:auto;
   height:auto;
   background-color:white;
+  font-family:A90;
   /*overflow-y:scroll;*/
   -webkit-text-size-adjust: none; 
   -ms-text-size-adjust:none;
@@ -25,21 +26,25 @@ body {
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;}
-a, button{color:RGB(150,150,150);font-family:A90;
-
+a{color:black; text-decoration:underline black solid;
 }
+button{background-color:yellow!important;line-height:10px;text-decoration:none;}
+button:hover{text-decoration:line-through;}
+.strike:active, .strike:hover, .name >a:hover {text-decoration:line-through!important;text-decoration-color:black!important;cursor:pointer;}
 
-a {   text-decoration:none;}
-button{text-decoration:line-through;}
-button:hover{text-decoration:none;}
+a:hover, a:active {text-decoration-line: none;
+  background-color:yellow;} 
+
+.name > a {color:black!important;z-index:100000000!important;text-decoration-line:none;}
+.name > a:hover{text-decoration:none!important;}
 
 
-.mail{
-  font-family:A90; 
-}
+
+
+
 
 .spaceradjustclient{text-align:right;float:right;padding-right:10px;}
-.strike{color:RGB(150,150,150);text-decoration-color:black;}
+.strike{color:black;text-decoration-color:black;}
 
 .always{display:none;}
 #more:hover{color:black;}
@@ -51,38 +56,44 @@ button:hover{text-decoration:none;}
  .email{
   -webkit-user-select: all;
   user-select: all;
-  font-family:A90;
 }
 
 .grid {
   background-color:none;
   display:grid;
 }
-
-.index {font-family:A90;display:grid;}
-
+.extratext{display:none;}
+.extratextsecond{display:contents;}
+.index {display:grid;}
+.mypicture{transform:translate(-20px);}
 @font-face {
   font-family:A90;
   src: url('AUTHENTICSans-90.otf'), url('AUTHENTICSans-90.woff'), url('AUTHENTICSans-90.woff2');
 }
- a:hover, a:active, .strike:active, .strike:hover {text-decoration:line-through;cursor:pointer;color:black;}
+ 
   
 mark:hover, mark:active {background-color:white;}
 .black {background-color:black;color:white;border:black 2px solid;}
 .black:hover, .black:active {background-color:white!important;color:black!important;border:white 2px solid!important;}
-@media only screen and (max-width: 904px) {
+@media only screen and (max-width: 669px) {
 
 html{  -webkit-text-size-adjust: none; 
   -ms-text-size-adjust:none;}
-  body{   
+  body, .extratextsecond{   
     font-family:A90;
     font-size:15px;
     letter-spacing:.2px;
     line-height:20px;
-    width:100vw;
+
     overflow-x:hidden;
 
   }
+  .extratext{display:none;}
+
+.extratextsecond{display:flex;padding-bottom:10px;}
+.awardsec{ flex:1;}
+.presssec{flex:1;padding-left:10px;}
+
 
 
   .name{display:inline-block;padding-bottom:0;}
@@ -90,7 +101,7 @@ html{  -webkit-text-size-adjust: none;
 .index{height:auto;}
 .born, .aboutme, .name,  .say{display:inline;grid-column:1/3;padding-left:10px;padding-right:0;padding-top:10px;padding-bottom:20px;}
 .aboutme{padding-bottom:0px;padding-right:30px;hyphens:manual !important;}
-  .name a{text-decoration:none;color:RGB(150,150,150);}
+  
   
   .hideformobile{display:none;}
   .hideformobile,.hide{padding-left:0;padding-right:0;}
@@ -122,9 +133,6 @@ html{  -webkit-text-size-adjust: none;
 .headerspacer{display:none;}
 
 .index > .client{width:100%;}
-
-
-  a{text-decoration:none;color:RGB(150,150,150);}
   .descspacer{display:none;}
   img{padding:0;width:100vw;}
   .groupmobileonly{padding-left:10px;}
@@ -132,8 +140,9 @@ html{  -webkit-text-size-adjust: none;
   .checkoutmore{position:absolute;grid-column:1/3;float:bottom;padding-left:10px;}
 .bottom{padding-bottom:20px;}
 .client{float:right;}
-.comp_details{grid-column:1/6;padding-left:10px;padding-top:10px;padding-bottom:15px;height:auto;display:block;}
-.comp_bolddescription{grid-column:1/6;padding-left:20px;padding-right:30px;padding-bottom:0px;}
+.comp_details{grid-column:1/6;padding-left:10px;padding-top:20px;padding-bottom:15px;height:auto;display:block;}
+
+.comp_bolddescription{grid-column:1/6;padding-left:20px;padding-right:10px;padding-bottom:0px;}
 .comp_description{display:none;}
 #more{display:none;    font-size:15px;}
 
@@ -165,15 +174,259 @@ button{margin-bottom:20px;font-size:15px;background-color:white;border:none;padd
 .shorten{display:none;}
 .images{width:100vw;}
 
-.compheadindex {padding-top:0;}
+.compheadindex {padding-top:0;padding-left:10px;}
+.mypicture{transform:translate(0);}
 }
 
 
-@media only screen and (min-width:905px) and (max-width:1197px){body{
+
+
+@media only screen and (min-width:669px) and (max-width:993px){body{
+
+  /* to make hwa-jin jun and profile side by side
+   display:inline-flex;*/
+   width:100%;
+  }
+ 
+ 
+ 
+ 
+ 
+   li {
+          display: inline;
+        }
+        
+        
+        /* for email munging*/
+        .noshow{
+          display:none;
+        }
+ 
+        .nolink{
+          color: currentColor;
+          pointer-events: none;
+           text-decoration: none;
+           
+        }
+ 
+ 
+       
+ .extratext{display:flex;padding-bottom:5px;}
+ 
+ .award{flex:1;}
+ .press{flex:1;padding-left:5px;}
+ .extratextsecond{display:none; }
+ .extratext, .comp_description{  font-size:13px!important;
+  line-height:18px;}
+ 
+ 
+
+   .client{grid-column:8/13;
+    }
+  
+ 
+    
+    .email{ position:fixed; 
+    left:0;
+    bottom:0;
+
+    padding-left:10px;
+    padding-bottom:5px;
+ 
+ 
+    z-index:100;
+ 
+    
+    }
+ 
+ 
+    
+ 
+  
+ 
+ .index{
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 150px 1fr 1fr 1fr 1fr 1fr;
+ 
+  padding-top: 2px; 
+  padding-bottom: 2px; 
+  padding-right: 10px; 
+  padding-left:0;
+ 
+  line-height:25px;
+  
+ 
+ }
+ 
+ 
+ 
+ 
+ .destoimg  {
+  display: none;
+ }
+ 
+ .show {
+  display: contents;
+ }
+ 
+ 
+ 
+ 
+ .name{
+  grid-column-start:1;
+  grid-column-end:4;
+  letter-spacing:.5px;
+ }
+ .born{padding-left:5px;display:inline-block;
+ 
+ }
+ .noclick{background-color:none;width:60vw;height:90vh;position:fixed;z-index:99;bottom:0;left:0;}
+ 
+
+ 
+ .year{
+  grid-column-start:7;
+  grid-column-end:7;
+  padding-left:30px;
+ 
+ 
+ 
+ }
+ .client{grid-column:8/13;display:inline-block;
+  }
+ 
+  
+ .index > div {
+  background-color: none;
+  
+  
+  
+ }
+ 
+ 
+ 
+ 
+ 
+ /*design to page*/
+ 
+ 
+ 
+ .comp_details{grid-column:5/13;  padding-top:10px;
+  padding-left:0px;display:inline-block;}
+ 
+
+
+  .compheadindex > div, .comp_bolddescription,.name,.index, .afternatehrtext, .email, .checkoutmore, .aboutme{ font-size:18px!important;
+    line-height:24px;
+    letter-spacing:.4px;}
+ .comp_bolddescription{
+  position:relative;
+  grid-column:5/14;
+  bottom:0;
+  padding-right:0;
+ 
+ }
+ 
+ .work{
+  width:200px;grid-column:5/7;padding-top:0px;}
+ .aboutme{padding-bottom:10px;grid-column:5/13;}
+ 
+ .comp_description{
+  position:relative;
+  background-color:none;
+  
+  padding-right:10px;
+  grid-column:8/13;
+  bottom:0;
+ }
+
+ .compheadindex{padding-top:0px;}
+ 
+ 
+ 
+ .images{
+  position:relative;
+  float:left top;
+  padding-left:0;
+  grid-column:1/8;
+  width:95%;
+  top:5px;
+ 
+ 
+ 
+ }
+ 
+ #gif2{width:100%;}
+ #busshel{width:100%;}
+ #gif1{width:100%;}
+ #vinylposter{width:70%;}
+ #award1{width:100%;}
+ #ad1{width:100%;}
+ #ad2{width:100%;padding-top:0px;}
+ 
+ 
+ 
+ .alternatehrtext{
+ padding-bottom:30px;
+ padding-top:5px;
+ padding-left:10px;}
+ .hr-text {
+  display:none;
+ }
+  
+  
+    
+ .checkoutmore{font-size:18.5px;padding-left:0;grid-column:8/13;}
+ 
+ 
+ 
+ 
+ .designtop{
+  background-image:url("/index.html");
+ }
+ 
+ 
+ 
+ 
+  .mainhead{/*padding-left:10px;*/padding-top:10px!important;}
+ 
+ .headspacer{
+  width:100%;height:25px;
+ }
+ 
+  .namehead{
+    padding-top:10px;padding-left:10px;
+  }
+ 
+  .headerspacer{height:1px;width:2.5vw;display:inline-block;}
+ 
+ 
+ .descspacer{width:100%;height:20px;}
+ 
+ .checkfooter{padding-bottom:5px;}
+ 
+ .hide{display:none;}
+ .mainhead{padding-top:0px;}
+ .hideformobile{display:inline-block;}
+ #dots,#myBtn,#more{display:none;}
+ 
+ 
+ .spaceradjust{display:none;}
+ .shorten{display:contents;}
+ .mypicture{transform:translate(0,-50px);}
+ }
+ 
+
+
+
+
+
+@media only screen and (min-width:994px) and (max-width:1239px){body{
 
   /* to make hwa-jin jun and profile side by side
    display:inline-flex;*/
      width:100%;
+     padding-top:5px;
  }
 
 
@@ -198,16 +451,27 @@ button{margin-bottom:20px;font-size:15px;background-color:white;border:none;padd
        }
 
 
+      
+.extratext{display:flex;}
 
+.award{flex:1;}
+.press{flex:1;}
+.extratextsecond{display:none;}
+.extratext, .comp_description {font-size:11pt;line-height:23px;}
+
+.comp_description,.award, .press{
+  line-height:22px !important;
+  font-size: 15px !important;
+  padding-bottom:15px;
+  
+  }
 
 
    
    .email{ position:fixed; 
    left:0;
    bottom:0;
-   line-height:27px;
-   font-size:18.5px;
-
+  
    padding-left:10px;
    padding-bottom:5px;
 
@@ -226,9 +490,9 @@ button{margin-bottom:20px;font-size:15px;background-color:white;border:none;padd
  display: grid;
  grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 150px 1fr 1fr 1fr 1fr 1fr;
 
- padding-top: 5px; 
- padding-bottom: 5px; 
- padding-right: 10px; 
+padding-top:2px;
+padding-bottom:2px;
+ padding-right: 0px; 
  padding-left:0;
 
  line-height:25px;
@@ -248,8 +512,6 @@ button{margin-bottom:20px;font-size:15px;background-color:white;border:none;padd
 }
 
 
-
-
 .name{
  grid-column-start:1;
  grid-column-end:4;
@@ -260,27 +522,23 @@ button{margin-bottom:20px;font-size:15px;background-color:white;border:none;padd
 }
 .noclick{background-color:none;width:60vw;height:90vh;position:fixed;z-index:99;bottom:0;left:0;}
 
-.aboutme, .comp_bolddescription{  
+.comp_bolddescription{  
  grid-column-start:5;
- grid-column-end:13;
- line-height:27px;
- letter-spacing: .25px;
- 
+ grid-column-end:13; 
  padding-right:10px;}
-
-.aboutme{font-size:18.5px;}
+ .aboutme{grid-column:5/13}
 
 .year{
  grid-column-start:7;
  grid-column-end:7;
- padding-left:30px;
+ padding-left:20px;
 
 
 
 }
-.client{grid-column:8/13;font-size:18.5px;
+.client{grid-column:8/13;display:inline-block;
  }
-.year,.name{font-size:18.5px;}
+
 
 
 .index > div {
@@ -291,7 +549,6 @@ button{margin-bottom:20px;font-size:15px;background-color:white;border:none;padd
 }
 
 
-.client{display:inline-block;}
 
 
 
@@ -299,43 +556,42 @@ button{margin-bottom:20px;font-size:15px;background-color:white;border:none;padd
 
 
 
-.comp_details{grid-column:5/13;  padding-top:10px;
- padding-left:0px;display:inline-block;font-size:18.5px;}
+.comp_details{grid-column:5/13;
+ padding-left:0px;display:inline-block;}
 
 
-
+.comp_bolddescription, .aboutme, .index, .compheadindex, .checkoutmore,.email { font-size:20px;
+  line-height:28px;
+  letter-spacing:.4px;}
 
 
 .comp_bolddescription{
+
  position:relative;
- font-family:A90;
- font-size:18.5px;
+
  background-color:none;
  grid-column:5/14;
  bottom:0;
  
  padding-right:0;
- 
 
 }
 
 .work{
  width:200px;grid-column:5/7;padding-top:0px;}
 .aboutme{padding-bottom:10px;}
+
+
 .comp_description{
  position:relative;
- font-family:A90;
- line-height:27px;
- letter-spacing: .25px;
  background-color:none;
  
- padding-right:10px;
+ padding-right:5px;
  grid-column:8/13;
  bottom:0;
-
 }
 
-.comp_description{font-size:18.5px;}
+
 
 .images{
  position:relative;
@@ -367,51 +623,12 @@ padding-top:5px;
 padding-left:10px;}
 .hr-text {
  display:none;
- line-height: 1px;
- position: relative;
- outline: 0;
- border: 0;
- padding:0;
- color: rgb(150,150,150);
- text-align: right;
  
- width:100%;
- font-size:18.5px;
- letter-spacing: .25px;
- line-height:27px;
- top:-20px; 
-padding-bottom:40px;
 }
- 
-
- .hr-text:before {
-   font-family:A90;
-   content: '';
-   width:1vw;
-
-   position: absolute;
-   height: 1px;  
-   top:6px;
-   color:black;
-   letter-spacing:.25px;
-   display:none;
-   
- }
- .hr-text:after {
-   font-family:A90;
-  font-family:A90;
-   content: attr(data-content);
-   position: absolute;
-  
-   color: rgb(150,150,150); letter-spacing:.25px;
-   line-height:3px;
-   padding-left:calc(1.16vw);
-   display:none;
- }
 
  
    
-.checkoutmore{font-family:A90;font-size:18.5px;padding-left:0;grid-column:8/13;}
+.checkoutmore{padding-left:0;grid-column:8/13;}
 
 
 
@@ -426,14 +643,14 @@ padding-bottom:40px;
  .mainhead{/*padding-left:10px;*/padding:0;}
 
 .headspacer{
- width:100%;height:80px;
+ width:100%;height:40px;
 }
 
  .namehead{
-   padding-top:10px;padding-left:10px;
+  padding-left:10px;
  }
 
- .headerspacer{height:1px;width:70px;display:inline-block;}
+ .headerspacer{height:1px;width:2.5vw;display:inline-block;}
 
 
 .descspacer{width:100%;height:20px;}
@@ -448,18 +665,18 @@ padding-bottom:40px;
 
 .spaceradjust{display:none;}
 .shorten{display:contents;}
+.mypicture{transform:translate(0,-50px);}
 }
 
 /* for width that the captions are tucked underneath the images / photos */
-@media only screen and (min-width:1198px) and (max-width:1416px){
+@media only screen and (min-width:1239px) and (max-width:1248px){
   body{
 
   /* to make hwa-jin jun and profile side by side
    display:inline-flex;*/
    width:100%;
   }
- 
- 
+
  
  
  
@@ -480,16 +697,33 @@ padding-bottom:40px;
            
         }
  
+ .comp_bolddescription{  font-size:25px;
+  line-height:33px;
+  letter-spacing:.4px;}
+        
+  .comp_description,.award, .press{
+    line-height:27px !important;
+    font-size: 18.5px !important;
+    padding-bottom:15px;
+    
+    }
+    .extratext{display:flex;}
+    .award{ flex:1;}
+  .press{flex:1;padding-left:10px;}
+
+  .extratextsecond{display:none;}
+  .awardsec{ flex:1;}
+  .presssec{flex:1;padding-left:10px;}
+  
+ .comp_description, .extratext > div {font-size:18px!important;}
  
- 
- 
+ .compheadindex, .email, button, .alternatehrtext, .about, .index, .aboutme {  font-size:25px;
+  line-height:33px;}
  
     
     .email{ position:fixed; 
     left:0;
     bottom:0;
-    font-size:25px;
-    line-height:33px;
     padding-left:10px;
     padding-bottom:5px;
 
@@ -505,16 +739,10 @@ padding-bottom:40px;
   
   grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 150px 1fr 1fr 1fr 1fr 1fr;
 
-  padding-top: 10px; 
-  padding-bottom: 10px; 
+  padding-top: 5px; 
+  padding-bottom: 5px; 
   padding-right: 10px; 
   padding-left:0;
-  font-size:25px;
-  line-height:33px;
-  letter-spacing:.4px;
- 
-  
- 
  }
 
 
@@ -533,7 +761,6 @@ padding-bottom:40px;
   grid-column-start:1;
   grid-column-end:4;
 
-  letter-spacing:.4px;
  }
  .born{padding-left:5px;display:inline-block;
  
@@ -547,30 +774,18 @@ padding-bottom:40px;
   padding-right:10px;}
  
  .aboutme{
-  font-size:25px;
-  line-height:33px;
+
   letter-spacing:.4px;}
  
  .year{
   grid-column-start:7;
   grid-column-end:7;
   padding-left:30px;
- 
-  font-size:25px;
-  line-height:33px;
-  letter-spacing:.4px;
- 
- 
  }
+
+
  .client{grid-column:8/13;
-  font-size:25px;
-  line-height:33px;
-  letter-spacing:0px;
   }
- .year,.name{
-  font-size:25px;
-  line-height:33px;
-  letter-spacing:.4px;}
  
  
  .index > div {
@@ -598,10 +813,6 @@ padding-bottom:40px;
  
  .comp_bolddescription{
   position:relative;
-  font-family:A90;
-  font-size:25px;
-  line-height:33px;
-  letter-spacing:.4px;
   background-color:none;
   grid-column:5/14;
   bottom:0;
@@ -616,8 +827,7 @@ padding-bottom:40px;
  .aboutme{padding-bottom:10px;}
  .comp_description{
   position:relative;
-  font-family:A90;
-  letter-spacing: .25px;
+
   line-height:27px;
   font-size: 18.5px;
   background-color:none;
@@ -655,7 +865,6 @@ padding-bottom:40px;
  .alternatehrtext{
   font-size:25px;
   line-height:33px;
-  letter-spacing:.4px;
  padding-bottom:30px;
  padding-top:5px;
  padding-left:10px;display:none;}
@@ -672,14 +881,13 @@ padding-bottom:40px;
   width:100%;
   font-size:25px;
   line-height:33px;
-  letter-spacing:.4px;
+  
   top:-5px; 
 padding-bottom:40px;
 }
   
 
   .hr-text:before {
-    font-family:A90;
     content: '';
     width:2vw;
 
@@ -689,18 +897,17 @@ padding-bottom:40px;
     color:black;
     font-size:25px;
     line-height:33px;
-    letter-spacing:.4px;
+  
 
     
   }
   .hr-text:after {
-    font-family:A90;
 
     content: attr(data-content);
     position: absolute;
     font-size:25px;
     line-height:33px;
-    letter-spacing:.4px;
+    
     line-height:3px;
     padding-left:calc(2.8vw);
   
@@ -710,10 +917,10 @@ padding-bottom:40px;
  
   
     
- .checkoutmore{font-family:A90;
+ .checkoutmore{
   font-size:25px;
   line-height:33px;
-  letter-spacing:.4px;padding-left:0;grid-column:8/13;}
+  padding-left:0;grid-column:8/13;}
  
  
  
@@ -730,7 +937,8 @@ padding-bottom:40px;
   }
  
   .compheadindex{
-    position:fixed;width:100%;height:auto;padding-bottom:5px;padding-top:0;padding-right:10px;padding-left:0;z-index:1000;background-color:white;
+    position:fixed;width:100%;height:auto;padding-bottom:5px;padding-top:0;padding-right:10px;z-index:1000;background-color:white;
+  
   }
   .mainhead{padding-left:/*10px*/0;}
  
@@ -757,15 +965,28 @@ padding-bottom:40px;
  
  .spaceradjust{display:none;}
  .shorten{display:contents;}
- }
+ 
+}
 
 
-@media only screen and (min-width:1417px) and (max-width:2000px){
+@media only screen and (min-width:1248px) and (max-width:2000px){
   body{
 
       width:100%;
   }
 
+  .comp_description,.award, .press{font-size:18.5px!important;
+    letter-spacing: .25px!important;
+    line-height:27px!important;
+    padding-bottom:15px;
+    }
+    .extratext{display:flex;}
+    .award{ flex:1;}
+  .press{flex:1;padding-left:10px;}
+
+  .extratextsecond{display:none;}
+  .awardsec{ flex:1;}
+  .presssec{flex:1;padding-left:10px;}
 
 
 
@@ -797,7 +1018,7 @@ padding-bottom:40px;
     bottom:0;
     font-size:30px;
     padding-left:10px;
-    padding-bottom:5px;
+
 
 
     z-index:100;
@@ -815,6 +1036,7 @@ padding-bottom:40px;
    .aboutme{padding-bottom:0;}
 
 
+
 .index{
   display: grid;
   grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 150px 1fr 1fr 1fr 1fr 1fr;
@@ -823,7 +1045,6 @@ padding-bottom:40px;
   padding-bottom: 10px; 
   padding-right: 10px; 
   padding-left:0;
-  font-family:A90;
   line-height:43px;
 
 
@@ -847,9 +1068,9 @@ padding-bottom:40px;
 .name{
   grid-column-start:1;
   grid-column-end:4;
-  letter-spacing:.1px;
+
 }
-.born{padding-left:70px;display:inline-block;
+.born{padding-left:1vw;display:inline-block;
 
 }
 .noclick{background-color:none;width:60vw;height:90vh;position:fixed;z-index:99;bottom:0;left:0;}
@@ -913,7 +1134,6 @@ text-align:left;
 
 .comp_bolddescription{
   position:relative;
-  font-family:A90;
   font-size:30px;
   background-color:none;
   grid-column:5/13;
@@ -925,10 +1145,6 @@ text-align:left;
 
 .comp_description{
   position:relative;
-  font-family:A90;
-  font-size:18.5px;
-  letter-spacing: .25px;
-  line-height:27px;
   
   background-color:none;
   
@@ -978,7 +1194,6 @@ padding-bottom:40px;
   
 
   .hr-text:before {
-    font-family:A90;
     content: '';
     width:1vw;
 
@@ -991,8 +1206,6 @@ padding-bottom:40px;
     
   }
   .hr-text:after {
-    font-family:A90;
-   font-family:A90;
     content: attr(data-content);
     position: absolute;
  letter-spacing:.25px;
@@ -1003,7 +1216,7 @@ padding-bottom:40px;
 
   
     
-.checkoutmore{font-family:A90;font-size:30px;padding-left:0;grid-column:8/13;}
+.checkoutmore{font-size:30px;padding-left:0;grid-column:8/13;}
 
 
 
@@ -1025,6 +1238,9 @@ padding-bottom:40px;
 
   .namehead{
     padding-top:10px;padding-left:10px;
+  }
+
+
   }
 
   .headerspacer{height:1px;width:70px;display:inline-block;}
@@ -1097,6 +1313,14 @@ padding-bottom:40px;
    /* color:rgb(30, 30, 30);*/
     
 
+   .extratext{display:flex;}
+   .award{ flex:1;}
+ .press{flex:1;padding-left:10px;}
+
+ .extratextsecond{display:none;}
+ .awardsec{ flex:1;}
+ .presssec{flex:1;padding-left:10px;}
+
 
 
 .index{
@@ -1107,7 +1331,6 @@ padding-bottom:40px;
   padding-bottom: 10px; 
   padding-right: 10px; 
   padding-left:0;
-  font-family:A90;
 
   /*background-color:rgba(255, 255, 255, 0.75);
   -webkit-box-shadow:0px 1px 1px rgba(255, 255, 255, 1);
@@ -1197,7 +1420,6 @@ position:absolute;
 
 .comp_bolddescription{
   position:relative;
-  font-family:A90;
   font-size:40px;
   background-color:none;
   grid-column:5/13;
@@ -1210,7 +1432,6 @@ position:absolute;
 
 .comp_description{
   position:relative;
-  font-family:A90;
   font-size:30px;
   letter-spacing: .25px;
   line-height:42px;
@@ -1263,7 +1484,6 @@ padding-bottom:40px;
   
 
   .hr-text:before {
-    font-family:A90;
     content: '';
     width:1vw;
 
@@ -1278,8 +1498,6 @@ padding-bottom:40px;
     
   }
   .hr-text:after {
-    font-family:A90;
-   font-family:A90;
     content: attr(data-content);
     position: absolute;
    
@@ -1291,7 +1509,7 @@ padding-bottom:40px;
 
   
     
-.checkoutmore{font-family:A90;font-size:40px;padding-left:0;grid-column:9/13;}
+.checkoutmore{font-size:40px;padding-left:0;grid-column:9/13;}
 
 
 
@@ -1330,5 +1548,4 @@ padding-bottom:40px;
 .spaceradjust{height:1px;width:70px;display:inline-block;}
 .shorten{display:contents;}
 #first{padding-top:50px !important;}
-
 }
