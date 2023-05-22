@@ -1018,7 +1018,7 @@ padding-bottom:40px;
     bottom:0;
     font-size:30px;
     padding-left:10px;
-
+    padding-bottom:5px;
 
 
     z-index:100;
@@ -1241,8 +1241,7 @@ padding-bottom:40px;
   }
 
 
-  }
-
+  
   .headerspacer{height:1px;width:70px;display:inline-block;}
 
 
