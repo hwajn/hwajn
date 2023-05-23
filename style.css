@@ -21,6 +21,7 @@ body {
 
 }
 
+ 
 .comp_bolddescription,.comp_bolddescription,.aboutme {  overflow-wrap: break-word;
   word-wrap: break-word;
   -webkit-hyphens: auto;
@@ -28,9 +29,9 @@ body {
   hyphens: auto;}
 a{color:black; text-decoration:underline black solid;
 }
-button{background-color:yellow!important;line-height:10px;text-decoration:none;}
+a.aboutmelink, button{background-color:yellow!important;line-height:10px;text-decoration:none;}
 button:hover{text-decoration:line-through;}
-.strike:active, .strike:hover, .name >a:hover {text-decoration:line-through!important;text-decoration-color:black!important;cursor:pointer;}
+a.aboutmelink:hover, .strike:active, .strike:hover, .name >a:hover {text-decoration:line-through!important;text-decoration-color:black!important;cursor:pointer;}
 
 a:hover, a:active {text-decoration-line: none;
   background-color:yellow;} 
@@ -65,7 +66,7 @@ a:hover, a:active {text-decoration-line: none;
 .extratext{display:none;}
 .extratextsecond{display:contents;}
 .index {display:grid;}
-.mypicture{transform:translate(-20px);}
+.mypicturemobile{display:none;}
 @font-face {
   font-family:A90;
   src: url('AUTHENTICSans-90.otf'), url('AUTHENTICSans-90.woff'), url('AUTHENTICSans-90.woff2');
@@ -74,15 +75,15 @@ a:hover, a:active {text-decoration-line: none;
   
 mark:hover, mark:active {background-color:white;}
 .black {background-color:black;color:white;border:black 2px solid;}
-.black:hover, .black:active {background-color:white!important;color:black!important;border:white 2px solid!important;}
+.black:hover, .black:active {background-color:white!important;color:black!important;border:white 2px solid!important;text-decoration:line-through;}
 @media only screen and (max-width: 669px) {
 
 html{  -webkit-text-size-adjust: none; 
   -ms-text-size-adjust:none;}
-  body, .extratextsecond{   
+  body,.client, .extratextsecond,.email,.name{   
     font-family:A90;
     font-size:15px;
-    letter-spacing:.2px;
+    letter-spacing:.15px!important;
     line-height:20px;
 
     overflow-x:hidden;
@@ -93,6 +94,10 @@ html{  -webkit-text-size-adjust: none;
 .extratextsecond{display:flex;padding-bottom:10px;}
 .awardsec{ flex:1;}
 .presssec{flex:1;padding-left:10px;}
+
+
+.index.strike span { display:none; }
+
 
 
 
@@ -113,8 +118,10 @@ html{  -webkit-text-size-adjust: none;
 
   .year{padding-left:20px;display:inline-block;}
   .work{padding-left:0px;display:none;float:left;}
-  .client{text-align:right;transform:translate(-35px);width: calc(100% - 60px); letter-spacing:0px!important;
+  .client{text-align:right;transform:translate(-35px);width: calc(100% - 60px);
   }
+
+  
   .nolink{
     color: currentColor;
     pointer-events: none;
@@ -126,7 +133,7 @@ html{  -webkit-text-size-adjust: none;
 
   .email{
 
-    float:right;margin-right:15px;
+    float:right;margin-right:15px;padding-left:10px;
     
     }
 
@@ -138,12 +145,15 @@ html{  -webkit-text-size-adjust: none;
   .groupmobileonly{padding-left:10px;}
   .checkfooter{position:absolute;float:bottom;}
   .checkoutmore{position:absolute;grid-column:1/3;float:bottom;padding-left:10px;}
-.bottom{padding-bottom:20px;}
+.bottom{margin-bottom:20px;}
 .client{float:right;}
 .comp_details{grid-column:1/6;padding-left:10px;padding-top:20px;padding-bottom:15px;height:auto;display:block;}
 
 .comp_bolddescription{grid-column:1/6;padding-left:20px;padding-right:10px;padding-bottom:0px;}
 .comp_description{display:none;}
+.comp_bolddescriptionaboutme{grid-column:1/6;padding-left:20px;padding-top:15px;}
+
+
 #more{display:none;    font-size:15px;}
 
 button{margin-bottom:20px;font-size:15px;background-color:white;border:none;padding-left:0;margin-left:0;}
@@ -175,7 +185,12 @@ button{margin-bottom:20px;font-size:15px;background-color:white;border:none;padd
 .images{width:100vw;}
 
 .compheadindex {padding-top:0;padding-left:10px;}
-.mypicture{transform:translate(0);}
+.nameaboutme{padding-top:10px;padding-left:20px;padding-bottom:10px;}
+.mypicture{ display: none!important;}
+.mypicturemobile{display:block;width:105vw;height:400px;background-image:url("/2023_who/hwajinjun.jpg");background-position:0 -40px; background-repeat:repeat-x;background-size:60%;}
+
+a.aboutmelink, button{background-color:yellow!important;line-height:10px;text-decoration:none;}
+
 }
 
 
@@ -219,7 +234,7 @@ button{margin-bottom:20px;font-size:15px;background-color:white;border:none;padd
  .extratext, .comp_description{  font-size:13px!important;
   line-height:18px;}
  
- 
+  .index.strike span { display:none; }
 
    .client{grid-column:8/13;
     }
@@ -316,10 +331,12 @@ button{margin-bottom:20px;font-size:15px;background-color:white;border:none;padd
  
 
 
-  .compheadindex > div, .comp_bolddescription,.name,.index, .afternatehrtext, .email, .checkoutmore, .aboutme{ font-size:18px!important;
+  .compheadindex > div, .client,.comp_bolddescription,.name,.nameaboutme,.index, .afternatehrtext, .email, .checkoutmore, .aboutme{ font-size:18px!important;
     line-height:24px;
-    letter-spacing:.4px;}
- .comp_bolddescription{
+    letter-spacing:.4px!important;}
+    .nameaboutme{position:absolute;padding-top:10px;padding-left:10px;}
+    .comp_bolddescriptionaboutme{padding-left:10px;padding-top:10px;}
+ .comp_bolddescription,.comp_bolddescriptionaboutme{
   position:relative;
   grid-column:5/14;
   bottom:0;
@@ -413,15 +430,16 @@ button{margin-bottom:20px;font-size:15px;background-color:white;border:none;padd
  
  .spaceradjust{display:none;}
  .shorten{display:contents;}
- .mypicture{transform:translate(0,-50px);}
- }
+ 
+a.aboutmelink, button{line-height:20px!important;} 
+}
  
 
 
 
 
 
-@media only screen and (min-width:994px) and (max-width:1239px){body{
+@media only screen and (min-width:994px) and (max-width:1247px){body{
 
   /* to make hwa-jin jun and profile side by side
    display:inline-flex;*/
@@ -451,13 +469,13 @@ button{margin-bottom:20px;font-size:15px;background-color:white;border:none;padd
        }
 
 
-      
+      .index.compheadindex{padding-top:0px!important;}
 .extratext{display:flex;}
 
 .award{flex:1;}
 .press{flex:1;}
 .extratextsecond{display:none;}
-.extratext, .comp_description {font-size:11pt;line-height:23px;}
+.extratext, .comp_description{font-size:11pt;line-height:23px;}
 
 .comp_description,.award, .press{
   line-height:22px !important;
@@ -473,7 +491,7 @@ button{margin-bottom:20px;font-size:15px;background-color:white;border:none;padd
    bottom:0;
   
    padding-left:10px;
-   padding-bottom:5px;
+
 
 
    z-index:100;
@@ -503,6 +521,12 @@ padding-bottom:2px;
 
 
 
+.index.strike span { position:absolute; display:none;  }
+.index.strike:hover span {display:grid;grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 180px 1fr 1fr 1fr 1fr 1fr;z-index:-100000;width:100%;}
+.hoverimage{position:fixed;width:calc(7.7vw * 7 - 80px);bottom:0;}
+
+
+
 .destoimg  {
  display: none;
 }
@@ -526,7 +550,7 @@ padding-bottom:2px;
  grid-column-start:5;
  grid-column-end:13; 
  padding-right:10px;}
- .aboutme{grid-column:5/13}
+ .aboutme,.comp_bolddescriptionaboutme{grid-column:5/13}
 
 .year{
  grid-column-start:7;
@@ -558,12 +582,12 @@ padding-bottom:2px;
 
 .comp_details{grid-column:5/13;
  padding-left:0px;display:inline-block;}
-
-
-.comp_bolddescription, .aboutme, .index, .compheadindex, .checkoutmore,.email { font-size:20px;
+.nameaboutme{position:absolute;padding-top:0;padding-left:10px;}
+.comp_bolddescription, .client, .aboutme, .index, .compheadindex, .checkoutmore,.email, .comp_bolddescriptionaboutme, .nameaboutme, .bottom { font-size:20px;
   line-height:28px;
-  letter-spacing:.4px;}
+  letter-spacing:.4px!important;}
 
+.comp_bolddescriptionaboutme{padding-left:10px;}
 
 .comp_bolddescription{
 
@@ -574,7 +598,6 @@ padding-bottom:2px;
  bottom:0;
  
  padding-right:0;
-
 }
 
 .work{
@@ -666,26 +689,21 @@ padding-left:10px;}
 .spaceradjust{display:none;}
 .shorten{display:contents;}
 .mypicture{transform:translate(0,-50px);}
+a.aboutmelink, button{line-height:24px!important;}
+.mypicturemobile{display:none;}
 }
 
-/* for width that the captions are tucked underneath the images / photos */
-@media only screen and (min-width:1239px) and (max-width:1248px){
+
+/*@media only screen and (min-width:1239px) and (max-width:1248px){
   body{
 
-  /* to make hwa-jin jun and profile side by side
-   display:inline-flex;*/
    width:100%;
   }
 
  
  
  
-   li {
-          display: inline;
-        }
-        
-        
-        /* for email munging*/
+
         .noshow{
           display:none;
         }
@@ -798,9 +816,7 @@ padding-left:10px;}
  
  .client{display:inline-block;}
  
- 
- 
- /*design to page*/
+
  
  
  
@@ -940,7 +956,7 @@ padding-bottom:40px;
     position:fixed;width:100%;height:auto;padding-bottom:5px;padding-top:0;padding-right:10px;z-index:1000;background-color:white;
   
   }
-  .mainhead{padding-left:/*10px*/0;}
+  .mainhead{padding-left:0;}
  
  .headspacer{
   width:100%;height:80px;
@@ -967,7 +983,7 @@ padding-bottom:40px;
  .shorten{display:contents;}
  
 }
-
+*/
 
 @media only screen and (min-width:1248px) and (max-width:2000px){
   body{
@@ -975,10 +991,12 @@ padding-bottom:40px;
       width:100%;
   }
 
-  .comp_description,.award, .press{font-size:18.5px!important;
+
+.comp_description,.award, .press{font-size:18.5px!important;
     letter-spacing: .25px!important;
     line-height:27px!important;
     padding-bottom:15px;
+    
     }
     .extratext{display:flex;}
     .award{ flex:1;}
@@ -988,15 +1006,14 @@ padding-bottom:40px;
   .awardsec{ flex:1;}
   .presssec{flex:1;padding-left:10px;}
 
-
+  a.aboutmelink, button{line-height:36px!important;}
 
 
    li {
           display: inline;
         }
         
-        
-        /* for email munging*/
+     
         .noshow{
           display:none;
         }
@@ -1040,7 +1057,6 @@ padding-bottom:40px;
 .index{
   display: grid;
   grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 150px 1fr 1fr 1fr 1fr 1fr;
-  font-size: 30px;
   padding-top: 10px; 
   padding-bottom: 10px; 
   padding-right: 10px; 
@@ -1053,7 +1069,10 @@ padding-bottom:40px;
 }
 
 
-
+.index.strike span { position:absolute; display:none;  }
+.index.strike:hover span {display:grid;grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 180px 1fr 1fr 1fr 1fr 1fr;z-index:-100000;width:100%;}
+.hoverimage{position:fixed;width:calc(100vw/13 * 6);bottom:0;}
+.bottomspacer{height:30px;}
 .destoimg  {
   display: none;
 }
@@ -1070,17 +1089,21 @@ padding-bottom:40px;
   grid-column-end:4;
 
 }
-.born{padding-left:1vw;display:inline-block;
+
+.compheadindex, .index,.name, .email, .aboutme, .comp_bolddescription, .client,.nameaboutme,.comp_bolddescriptionaboutme,.bottom {  font-size: 30px;line-height:40px;
+  letter-spacing:.1px!important;}
+
+  .comp_bolddescriptionaboutme{padding-top:10px;padding-left:20px;}
+  .born{padding-left:1vw;display:inline-block;
 
 }
 .noclick{background-color:none;width:60vw;height:90vh;position:fixed;z-index:99;bottom:0;left:0;}
 
-.aboutme, .comp_bolddescription{  
+    .nameaboutme{position:absolute;padding-top:10px;padding-left:10px;}
+
+    .aboutme, .comp_bolddescription, .comp_bolddescriptionaboutme{  
   grid-column-start:5;
   grid-column-end:13;
-  line-height:40px;
-  letter-spacing:.1px;
-  
   padding-right:10px;}
 .aboutme{padding-bottom:0;}
 .year{
@@ -1125,7 +1148,7 @@ text-align:left;
 
 
 
-.comp_details{grid-column:5/13;  padding-top:10px;
+.comp_details{grid-column:5/13; 
   padding-left:0px;}
 
 
@@ -1134,7 +1157,6 @@ text-align:left;
 
 .comp_bolddescription{
   position:relative;
-  font-size:30px;
   background-color:none;
   grid-column:5/13;
   bottom:0;
@@ -1228,7 +1250,7 @@ padding-bottom:40px;
 
 
   .compheadindex{
-    position:fixed;width:100%;height:auto;padding-bottom:5px;padding-top:0;padding-right:10px;padding-left:0;z-index:1000;background-color:white;
+    position:fixed;width:100%;height:auto;padding-bottom:5px;padding-top:10px;padding-right:10px;padding-left:0;z-index:1000;background-color:white;
   }
   .mainhead{padding-left:0;}
 
@@ -1237,7 +1259,7 @@ padding-bottom:40px;
 }
 
   .namehead{
-    padding-top:10px;padding-left:10px;
+padding-left:10px;
   }
 
 
@@ -1256,6 +1278,8 @@ padding-bottom:40px;
 #dots,#myBtn,#more{display:none;}
 .spaceradjust{height:1px;width:70px;display:inline-block;}
 .shorten{display:none;}
+
+.mypicturemobile{display:none;}
 }
 
 
@@ -1307,12 +1331,16 @@ padding-bottom:40px;
 
 
     
+.index.strike span { position:absolute; display:none; z-index:99; }
+.index.strike:hover span {display:grid;grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 180px 1fr 1fr 1fr 1fr 1fr;z-index:-100000;width:100%;}
+.hoverimage{position:fixed;width:calc(100vw/13 * 6);top:0;}
+.bottomspacer{height:30px;}
 
   
    /* color:rgb(30, 30, 30);*/
     
 
-   .extratext{display:flex;}
+   .extratext{display:flex;padding-bottom:20px;}
    .award{ flex:1;}
  .press{flex:1;padding-left:10px;}
 
@@ -1362,19 +1390,17 @@ padding-bottom:40px;
 }
 .noclick{background-color:none;width:60vw;height:90vh;position:fixed;z-index:99;bottom:0;left:0;}
 
+
+.aboutme, .comp_bolddescription, .client,.comp_details, .email, button, .hr-text, .bottom {  font-size:40px;}
 .aboutme, .comp_bolddescription{  
   grid-column-start:5;
   grid-column-end:13;
-  line-height:55px;
-  letter-spacing:.5px;
-  
   padding-right:10px;}
 
   .aboutme{padding-bottom:20px;}
 .year{
   grid-column-start:8;
   grid-column-end:8;
-letter-spacing:-.5px;
 text-align:right;padding-right:100px;
 
   
@@ -1419,7 +1445,7 @@ position:absolute;
 
 .comp_bolddescription{
   position:relative;
-  font-size:40px;
+
   background-color:none;
   grid-column:5/13;
   
@@ -1474,9 +1500,6 @@ position:absolute;
   text-align: right;
   
   width:100%;
-  font-size:30px;
-  letter-spacing: .25px;
-  line-height:45px;
   top:-10px; 
 padding-bottom:40px;
 }
@@ -1525,7 +1548,7 @@ padding-bottom:40px;
   .mainhead{padding-left:/*10px*/0;}
 
 .headspacer{
-  width:100%;height:100px;
+  width:100%;height:170px;
 }
 
   .namehead{
@@ -1547,4 +1570,6 @@ padding-bottom:40px;
 .spaceradjust{height:1px;width:70px;display:inline-block;}
 .shorten{display:contents;}
 #first{padding-top:50px !important;}
+
+.mypicturemobile{display:none;}
 }
