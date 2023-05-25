@@ -98,7 +98,7 @@ html{  -webkit-text-size-adjust: none;
 
 .index.strike span { display:none; }
 
-
+.aboutmelink{line-height:18px!important;}
 
 
   .name{display:inline-block;padding-bottom:0;}
@@ -234,6 +234,7 @@ a.aboutmelink, button{background-color:yellow!important;line-height:10px;text-de
  .extratext, .comp_description{  font-size:13px!important;
   line-height:18px;}
  
+
   .index.strike span { display:none; }
 
    .client{grid-column:8/13;
@@ -432,6 +433,13 @@ a.aboutmelink, button{background-color:yellow!important;line-height:10px;text-de
  .shorten{display:contents;}
  
 a.aboutmelink, button{line-height:20px!important;} 
+
+
+.index.strike span { position:absolute; display:none;  }
+.index.strike:hover span {display:grid;grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 180px 1fr 1fr 1fr 1fr 1fr;z-index:-100000;width:100%;}
+.hoverimage{position:fixed;width:calc(7.7vw * 7 - 80px);bottom:0;}
+
+
 }
  
 
