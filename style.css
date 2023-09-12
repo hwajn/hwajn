@@ -73,9 +73,9 @@ a:hover, a:active {text-decoration-line: none;
 }
  
   
-mark:hover, mark:active {background-color:white;}
-.black {background-color:none;color:black;}
-.black:hover, .black:active {background-color:none;color:black}
+mark:hover, mark:active {background-color:none!important;}
+.black {background-color:none!important;color:black;}
+.black:hover, .black:active {background-color:none!important;color:black}
 @media only screen and (max-width: 669px) {
 
 html{  -webkit-text-size-adjust: none; 
