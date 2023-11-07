@@ -74,9 +74,9 @@ a:hover, a:active {text-decoration-line: none;
 }
  
   
-mark:hover, mark:active {background-color:white;}
-.black {background-color:black;color:white;border:black 2px solid;}
-.black:hover, .black:active {background-color:white!important;color:black!important;border:white 2px solid!important;text-decoration:line-through;}
+mark:hover, mark:active {background-color:none!important;}
+.black {background-color:none!important;color:black;}
+.black:hover, .black:active {background-color:none!important;color:black}
 @media only screen and (max-width: 669px) {
 
 html{  -webkit-text-size-adjust: none; 
