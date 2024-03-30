@@ -1,0 +1,92 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="/style.css"> 
+       
+      <meta name="HandheldFriendly" content="true" />
+      <meta name="MobileOptimized" content="320" />
+      <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no" />
+      <link rel="shortcut icon" type="image/svg+xml" href="svg-white.svg">
+            
+
+<script>function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "read less"; 
+    moreText.style.display = "inline";
+  }
+}</script>
+    </head>
+
+<body>
+  
+
+
+<div class="index compheadindex"><div class="name namehead"><a href="../../">Hwa-Jin Jun</a></div><div class="email hide"style="padding-top:10px;position:absolute;right:0;padding-right:10px;"><a class="nolink mail" href="mailto:lo&commat;h n&period;">h<div class="noshow">@hwa</div>el<div class="noshow">lion</div>lo&commat;h<div class="noshow">art</div>w<div class="noshow">an</div>ajn&period;co<div class="noshow">old</div>m</a></li> </div><div class="comp_details">09/21<div class="headerspacer"></div><div class="client"><a href="https://www.ocadu.ca">OCAD U</a>&mdash;talk series website &&nbsp;posters</div></div></div></div>
+<div class="headspacer"></div>
+
+<div class="index indexdesc"><div class="comp_bolddescription">I was hired by the graphic design department at OCAD U to design a website &  several digital posters for a lecture series about research as design process.
+  <span id="dots">...</span><span id="more"><br><br>My intent was to create a concept that would be equally as interesting as email posters & as a website. Research and process both initialize a search for a something that aids in the maturation of one’s project. I visualized this idea with colour variations & the use of blur to mimic the drift of focus/out-of-focus that we seem to fluctuate through as we undergo making. As you move your mouse across the screen, colours paint the display; a click erases all strokes. Because the posters are not interactive, how the strokes interacted with the type was adjusted to maintain legibility all the whilst maintaining the visual theme.</span>
+  <button onclick="myFunction()" id="myBtn">read more</button>
+</div>
+
+<div class="descspacer"></div>
+
+<div class="images">
+<img src="website.gif" style="width:100%;">
+<div class="hr-text" data-content="interactive&nbsp;website&nbsp;&&nbsp;its&nbsp;variations"></div>
+<div class="alternatehrtext">interactive website & its variations</div>
+<img src="Poster_ResearchMethods_guests_final.jpg" style="width:100%;">
+<div class="hr-text" data-content="poster&nbsp;for&nbsp;Mindy&nbsp;Seu's&nbsp;Talk"></div>
+<div class="alternatehrtext"> poster for Mindy Seu's talk</div>
+<img src="Poster_ResearchMethods_guests_final2.jpg" style="width:100%;">
+<div class="hr-text" data-content="poster&nbsp;for&nbsp;Danielle&nbsp;Aubert's&nbsp;Talk"></div>
+<div class="alternatehrtext"> poster for Danielle Aubert's talk</div>
+<img src="Poster_ResearchMethods_guests_final3.jpg" style="width:100%;">
+<div class="hr-text" data-content="poster&nbsp;for&nbsp;Danielle&nbsp;Aubert's&nbsp;Talk"></div>
+<div class="alternatehrtext"> poster for Kelly Walter's talk</div>
+<img src="Poster_ResearchMethods_guests_final4.jpg" style="width:100%;">
+<div class="hr-text" data-content="poster&nbsp;for&nbsp;Cem&nbsp;Eskinazi's&nbsp;Talk"></div>
+<div class="alternatehrtext"> poster for Cem Eskinazi's talk</div>
+</div>
+
+ 
+<div class="comp_description">My intent was to create a concept that would be equally as interesting as email posters & as a website. Research and process both initialize a search for a something that aids in the maturation of one’s project. I visualized this idea with colour variations & the use of blur to mimic the drift of focus/out-of-focus that we seem to fluctuate through as we undergo making. As you move your mouse across the screen, colours paint the display; a click erases all strokes. Because the posters are not interactive, how the strokes interacted with the type was adjusted to maintain legibility all the whilst maintaining the visual theme.
+  <!-- spacer element between comp description & email-->
+
+</div>
+
+
+
+</div>
+
+
+<!--email, script for selecting text on click from https://css-tricks.com/click-once-select-all-click-again-select-normally/-->
+
+
+<div class="email"><a class="nolink" href="mailto:lo{&commat;}h n{&period;}" style= "font-family:A90; ">h<div class="noshow">@hwa</div>el<div class="noshow">lion</div>lo{&commat;}h<div class="noshow">art</div>w<div class="noshow">an</div>ajn{&period;}co<div class="noshow">old</div>m</a></li> </div>
+
+
+<div class="index checkfooter"><div class="checkoutmore"><a class="bottom"href="../2022_zineposium/">next</a></div></div>
+<!-- address munging script by Steve Clay http://mrclay.org/2010/11/14/tiny-email-munging-script/-->
+<script>(function(){
+var a, i = 0, o = this.onload;
+onload = function(){
+  o && o(); // run the old window.onload if existed
+  while (a = document.getElementsByTagName("a").item(i++))
+    if (0 == a.href.indexOf("mailto:")) {
+      a.href = a.href.replace(/[{}]/g, "");
+      a.innerHTML = a.innerHTML.replace(/{(.)}/g, "$1");
+    }
+};
+})();</script>
+</body>
+</html>
+
