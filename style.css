@@ -73,7 +73,7 @@ a.name:active{color:white!important;}
       /*  remove the underline    */
       }
   
-  .headspacer{height:200px;position:relative;width:100%;}
+  .headspacer{height:200px;position:relative;width:100%;z-index:-100;}
     
   /*nolink also changes the email font*/
   .nolink{
@@ -97,7 +97,7 @@ a.name:active{color:white!important;}
     letter-spacing:.2px!important;
     line-height:20px;text-align:justify;}
   .introduction{position:static;width:73vw;max-width:900px;padding-left:15px!important;float:right;top:0;right:0;color:black;z-index:10000!important;padding-bottom:150px;
-    padding-top:5px;padding-right:10px;padding-bottom:50px;hyphens:manual;}
+    padding-top:5px;padding-right:10px;padding-bottom:50px;hyphens:manual;z-index:100;}
   
     .serif{font-family:'paragon-italics'!important;letter-spacing:-.55pt;font-size:11.5pt;}
   
@@ -161,7 +161,7 @@ a.name:active{color:white!important;}
       /*  remove the underline    */
       }
   
-  .headspacer{height:200px;position:relative;width:100%;}
+  .headspacer{height:200px;position:relative;width:100%;z-index:-100;}
     
   /*nolink also changes the email font*/
   .nolink{
@@ -246,7 +246,7 @@ a.name:active{color:white!important;}
     /*  remove the underline    */
     }
 
-.headspacer{height:200px;position:relative;width:100%;}
+.headspacer{height:200px;position:relative;width:100%;z-index:-100;}
   
 /*nolink also changes the email font*/
 .nolink{
@@ -265,8 +265,8 @@ display:none;
 
 
 body{hyphens:auto;height:100%!important;width:100%!important;padding:0!important;margin:0!important;}
-.introductionspacer{display:inline-block!important;width:40vw!important;max-width:770px!important;background-color:none;height:100px;z-index:1000;}
-.introduction{position:static;width:57vw;max-width:900px;padding-left:15px!important;float:right;top:0;right:0;color:black;z-index:10000!important;margin-bottom:180px;}
+.introductionspacer{display:none;width:40vw!important;max-width:770px!important;background-color:none;height:100px;z-index:1000;}
+.introduction{position:static;width:80vw;max-width:900px;padding-left:15px!important;float:right;top:0;right:0;color:black;z-index:10000!important;margin-bottom:180px;}
 
 .serif{font-family:'paragon-italics'!important;letter-spacing:-.55pt;font-size:14pt;}
 
@@ -345,7 +345,7 @@ a:active.serif {color:white!important;-webkit-text-fill-color:white!important;}
     /*  remove the underline    */
     }
 
-.headspacer{height:200px;position:relative;width:100%;}
+.headspacer{height:200px;position:relative;width:100%;z-index:-100;}
   
 /*nolink also changes the email font*/
 .nolink{
@@ -442,7 +442,7 @@ a:active.serif {color:white!important;-webkit-text-fill-color:white!important;}
     /*  remove the underline    */
     }
 
-.headspacer{height:200px;position:relative;width:100%;}
+.headspacer{height:200px;position:relative;width:100%;z-index:-100;}
   
 /*nolink also changes the email font*/
 .nolink{
