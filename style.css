@@ -29,171 +29,160 @@
 
 html {padding:0;margin:0 auto;width:100%;height:100%;overflow-x: hidden;max-height: 100%
 }
-body{padding:0;margin:0 auto;width:100%;height:100%;max-height: 100%;overflow-x:hidden!important;}
+body{background-color:white!important;padding:0;margin:0 auto;width:100%;height:100%;max-height: 100%;overflow-x:hidden!important;}
 .introductionspacer{display:none;}
 
-a.name:link{color:white!important;}
-a.name:visited{color:white!important;}
-a.name:hover{color:red!important;}
-a.name:active{color:white!important;}
-.learnmorehere{opacity:0!important;}
 .name,.transparent, .stickyhead, .email, .nolink{mix-blend-mode:difference!important;z-index:100;}
 .project_description{z-index:2000;}
+.learnmorehere{z-index:10000!important;}
+.portrait{mix-blend-mode: multiply;}
 
+.project{z-index:-1000;}
+.project a:link {color:black!important;-webkit-text-fill-color:black!important;mix-blend-mode: normal!important;text-decoration-line:underline;}
+.project a:visited {color:black!important;-webkit-text-fill-color:black!important;mix-blend-mode: normal!important;text-decoration: underline;}
+.project a:hover {color:#00cfdf!important;-webkit-text-fill-color:#00cfdf!important;font-style:normal;mix-blend-mode: normal!important;text-decoration:underline #00cfdf !important;}
+.project a:active {color:black!important;-webkit-text-fill-color:black!important;mix-blend-mode: normal!important;text-decoration: underline !important;}
+.introduction a:link {color:black!important;-webkit-text-fill-color:black!important;mix-blend-mode: normal!important;text-decoration-line:underline;}
+.introduction a:visited {color:black!important;-webkit-text-fill-color:black!important;mix-blend-mode: normal!important;text-decoration: underline;}
+.introduction a:hover {color:#00cfdf!important;-webkit-text-fill-color:#00cfdf!important;font-style:normal;mix-blend-mode: normal!important;text-decoration:underline #00cfdf !important;}
+.introduction a:active {color:black!important;-webkit-text-fill-color:black!important;mix-blend-mode: normal!important;text-decoration: underline !important;}
+.introductionmore a:link {color:black!important;-webkit-text-fill-color:black!important;mix-blend-mode: normal!important;text-decoration-line:underline;}
+.introductionmore a:visited {color:black!important;-webkit-text-fill-color:black!important;mix-blend-mode: normal!important;text-decoration: underline;}
+.introductionmore a:hover {color:#00cfdf!important;-webkit-text-fill-color:#00cfdf!important;font-style:normal;mix-blend-mode: normal!important;text-decoration:underline #00cfdf !important;}
+.introductionmore a:active {color:black!important;-webkit-text-fill-color:black!important;mix-blend-mode: normal!important;text-decoration: underline !important;}
 
+.mail,.email,.noshow{color:white!important;mix-blend-mode: difference!important;}
+.portrait{mix-blend-mode: multiply;z-index:-10000!important;}
+.stickyhead a:link{color:white!important;-webkit-text-fill-color:white!important;mix-blend-mode: difference!important;text-decoration: none!important;}
+ .stickyhead a:visited{color:white!important;-webkit-text-fill-color:white!important;mix-blend-mode: difference!important;text-decoration: none!important;}
+ .stickyhead a:hover{color:red!important;-webkit-text-fill-color:red!important;mix-blend-mode:normal!important;text-decoration: none!important;}
+ .stickyhead a:active{color:white!important;-webkit-text-fill-color:white!important;mix-blend-mode: difference;text-decoration: none!important;}
+ 
 
+.learnmorehere a:link{color:white!important;-webkit-text-fill-color:white!important;mix-blend-mode: difference!important;text-decoration: none!important;}
+ .learnmorehere a:visited{color:white!important;-webkit-text-fill-color:white!important;mix-blend-mode: difference!important;text-decoration: none!important;}
+ .learnmorehere a:hover{color:red!important;-webkit-text-fill-color:red!important;mix-blend-mode:normal!important;text-decoration: none!important;}
+ .learnmorehere a:active{color:white!important;-webkit-text-fill-color:white!important;mix-blend-mode: difference;text-decoration: none!important;}
+ 
+ .portrait{pointer-events: none!important;z-index:-1000000!important;}
+ .introductionmore,.introduction{box-sizing: border-box!important;}
+
+  /*nolink also changes the email font*/
+  .nolink,.mail{
+    color: white;
+      pointer-events: none!important;
+      text-decoration: none !important;
+      -webkit-text-decoration: none !important;bottom:0;position:fixed!important;;mix-blend-mode: difference!important;z-index:100000000!important;;}    
+    
+    /* for email munging*/
+    .noshow{
+    display:none!important;
+    }
+
+    .email{bottom:10px;left:0px;position:sticky;   
+      z-index:1000001!important;
+      /*  for click select all    */
+      -webkit-user-select: all!important;
+      user-select: all;overflow-anchor: none!important;
+  
+      }
+  
+    
 @media only screen and (max-width: 563px) {
-  .stickyhead{position:absolute;display:inline-block;}
-  .name{position:fixed;padding-left:10px!important;}
-  .learnmorehere {position:fixed!important;right:0;padding-right:30px!important;z-index:10;color:black;}
-  .email,.nolink{z-index:1000!important;mix-blend-mode: difference!important;}
-  .name,.transparent, .email, .nolink, .learnmorehere, .introductionmore
+  html{overflow:hidden;}
+      .pagewidth{overflow:hidden!important;}
+  .stickyhead{position:absolute;display:inline-block;padding-left:10px;}
+      .name{padding-top:5px;}
+      .learnmorehere {position:fixed!important;left:0;padding-left:10px;}
+  .email,.nolink{z-index:1000!important;mix-blend-mode: normal!important;}
+  
+  /*brings email down to bottom of page*/
+    .email.hide{padding-right:0!important;}
+  
+  .name,.transparent, .email, .nolink, .learnmorehere, .introduction,.introductionmore,.project_description
     {font-family:'instrument'!important; 
       font-style:normal!important;
       font-size:12pt!important;
-      letter-spacing:.5px!important;
-      line-height:17px!important;;
-      text-align:justify;
-      padding:5px;}
+      letter-spacing:.1px!important;
+      line-height:19px!important;
+      text-align:left;}
+.mail{mix-blend-mode: normal!important;color:black!important;}
+    .fonts,.colophon{font-family:'instrument'!important; 
+      font-style:normal!important;}
 
-      .name,.transparent, .stickyhead, .email, .nolink{mix-blend-mode: difference!important;color:white;z-index:100;}
+      .transparent, .email, .nolink{z-index:100;}
   
-      .name a:link{color:white!important;}
-      .name a:visited{color:black!important;}
-      .name a:hover{color:white!important;}
-      .name a:active{color:white!important;}
-      
-      .learnmorehere a:link{color:black!important;mix-blend-mode: normal!important;}
-      .learnmorehere a:visited{color:black!important;mix-blend-mode: normal!important;}
-      .learnmorehere a:hover{color:black!important;mix-blend-mode: normal!important;}
-      .learnmorehere a:active{color:black!important;mix-blend-mode: normal!important;}
-  
-  .email{bottom:10px;left:0px;position:sticky;   
-      z-index:100;
-      /*  for click select all    */
-      -webkit-user-select: all;
-      user-select: all;overflow-anchor: none;
-      /*  remove the underline    */
-      }
-  
-  .headspacer{height:200px;position:relative;width:100%;z-index:-100;}
+
+  .headspacer{height:400px;position:relative;width:100%;z-index:-100;}
     
-  /*nolink also changes the email font*/
-  .nolink{
-  color: white;
-    pointer-events: none;
-    text-decoration: none !important;
-    -webkit-text-decoration: none !important;bottom:0;position:fixed;}    
-  
-  /* for email munging*/
-  .noshow{
-  display:none;
-  }
-  
+
   
 
   
-  body{hyphens:auto;padding-bottom:50px;}
-  .project_description, .introduction{font-family:'instrument'!important; 
-    font-style:normal!important;
-    font-size:12pt!important;
-    letter-spacing:.2px!important;
-    line-height:20px;text-align:justify;}
-  .introduction{position:static;width:73vw;max-width:900px;padding-left:15px!important;float:right;top:0;right:0;color:black;z-index:10000!important;padding-bottom:100px;
-    padding-top:5px;padding-right:10px;hyphens:manual;z-index:100;}
+  body{hyphens:auto;padding-bottom:70px;}
+  
+  .introduction{position:static;float:right;top:0;right:0;z-index:10000!important;
+    padding-top:4px;hyphens:manual;z-index:100;}
   
     .serif{font-family:'paragon-italics'!important;letter-spacing:-.55pt;font-size:11.5pt;}
+  .name{top:0;color:black!important;}
   
-  a{text-decoration:none!important;}
-  a:link.serif {color:black!important;-webkit-text-fill-color:black!important;}
-  a:visited.serif {color:black!important;-webkit-text-fill-color:black!important;}
-  a:hover.serif {color:red!important;-webkit-text-fill-color:red!important;font-style:normal;}
-  a:active.serif {color:black!important;-webkit-text-fill-color:black!important;}
-  
+ 
   .project{width:100%;}
-  .project_description{padding-top:10px;padding-left:10px;padding-right:10px;}
+  .project_description{padding-top:10px;padding-left:10px;}
   .bold{font-family:'instrument-bold'!important;display:inline-block;}
   .italics{font-family:'instrument-italics'!important;display:inline-block;}
-  .sup {columns:1;letter-spacing:-.01px;font-size:80%;line-height:13px!important;width:98%;text-align:justify;hyphens: auto;padding-left:50px;padding-bottom:80px;}
+  .sup {columns:1;letter-spacing:0.3px;font-size:80%;line-height:13px!important;width:98%;text-align:justify;hyphens: auto;padding-left:50px;padding-bottom:80px;}
       .carousel-item{width:85vw;max-width:1200px!important;}
       .d-block{z-index:-997;}
   .carousel-control-next, .carousel-control-prev {mix-blend-mode: difference!important;}
     
   .portrait{position:fixed;z-index:100px;width:200px;height:300px;bottom:0;background-size:100%;background-position:0px 0px;background-image:url("/2024_me/hwajinjun.png");background-repeat: no-repeat;position:absolute;mix-blend-mode: multiply;}
-  .lists{font-size:80%;line-height:20px;}
-  .introductionmore{position:relative;width:80vw;float:right;top:0;max-width:900px;z-index:100;left: calc((100vw - 100%));padding-right:20px;}
-  
-  .colophon{padding-top:250px;float:right;width:100%;text-align:right;}
+  .lists{text-align:left;width:73vw;}
+  .lists,.fonts{font-size:80%!important;line-height:15px}
+  .email,.mail,.noshow{font-size:14px!important;padding-left:5px;}
+  .introductionmore{position:static;float:right;top:0;z-index:100;mix-blend-mode: normal!important;}
+  .introductionmore,.introduction{width:71vw!important;padding-right:10px;}
+  .colophon{padding-top:20px;display:inline-block;width:fit-content;bottom:0;padding-bottom:200px;text-align:right;float:right;}
   
     }
 
     @media only screen and (min-width:564px)and (max-width: 676px) {
-  .stickyhead{position:absolute;display:inline-block;}
-  .name{position:fixed;padding-left:10px!important;}
-  .learnmorehere {position:fixed!important;right:0;padding-right:30px!important;z-index:10;color:black;}
-  .email,.nolink{z-index:1000!important;mix-blend-mode: difference!important;}
-  .name,.transparent, .email, .nolink, .learnmorehere, .introductionmore
+      .stickyhead{position:absolute;display:inline-block;line-height:20px!important;}
+      .name{position:fixed;padding-left:10px!important;}
+      .learnmorehere {position:fixed!important;left:0;padding-left:12px!important;}
+  .email,.nolink{z-index:1000!important;}
+  .name,.transparent, .email, .nolink, .learnmorehere
     {font-family:'instrument'!important; 
       font-style:normal!important;
       font-size:12pt!important;
-      letter-spacing:.55px!important;
-      padding:5px;}
-      .project_description, .introduction{font-family:'instrument'!important; 
+      letter-spacing:.55px!important;line-height:20px!important;}
+      .email{padding-left:10px;}
+      .mail{padding-bottom:1px;}
+      .project_description, .introduction,.introductionmore,.colophon{font-family:'instrument'!important; 
         font-style:normal!important;
         font-size:12pt!important;
         letter-spacing:.2px!important;
-        line-height:20px;text-align:justify;}
-        .introduction{padding-top:8px;padding-right:10px;}
-      .name,.transparent, .stickyhead, .email, .nolink{mix-blend-mode: difference!important;color:white;z-index:100;}
+        line-height:20px!important;text-align:justify;}
+        .introduction{padding-right:10px;}
+      .name,.transparent, .stickyhead, .email, .nolink{z-index:100;}
   
-      .name a:link{color:white!important;}
-      .name a:visited{color:black!important;}
-      .name a:hover{color:white!important;}
-      .name a:active{color:white!important;}
-      
-      .learnmorehere a:link{color:black!important;mix-blend-mode: normal!important;}
-      .learnmorehere a:visited{color:black!important;mix-blend-mode: normal!important;}
-      .learnmorehere a:hover{color:black!important;mix-blend-mode: normal!important;}
-      .learnmorehere a:active{color:black!important;mix-blend-mode: normal!important;}
-  
-  .email{bottom:10px;left:0px;position:sticky;   
-      z-index:100;
-      /*  for click select all    */
-      -webkit-user-select: all;
-      user-select: all;overflow-anchor: none;
-      /*  remove the underline    */
-      }
-  
+
   .headspacer{height:200px;position:relative;width:100%;z-index:-100;}
     
-  /*nolink also changes the email font*/
-  .nolink{
-  color: white;
-    pointer-events: none;
-    text-decoration: none !important;
-    -webkit-text-decoration: none !important;bottom:0;position:fixed;}    
-  
-  /* for email munging*/
-  .noshow{
-  display:none;
-  }
+
   
   
 
   
   body{hyphens:auto;}
-  .introduction{position:static;width:80vw;max-width:900px;padding-left:15px!important;float:right;top:0;right:0;color:black;z-index:10000!important;padding-bottom:100px;}
+  .introduction{position:static;max-width:900px;padding-left:15px!important;float:right;top:0;right:0;color:black;z-index:10000!important;padding-bottom:100px;}
   
   .serif{font-family:'paragon-italics'!important;letter-spacing:-.55pt;font-size:11.5pt;}
   
-  a{text-decoration:none!important;}
-  a:link.serif {color:white!important;-webkit-text-fill-color:white!important;}
-  a:visited.serif {color:black!important;-webkit-text-fill-color:black!important;}
-  a:hover.serif {color:red!important;-webkit-text-fill-color:red!important;font-style:normal;}
-  a:active.serif {color:white!important;-webkit-text-fill-color:white!important;}
   
   
-  
+  .introduction,.introductionmore{width:72vw;}
   
   
   .project{width:100%;}
@@ -211,74 +200,45 @@ a.name:active{color:white!important;}
   
   
   .portrait{position:fixed;z-index:100px;width:200px;height:300px;bottom:0;background-size:100%;background-position:0px 0px;background-image:url("/2024_me/hwajinjun.png");background-repeat: no-repeat;position:absolute;mix-blend-mode: multiply;}
-  .lists{font-size:80%;line-height:20px;}
-  .introductionmore{position:relative;width:80vw;float:right;top:0;max-width:900px;z-index:100;left: calc((100vw - 100%));padding-right:20px;}
+  .lists,.fonts{font-size:80%;line-height:15px;}
   
-  .colophon{padding-top:250px;float:right;width:100%;text-align:right;}
+  .introductionmore{position:relative;float:right;top:0;max-width:900px;z-index:100;left: calc((100vw - 100%));padding-right:20px;text-align:left!important;}
+  
+  .colophon{padding-top:250px;display:inline-block;text-align:right;float:right;padding-bottom:5px;}
   
     }
 
     
     @media only screen and (min-width:677px) and (max-width:1234px) {
-      
+      html{overflow:hidden;}
+      .pagewidth{overflow:hidden!important;}
       .stickyhead{position:absolute;display:inline-block;}
+      .introductionmore{overflow:hidden!important;}
 .name{position:fixed;padding-left:10px!important;}
-.learnmorehere {position:fixed!important;right:0;padding-right:30px!important;z-index:10;color:black;}
-.email,.nolink{z-index:1000!important;mix-blend-mode: difference!important;}
+.learnmorehere {position:fixed;padding-left:10px!important;}
+.email,.mail.nolink{z-index:1000!important;}
 .name,.transparent, .email, .nolink, .introduction, .learnmorehere, .introductionmore,.colophon
   {font-family:'instrument'!important; 
     font-style:normal!important;
     font-size:14pt!important;
     letter-spacing:.25px!important;
-    padding:5px;line-height:25px!important;}
-    .transparent, .stickyhead, .email, .nolink{mix-blend-mode: difference!important;color:white;z-index:100;}
-    .name a:link{color:white!important;}
-    .name a:visited{color:black!important;}
-    .name a:hover{color:white!important;}
-    .name a:active{color:white!important;}
-    
-    .learnmorehere a:link{color:black!important;mix-blend-mode: normal!important;}
-    .learnmorehere a:visited{color:black!important;mix-blend-mode: normal!important;}
-    .learnmorehere a:hover{color:black!important;mix-blend-mode: normal!important;}
-    .learnmorehere a:active{color:black!important;mix-blend-mode: normal!important;}
+    padding:5px;line-height:23px!important;}
+    .transparent, .stickyhead, .email, .nolink{z-index:100;}
 
-.email{bottom:10px;left:0px;position:sticky;   
-    z-index:100;
-    /*  for click select all    */
-    -webkit-user-select: all;
-    user-select: all;overflow-anchor: none;
-    /*  remove the underline    */
-    }
 
-.headspacer{height:200px;position:relative;width:100%;z-index:-100;}
+.headspacer{height:380px;position:relative;width:100%;z-index:-100;}
   
-/*nolink also changes the email font*/
-.nolink{
-color: white;
-  pointer-events: none;
-  text-decoration: none !important;
-  -webkit-text-decoration: none !important;bottom:0;position:fixed;}    
-
-/* for email munging*/
-.noshow{
-display:none;
-}
 
 
 
 
 
-body{hyphens:auto;height:100%!important;width:100%!important;padding:0!important;margin:0!important;padding-bottom:50px!important;}
+body{hyphens:auto;height:100%!important;width:100%!important;padding:0!important;margin:0!important;padding-bottom:0px!important;}
 .introductionspacer{display:none;width:40vw!important;max-width:770px!important;background-color:none;height:100px;z-index:1000;}
-.introduction{position:static;width:80vw;max-width:900px;padding-left:15px!important;float:right;top:0;right:0;color:black;z-index:10000!important;}
-
+.introduction{position:relative;padding-left:15px!important;float:right;top:0;right:0;color:black;z-index:10000!important;}
+.introduction,.introductionmore{width:60vw;max-width:900px;}
 .serif{font-family:'paragon-italics'!important;letter-spacing:-.55pt;font-size:14pt;}
 
-a{text-decoration:none!important;}
-a:link.serif {color:white!important;-webkit-text-fill-color:white!important;}
-a:visited.serif {color:black!important;-webkit-text-fill-color:black!important;}
-a:hover.serif {color:red!important;-webkit-text-fill-color:red!important;font-style:normal;}
-a:active.serif {color:white!important;-webkit-text-fill-color:white!important;}
 
 
 
@@ -301,11 +261,11 @@ a:active.serif {color:white!important;-webkit-text-fill-color:white!important;}
 
 
 
-.portrait{position:relative;display:block;max-width:1694px!important;float:left;width:47vw;position:absolute;height:100%;background-image:url("/2024_me/hwajinjun.png");background-size:cover;background-repeat: no-repeat!important;mix-blend-mode: multiply;z-index:-100;background-position:0 -200px;}
+.portrait{position:relative;display:block;float:left;width:39vw;position:absolute;height:100%;background-image:url("/2024_me/hwajinjun.png");background-size:cover;background-repeat:no-repeat!important;mix-blend-mode: multiply;z-index:-100;background-position:0 -200px;}
 .lists,.fonts{font-size:80%;line-height:20px;}
-.introductionmore{position:relative;width:52vw;float:right;max-width:900px;z-index:100;left: calc((100vw - 100%));padding-right:20px;}
+.introductionmore{position:relative;float:right;max-width:900px;z-index:100;left: calc((100vw - 100%));padding-right:20px;}
 
-.colophon{padding-top:50px;float:right;width:100%;text-align:right;}
+.colophon{padding-top:50px;float:left;width:60vw;max-width:900px;text-align:right;float:right;}
 
         }
 
@@ -313,11 +273,12 @@ a:active.serif {color:white!important;-webkit-text-fill-color:white!important;}
 
 
 @media only screen and (min-width: 1235px) and (max-width:1550px){
-  
+  html{overflow:hidden;}
+      .pagewidth{overflow:hidden!important;}
 .stickyhead{position:absolute;display:inline-block;}
 .name{position:fixed;padding-left:10px!important;}
-.learnmorehere {position:fixed!important;right:0;height:fit-content;padding-right:30px!important;color:black;}
-.email,.nolink{z-index:1000!important;mix-blend-mode: difference!important;}
+.learnmorehere {position:fixed!important;left:0;padding-left:10px!important;}
+
 .name,.transparent, .email, .nolink, .learnmorehere,.colophon
   {font-family:'instrument'!important; 
     font-style:normal!important;
@@ -328,58 +289,19 @@ a:active.serif {color:white!important;-webkit-text-fill-color:white!important;}
     .introduction,.introductionmore{font-family:'instrument'!important; 
       font-style:normal!important;
       font-size:15pt!important;
-      letter-spacing:.25px!important;}
-    .name,.transparent, .stickyhead, .email, .nolink{mix-blend-mode: difference!important;color:white;z-index:100;}
-
-    .name a:link{color:white!important;}
-    .name a:visited{color:black!important;}
-    .name a:hover{color:white!important;}
-    .name a:active{color:white!important;}
-    
-    .learnmorehere a:link{color:black!important;mix-blend-mode: normal!important;}
-    .learnmorehere a:visited{color:black!important;mix-blend-mode: normal!important;}
-    .learnmorehere a:hover{color:black!important;mix-blend-mode: normal!important;}
-    .learnmorehere a:active{color:black!important;mix-blend-mode: normal!important;}
-
-.email{bottom:10px;left:0px;position:sticky;   
-    z-index:100;
-    /*  for click select all    */
-    -webkit-user-select: all;
-    user-select: all;overflow-anchor: none;
-    /*  remove the underline    */
-    }
+      letter-spacing:.25px!important;line-height:23px;}
+    .name,.transparent, .stickyhead, .email, .nolink{z-index:100;}
 
 .headspacer{height:200px;position:relative;width:100%;z-index:-100;}
   
-/*nolink also changes the email font*/
-.nolink{
-color: white;
-  pointer-events: none;
-  text-decoration: none !important;
-  -webkit-text-decoration: none !important;bottom:0;position:fixed;}    
-
-/* for email munging*/
-.noshow{
-display:none;
-}
-
-
-
 
 
 body{width:100%;height:100%;hyphens:auto;}
 .parent{padding:0;}
 .introductionspacer{display:inline-block!important;width:45vw!important;max-width:770px!important;background-color:none;height:100px;z-index:1000;padding-left:0!important;padding-right:0!important;}
-.introduction{display:inline-block!important;width:53vw;max-width:900px;top:0;right:0;color:black;z-index:10000!important;}
-
+.introduction{display:inline-block!important;max-width:900px;top:0;right:0;color:black;z-index:10000!important;padding-top:10px;}
+.introduction,.introductionmore{width:53vw;}
 .serif{font-family:'paragon-italics'!important;letter-spacing:-.55pt;font-size:14pt;}
-
-a{text-decoration:none!important;}
-a:link.serif {color:white!important;-webkit-text-fill-color:white!important;}
-a:visited.serif {color:black!important;-webkit-text-fill-color:black!important;}
-a:hover.serif {color:red!important;-webkit-text-fill-color:red!important;font-style:normal;}
-a:active.serif {color:white!important;-webkit-text-fill-color:white!important;}
-
 
 
 
@@ -398,10 +320,10 @@ a:active.serif {color:white!important;-webkit-text-fill-color:white!important;}
 
 
 
-.pagewidth{width:100%;max-width:1694px;}
-.portrait{display:block;max-width:1694px!important;float:left;width:47vw;position:absolute;height:100%;background-image:url("/2024_me/hwajinjun.png");background-size:cover;background-repeat: no-repeat!important;mix-blend-mode: multiply;z-index:-100;background-position:0 -300px;}
+.pagewidth{width:100%;max-width:1694px!important;}
+.portrait{display:block;max-width:1694px!important;float:left;width:46vw;position:absolute;height:100%;background-image:url("/2024_me/hwajinjun.png");background-size:cover;background-repeat: no-repeat!important;mix-blend-mode: multiply;z-index:-100;background-position:0 -300px;}
 .lists{font-size:80%;line-height:20px;padding-top:0px;}
-.introductionmore{position:relative;width:52vw;float:right;max-width:900px;z-index:100;left: calc((100vw - 100%));padding-right:20px;}
+.introductionmore{position:relative;float:right;max-width:900px;z-index:100;left: calc((100vw - 100%));padding-right:20px;padding-top:10px;}
 .fonts{bottom:0;font-size:80%;line-height:20px;}
 .colophon{padding-top:50px;float:right;width:100%;text-align:right;}
 
@@ -411,10 +333,10 @@ a:active.serif {color:white!important;-webkit-text-fill-color:white!important;}
 
   @media only screen and (min-width: 1551px) {
     
-.stickyhead{position:absolute;display:inline-block;}
-.name{position:fixed;padding-left:10px!important;}
-.learnmorehere {position:fixed!important;right:0;height:fit-content;padding-right:30px!important;color:black;}
-.email,.nolink{z-index:1000!important;mix-blend-mode: difference!important;}
+    .stickyhead{position:absolute;display:inline-block;line-height:15px;}
+    .name{position:fixed;padding-left:10px!important;}
+    .learnmorehere {position:fixed!important;left:0;padding-left:10px!important;margin-top:10px;}
+.mail,.email,.nolink{z-index:1000!important;}
 .name,.transparent, .email, .nolink, .learnmorehere,.colophon
   {font-family:'instrument'!important; 
     font-style:normal!important;
@@ -425,42 +347,14 @@ a:active.serif {color:white!important;-webkit-text-fill-color:white!important;}
     .introduction,.introductionmore{font-family:'instrument'!important; 
       font-style:normal!important;
       font-size:15pt!important;
-      letter-spacing:.25px!important;}
-    .name,.transparent, .stickyhead, .email, .nolink{mix-blend-mode: difference!important;color:white;z-index:100;}
+      line-height:23px!important;
+      letter-spacing:.25px!important;padding-top:10px;}
+    .name,.transparent, .stickyhead, .email, .nolink{z-index:100;}
+    .pagewidth{width:100%;max-width:1440px!important;}
 
-    .name a:link{color:white!important;}
-    .name a:visited{color:black!important;}
-    .name a:hover{color:white!important;}
-    .name a:active{color:white!important;}
-    
-    .learnmorehere a:link{color:black!important;mix-blend-mode: normal!important;}
-    .learnmorehere a:visited{color:black!important;mix-blend-mode: normal!important;}
-    .learnmorehere a:hover{color:black!important;mix-blend-mode: normal!important;}
-    .learnmorehere a:active{color:black!important;mix-blend-mode: normal!important;}
-
-.email{bottom:10px;left:0px;position:sticky;   
-    z-index:100;
-    /*  for click select all    */
-    -webkit-user-select: all;
-    user-select: all;overflow-anchor: none;
-    /*  remove the underline    */
-    }
 
 .headspacer{height:200px;position:relative;width:100%;z-index:-100;}
   
-/*nolink also changes the email font*/
-.nolink{
-color: white;
-  pointer-events: none;
-  text-decoration: none !important;
-  -webkit-text-decoration: none !important;bottom:0;position:fixed;}    
-
-/* for email munging*/
-.noshow{
-display:none;
-}
-
-
 
 
 
@@ -471,11 +365,6 @@ body{width:100%;height:100%;hyphens:auto;}
 
 .serif{font-family:'paragon-italics'!important;letter-spacing:-.55pt!important;;font-size:14pt!important;}
 
-a{text-decoration:none!important;}
-a:link.serif {color:white!important;-webkit-text-fill-color:white!important;}
-a:visited.serif {color:black!important;-webkit-text-fill-color:black!important;}
-a:hover.serif {color:red!important;-webkit-text-fill-color:red!important;font-style:normal;}
-a:active.serif {color:white!important;-webkit-text-fill-color:white!important;}
 
 
 
@@ -495,8 +384,8 @@ a:active.serif {color:white!important;-webkit-text-fill-color:white!important;}
 
 
 
-.pagewidth{left:0px;max-width:1694px;width:100%!important;height:fit-content;background-color:none;position:absolute;z-index:-100px;margin:0!important;padding:0!important;mix-blend-mode: multiply;}
-.portrait{max-width:796.26px!important;float:left;width:47%;position:absolute;height:100%;background-image:url("/2024_me/hwajinjun.png");background-size:cover;background-repeat: no-repeat!important;mix-blend-mode: multiply;z-index:-100;background-position:0 -300px;}
+.pagewidth{left:0px;max-width:1694px;width:100%!important;height:fit-content;background-color:none;position:absolute;z-index:-100px;margin:0!important;padding:0!important;}
+.portrait{max-width:796.26px!important;float:left;width:47%;position:absolute;height:100%;background-image:url("/2024_me/hwajinjun.png");background-size:cover;background-repeat: no-repeat!important;mix-blend-mode: normal!important;background-position:0 -300px;}
 .lists{font-size:80%;line-height:20px;padding-top:0px;margin-bottom:30px;}
 .introductionmore{width:52%;float:right;max-width:860.94px!important;z-index:100;left: calc((100vw - 100%));padding-right:20px;}
 .fonts{bottom:0;font-size:80%;line-height:20px;}
