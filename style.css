@@ -86,9 +86,9 @@ body{background-color:white!important;padding:0;margin:0 auto;width:100%;height:
       user-select: all;overflow-anchor: none!important;
   
       }
-        .carousel-control-next, .carousel-control-prev {mix-blend-mode: difference!important;}
+        .carousel-control-next, .carousel-control-prev {mix-blend-mode: difference!important;filter:drop-shadow(2px 2px 5px black)}
         
-        .carousel-control-next{mix-blend-mode: difference!important;}
+        
         
     
 @media only screen and (max-width: 563px) {
