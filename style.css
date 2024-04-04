@@ -324,8 +324,8 @@ body{hyphens:auto;height:100%!important;width:100%!important;padding:0!important
 body{width:100%;height:100%;hyphens:auto;}
 .parent{padding:0;}
 .introductionspacer{display:inline-block!important;width:45vw!important;max-width:770px!important;background-color:none;height:100px;z-index:1000;padding-left:0!important;padding-right:0!important;}
-.introduction{display:inline-block!important;max-width:900px;top:0;right:0;color:black;z-index:10000!important;padding-top:10px;}
-.introduction,.introductionmore{width:53vw;}
+.introduction{display:inline-block!important;max-width:900px;top:0;right:0;color:black;z-index:10000!important;padding-top:05px;}
+.introduction,.introductionmore{width:53vw;padding-top:5px;}
 .serif{font-family:'paragon-italics'!important;letter-spacing:-.55pt;font-size:14pt;}
 
 
@@ -348,7 +348,7 @@ body{width:100%;height:100%;hyphens:auto;}
 /*.portrait{display:block;max-width:1694px!important;float:left;width:46vw;position:absolute;height:100%;background-image:url("/2024_me/hwajinjun.png");background-size:cover;background-repeat: no-repeat!important;mix-blend-mode: multiply;z-index:-100;background-position:0 -300px;}*/
 .portrait{display:block;max-width:1694px!important;float:left;width:46vw;position:absolute;height:100%;background-image:url("/2024_me/IMG_5303.gif");background-size:cover;background-repeat: no-repeat!important;mix-blend-mode: multiply;z-index:-100;background-position:0 -50px;}
 .lists{font-size:80%;line-height:20px;padding-top:0px;}
-.introductionmore{position:relative;float:right;max-width:900px;z-index:100;left: calc((100vw - 100%));padding-right:20px;padding-top:10px;}
+.introductionmore{position:relative;float:right;max-width:900px;z-index:100;left: calc((100vw - 100%));padding-right:20px;}
 .fonts{bottom:0;font-size:80%;line-height:20px;}
 .colophon{padding-top:50px;float:right;width:100%;text-align:right;}
 .stickyhead2 a:link{color:white!important;-webkit-text-fill-color:white!important;mix-blend-mode: normal!important;text-decoration: none!important;mix-blend-mode:normal!important;text-shadow:2px 2px 5px black,-2px -2px 5px black, 2px -2px 5px black, -2px 2px 5px black;}
