@@ -81,7 +81,35 @@ a{text-decoration: none;}
 	  src: url('/fonts/Paragonitalic-Regular.woff2') format('woff2');
 	  font-style:normal;}
 	
+	.name,.transparent, .email, .nolink, .learnmorehere,.colophon
+  {font-family:'instrument'!important; 
+    font-style:normal!important;
+    font-size:15pt!important;
+    letter-spacing:.25px!important;
+    padding:5px;}
+	.name{position:fixed;padding-left:10px!important;z-index:10000;color:white;}
+    
+.mail,.email,.nolink{z-index:1000!important;background-color:none;display:inline-block;}
+    .stickyhead{position:absolute;display:inline-block;line-height:15px;}
+	.nolink,.mail{
+		color: white;
+		  pointer-events: none!important;
+		  text-decoration: none !important;
+		  -webkit-text-decoration: none !important;bottom:0;position:fixed!important;;mix-blend-mode: difference!important;z-index:100000000!important;		  -webkit-user-select: all!important;
+		  user-select: all;overflow-anchor: none!important;}    
+		
+		/* for email munging*/
+		.noshow{
+		display:none!important;
+		}
 	
+		.email{bottom:10px;left:0px;position:sticky;   
+		  z-index:1000001!important;
+		  /*  for click select all    */
+		  -webkit-user-select: all!important;
+		  user-select: all;overflow-anchor: none!important;
+	  
+		  }
 	@font-face{
 		font-family: kepler;
 	src: url("Kepler\ Std\ Light\ Condensed\ Display.otf");
@@ -89,13 +117,22 @@ a{text-decoration: none;}
 	rc: url("Kepler\ Std\ Light\ Condensed\ Display.ttf");}
 	
 
-
+@media only screen and (max-width:500.99px) {
+	body{height:7000px;}
+	html{height:100vh;}
 #scrolly-video{width:100px;z-index:1000;}
 #one{top:0px;background-color:none;}
 #two{top:3500px;background-color: none;}
 #three{top:6900px;background-color: none;overflow-y:hidden;}
 
-
+}
+@media only screen and (min-width: 501px) {
+	body{height:7000px;}
+#scrolly-video{height:100vh;transform:translateY(-10vh);}
+#one{top:0px;background-color:none;}
+#two{top:3500px;background-color: none;}
+#three{top:6900px;background-color: none;}
+}
 
 
     
@@ -369,4 +406,3 @@ a{text-decoration: none;}
   
   }
   
-	
