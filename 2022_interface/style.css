@@ -1,0 +1,135 @@
+/*font used is Kepler*/
+html{scroll-behavior: smooth;  overscroll-behavior: none!important;}
+
+body {padding:0;margin:0;
+background: black;
+	font-weight:100;
+	font-family:kepler;
+	background-color:black;
+	color:#7B8E7B;
+}
+a{text-decoration: none;}
+
+::-webkit-scrollbar {
+	width: 0px;
+	background: transparent; }
+	
+	#div1, #div2, #div3, #div4, #div5, #div6 {
+		color:transparent;
+		position:absolute;
+		z-index:10;
+		font-size:3em;
+		cursor:pointer;
+	}
+	#one,#two,#three{width:100px;height:100px;z-index:100;position:absolute;}
+	
+
+	
+
+	
+	
+	
+	
+	#div11, #div22, #div33, #div44, #div55, #div66 {
+		color:#7B8E7B;
+		position:fixed;
+		z-index:300;
+		font-size:4em;
+		cursor:pointer;
+		margin-left:0px;
+	
+		display: /*inline-block;     */none;
+		padding: 1em;     
+		margin: -1em; 
+	}
+	
+	#div11:hover, #div22:hover, #div33:hover, #div44:hover,#div55:hover {
+	color:#E9FFF2;
+	}
+	
+	#div11 {top:.25em;right:calc(.5em);
+	}
+	#div22 {top:calc(25% + .75em);right:calc(.5em);
+	}
+	#div33{top:calc(50% + 1.25em);right:.5em;
+	}
+	#div44{bottom:.25em;right:.5em;
+	}
+	#div55{top:.25em;left:.5em;
+	}
+	@font-face { font-family: 'paragon'; 
+		src: url('/fonts/Paragon-Regular.woff2') format('woff2');
+		font-weight:normal;
+		font-style:normal;}             
+	  
+	@font-face { font-family: 'instrument'; 
+		src: url('/fonts/InstrumentSans-Regular.woff2') format('woff2');
+		font-weight:normal;
+		font-style:normal;}
+	
+	@font-face { font-family: 'instrument-bold'; 
+	  src: url('/fonts/InstrumentSans-Bold.woff2') format('woff2');
+	  font-weight:normal;
+	  font-style:normal;}
+		  
+	@font-face { font-family: 'instrument-italics'; 
+	  src: url('/fonts/InstrumentSans-Italic.woff2') format('woff2');
+	  font-weight:normal;
+	  font-style:normal;}
+	
+	@font-face { font-family: 'paragon-italics'; 
+	  src: url('/fonts/Paragonitalic-Regular.woff2') format('woff2');
+	  font-style:normal;}
+	
+	.name,.transparent, .email, .nolink, .learnmorehere,.colophon
+  {font-family:'instrument'!important; 
+    font-style:normal!important;
+    font-size:15pt!important;
+    letter-spacing:.25px!important;
+    padding:5px;}
+	.name{position:fixed;padding-left:10px!important;z-index:10000;color:white;}
+    
+.mail,.email,.nolink{z-index:1000!important;background-color:none;display:inline-block;}
+    .stickyhead{position:absolute;display:inline-block;line-height:15px;}
+	.nolink,.mail{
+		color: white;
+		  pointer-events: none!important;
+		  text-decoration: none !important;
+		  -webkit-text-decoration: none !important;bottom:0;position:fixed!important;;mix-blend-mode: difference!important;z-index:100000000!important;		  -webkit-user-select: all!important;
+		  user-select: all;overflow-anchor: none!important;}    
+		
+		/* for email munging*/
+		.noshow{
+		display:none!important;
+		}
+	
+		.email{bottom:10px;left:0px;position:sticky;   
+		  z-index:1000001!important;
+		  /*  for click select all    */
+		  -webkit-user-select: all!important;
+		  user-select: all;overflow-anchor: none!important;
+	  
+		  }
+	@font-face{
+		font-family: kepler;
+	src: url("Kepler\ Std\ Light\ Condensed\ Display.otf");
+	src: url("Kepler\ Std\ Light\ Condensed\ Display.woff");
+	rc: url("Kepler\ Std\ Light\ Condensed\ Display.ttf");}
+	
+
+@media only screen and (max-width:500.99px) {
+	body{height:7000px;}
+	html{height:100vh;}
+#scrolly-video{width:100px;z-index:1000;}
+#one{top:0px;background-color:none;}
+#two{top:3500px;background-color: none;}
+#three{top:6900px;background-color: none;overflow-y:hidden;}
+
+}
+@media only screen and (min-width: 501px) {
+	body{height:7000px;}
+#scrolly-video{height:100vh;transform:translateY(-10vh);}
+#one{top:0px;background-color:none;}
+#two{top:3500px;background-color: none;}
+#three{top:6900px;background-color: none;}
+}
