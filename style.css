@@ -115,7 +115,8 @@ body{background-color:white!important;padding:0;margin:0 auto;width:100%;height:
       font-style:normal!important;}
 
       .transparent, .email, .nolink{z-index:100;}
-  
+  .colophon{font-size:9pt!important;
+      letter-spacing:.1px!important;}
 
   .headspacer{height:400px;position:relative;width:100%;z-index:-100;}
     
@@ -142,13 +143,14 @@ body{background-color:white!important;padding:0;margin:0 auto;width:100%;height:
 
     
   /*.portrait{position:fixed;z-index:100px;width:200px;height:300px;bottom:0;background-size:100%;background-position:0px 0px;background-image:url("/2024_me/hwajinjun.png");background-repeat: no-repeat;position:absolute;mix-blend-mode: multiply;}*/
-  .portrait{position:fixed;z-index:100px;width:200px;height:300px;bottom:0;background-size:100%;background-position:0px 40px;background-image:url("/2024_me/IMG_5303.gif");background-repeat: no-repeat;position:absolute;mix-blend-mode: multiply;}
-  .lists{text-align:left;width:73vw;}
-  .lists,.fonts{font-size:80%!important;line-height:15px}
+  .portrait{position:fixed;z-index:100px;display: none;bottom:0;background-size:100%;background-position:0px 40px;background-image:url("/2024_me/IMG_5303.gif");background-repeat: no-repeat;position:absolute;mix-blend-mode: multiply;}
+  .lists{text-align:left;width:68vw;}
+  .lists{font-size:80%!important;line-height:15px}
   .email,.mail,.noshow{font-size:13px!important;padding-left:1px;letter-spacing:-.4px!important;}
   .introductionmore{position:static;float:right;top:0;z-index:100;mix-blend-mode: normal!important;}
   .introductionmore,.introduction{width:70vw!important;padding-right:10px;}
-  .colophon{padding-top:20px;display:inline-block;width:fit-content;bottom:0;padding-bottom:200px;text-align:right;float:right;}
+  
+  .colophon{padding-top:20px;display:inline-block;width:fit-content;bottom:0;padding-bottom:3px;padding-right:3px;text-align:right;float:right;}
   
   .stickyhead2 a:link{color:white!important;-webkit-text-fill-color:white!important;mix-blend-mode: difference!important;text-decoration: none!important;}
  .stickyhead2 a:visited{color:white!important;-webkit-text-fill-color:white!important;mix-blend-mode: difference!important;text-decoration: none!important;}
@@ -211,7 +213,7 @@ body{background-color:white!important;padding:0;margin:0 auto;width:100%;height:
   
   
   /*.portrait{position:fixed;z-index:100px;width:200px;height:300px;bottom:0;background-size:100%;background-position:0px 0px;background-image:url("/2024_me/hwajinjun.png");background-repeat: no-repeat;position:absolute;mix-blend-mode: multiply;}*/
-  .portrait{position:fixed;z-index:100px;width:200px;height:300px;bottom:0;background-size:100%;background-position:0px 40px;background-image:url("/2024_me/IMG_5303.gif");background-repeat: no-repeat;position:absolute;mix-blend-mode: multiply;}
+  .portrait{position:fixed;display:hide;z-index:100px;bottom:0;background-size:100%;background-position:0px 40px;background-image:url("/2024_me/IMG_5303.gif");background-repeat: no-repeat;position:absolute;mix-blend-mode: multiply;}
   .lists,.fonts{font-size:80%;line-height:15px;}
   
   .introductionmore{position:relative;float:right;top:0;max-width:900px;z-index:100;left: calc((100vw - 100%));padding-right:20px;text-align:left!important;}
@@ -284,7 +286,7 @@ body{hyphens:auto;height:100%!important;width:100%!important;padding:0!important
 /*.portrait{position:relative;display:block;float:left;width:39vw;position:absolute;height:100%;background-image:url("/2024_me/hwajinjun.png");background-size:cover;background-repeat:no-repeat!important;mix-blend-mode: multiply;z-index:-100;background-position:0 -200px;}*/
 .portrait{position:relative;display:block;float:left;width:39vw;position:absolute;height:100%;background-image:url("/2024_me/IMG_5303.gif");background-size:cover;background-repeat:no-repeat!important;mix-blend-mode: multiply;z-index:-100;background-position:center;}
 .lists,.fonts{font-size:80%;line-height:20px;}
-.introductionmore{position:relative;float:right;max-width:900px;z-index:100;left: calc((100vw - 100%));padding-right:20px;}
+.introductionmore{position:relative;float:right;max-width:900px;width: 59vw;z-index:100;left: calc((100vw - 100%));padding-right:20px;}
 
 .colophon{padding-top:50px;float:left;width:60vw;max-width:900px;text-align:right;float:right;}
 .stickyhead2 a:link{color:white!important;-webkit-text-fill-color:white!important;mix-blend-mode: normal!important;text-decoration: none!important;mix-blend-mode:normal!important;text-shadow:2px 2px 5px black,-2px -2px 5px black, 2px -2px 5px black, -2px 2px 5px black;}
@@ -346,9 +348,9 @@ body{width:100%;height:100%;hyphens:auto;}
 
 .pagewidth{width:100%;max-width:1694px!important;}
 /*.portrait{display:block;max-width:1694px!important;float:left;width:46vw;position:absolute;height:100%;background-image:url("/2024_me/hwajinjun.png");background-size:cover;background-repeat: no-repeat!important;mix-blend-mode: multiply;z-index:-100;background-position:0 -300px;}*/
-.portrait{display:block;max-width:1694px!important;float:left;width:46vw;position:absolute;height:100%;background-image:url("/2024_me/IMG_5303.gif");background-size:cover;background-repeat: no-repeat!important;mix-blend-mode: multiply;z-index:-100;background-position:0 -50px;}
+.portrait{display:block;max-width:1694px!important;float:left;width:44vw;position:absolute;height:100%;background-image:url("/2024_me/IMG_5303.gif");background-size:cover;background-repeat: no-repeat!important;mix-blend-mode: multiply;z-index:-100;background-position:0 -50px;}
 .lists{font-size:80%;line-height:20px;padding-top:0px;}
-.introductionmore{position:relative;float:right;max-width:900px;z-index:100;left: calc((100vw - 100%));padding-right:20px;}
+.introductionmore{position:relative;float:right;max-width:900px;z-index:100;width:55vw;padding-right:20px;}
 .fonts{bottom:0;font-size:80%;line-height:20px;}
 .colophon{padding-top:50px;float:right;width:100%;text-align:right;}
 .stickyhead2 a:link{color:white!important;-webkit-text-fill-color:white!important;mix-blend-mode: normal!important;text-decoration: none!important;mix-blend-mode:normal!important;text-shadow:2px 2px 5px black,-2px -2px 5px black, 2px -2px 5px black, -2px 2px 5px black;}
@@ -414,9 +416,9 @@ body{width:100%;height:100%;hyphens:auto;}
 
 .pagewidth{left:0px;max-width:1694px;width:100%!important;height:fit-content;background-color:none;position:absolute;z-index:-100px;margin:0!important;padding:0!important;}
 /*.portrait{max-width:796.26px!important;float:left;width:47%;position:absolute;height:100%;background-image:url("/2024_me/hwajinjun.png");background-size:cover;background-repeat: no-repeat!important;mix-blend-mode: normal!important;background-position:0 -300px;}*/
-.portrait{max-width:796.26px!important;float:left;width:47%;position:absolute;height:100%;background-image:url("/2024_me/IMG_5303.gif");background-size:cover;background-repeat: no-repeat!important;mix-blend-mode: normal!important;background-position:0 -20px;}
+.portrait{max-width:796.26px!important;float:left;width:44%;position:absolute;height:100%;background-image:url("/2024_me/IMG_5303.gif");background-size:cover;background-repeat: no-repeat!important;mix-blend-mode: normal!important;background-position:0 -20px;}
 .lists{font-size:80%;line-height:20px;padding-top:0px;margin-bottom:30px;}
-.introductionmore{width:52%;float:right;max-width:860.94px!important;z-index:100;left: calc((100vw - 100%));padding-right:20px;}
+.introductionmore{float:right;max-width:55.25vw;z-index:100;padding-right:20px;}
 .fonts{bottom:0;font-size:80%;line-height:20px;}
 .colophon{position:absolute;bottom:5px;right:0;margin-right:5px;text-align:right;}
 .stickyhead2 a:link{color:white!important;-webkit-text-fill-color:white!important;mix-blend-mode: normal!important;text-decoration: none!important;mix-blend-mode:normal!important;text-shadow:2px 2px 5px black,-2px -2px 5px black, 2px -2px 5px black, -2px 2px 5px black;}
