@@ -36,7 +36,7 @@ body{background-color:white!important;padding:0;margin:0 auto;width:100%;height:
 .project_description{z-index:2000;}
 .learnmorehere{z-index:10000!important;}
 .portrait{mix-blend-mode: multiply;}
-.video{display: block;}
+.video{display: block; outline: none;border: none;}
 .project{z-index:-1000;}
 .project a:link {color:black!important;-webkit-text-fill-color:black!important;mix-blend-mode: normal!important;text-decoration-line:underline;}
 .project a:visited {color:black!important;-webkit-text-fill-color:black!important;mix-blend-mode: normal!important;text-decoration: underline;}
