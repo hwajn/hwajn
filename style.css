@@ -258,7 +258,7 @@ body{background-color:white!important;padding:0;margin:0 auto;width:100%;height:
 body{hyphens:auto;height:100%!important;width:100%!important;padding:0!important;margin:0!important;padding-bottom:0px!important;}
 .introductionspacer{display:none;width:40vw!important;max-width:770px!important;background-color:none;height:100px;z-index:1000;}
 .introduction{position:relative;padding-left:15px!important;float:right;top:0;right:0;color:black;z-index:10000!important;}
-.introduction,.introductionmore{width:60vw;max-width:900px;}
+.introduction,.introductionmore{width:60vw;max-width:900px;;}
 .serif{font-family:'paragon-italics'!important;letter-spacing:-.55pt;font-size:14pt;}
 
 
