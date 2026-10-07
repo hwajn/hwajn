@@ -1,7 +1,8 @@
 
 <!doctype html>
 <html lang="en">
-        <head>
+
+<head>
 
           <!---This website was coded by me - Hwa-Jin! It's a continuous work in progress and things may change now and then. :^) -->
             <link rel="stylesheet" href="style.css">
@@ -24,7 +25,8 @@
 </head>
 
 
-        <body>     
+        <body>  
+             
           <div class="stickyhead"><a class="name"  href="../../">hwa-jin jun</a><br><a class="learnmorehere" href="2024_me">info</a></div> 
           
           <div class="parent"><div class="introductionspacer"></div>
@@ -33,13 +35,17 @@
           She is a cons­&shy;um&shy;­mate hik&shy;­ing am­&shy;ateur, and enjoys spend­ing her time out&shy;­doors ten­&shy;d&shy;ing to her bud&shy;d­ing ba&shy;­ck&shy;­yard veg&shy;­e&shy;­table gard&shy;­en. 
           At her core, she is a ten&shy;­aci­ous ex&shy;plor&shy;­er and co­ns&shy;tant learn&shy;er; Hwa‑Jin adept­ly trans&shy;­lates her un&shy;­abash&shy;­ed cur­ios&shy;ity and un­con­ventional 
           st­yle into her prac&shy;­tice in&shy;vol&shy;v&shy;ing inter&shy;­active dig&shy;i&shy;tal ex&shy;p­er&shy;­iences and pro&shy;cess-driven, collage-like des&shy;igns. She is cur&shy;rent&shy;ly the 
-          des&shy;ign dir&shy;ector of <a class="serif" href="https://www.cmagazine.com">C&nbsp;Magazine</a>, one of the foremost print mags for contemporary art and criticism.</div>
+          des&shy;ign dir&shy;ector of <a class="serif" href="https://www.cmagazine.com">C&nbsp;Magazine</a>, one of the foremost print mags for contemporary art and criticism.
+                If you'd like to talk design or give hiking recommendations, feel free to email her 
+        <span style="white-space:nowrap;">( <span class="copy-text" onclick="copyText(this)"></span> )</span></div>
         <div class="headspacer"></div></div>       
 
       
+<div id="snackbar" style="  z-index:9999999999;">
+  Copied to clipboard
+</div>
 
-
-        
+       
    
  <div class="project">
 
@@ -498,7 +504,7 @@ These impossible shapes visually represent the design mindsets honoured througho
 <div class="sup"></div>
   
   </div></div>
-
+ 
 
 
 <!--
@@ -717,15 +723,54 @@ These impossible shapes visually represent the design mindsets honoured througho
 
 
 <!--email, script for selecting text on click from https://css-tricks.com/click-once-select-all-click-again-select-normally/-->
-<div class="email hide"style="color:white!important;mix-blend-mode:difference!important;padding-top:10px;position:absolute;right:0;padding-right:10px;"><a class="nolink mail" href="mailto:lo&commat;h n&period;">h<div class="noshow">@hwa</div>el<div class="noshow">lion</div>lo&commat;h<div class="noshow">art</div>w<div class="noshow">an</div>ajn&period;co<div class="noshow">old</div>m</a></li> </div>
+<!--<div class="email hide"style="color:white!important;mix-blend-mode:difference!important;padding-top:10px;position:absolute;right:0;padding-right:10px;"><a class="nolink mail" href="mailto:lo&commat;h n&period;">h<div class="noshow">@hwa</div>el<div class="noshow">lion</div>lo&commat;h<div class="noshow">art</div>w<div class="noshow">an</div>ajn&period;co<div class="noshow">old</div>m</a></li> </div>-->
+
+<div class="email hide copy-text" onclick="copyText(this)"style="padding-left:10px;position:absolute;right:0;padding-right:10px;color:white!important;mix-blend-mode:difference!important;"><a class="nolink mail" style="color:white!important;mix-blend-mode:difference!important;"></div>
 
 
 
 
 
+<script>
+const user = ["hel", "lo"].join("");
+const domain = ["hw","aj", "n", ".com"].join("");
+const email = user + "@" + domain;
+// Center snackbar on the screen
+snackbar.style.position = "fixed";
+snackbar.style.left = "50%";
+snackbar.style.top = "35%";
+snackbar.style.transform = "translate(-50%, -35%)";
+const copyTexts = document.querySelectorAll(".copy-text");
+
+copyTexts.forEach(function (copyText) {
+  copyText.textContent = email;
+
+  copyText.onclick = function () {
+    navigator.clipboard.writeText(email);
 
 
- <!-- address munging script by Steve Clay http://mrclay.org/2010/11/14/tiny-email-munging-script/ -->
+    
+    // Change text color
+    copyText.classList.add("copied");
+
+    // Show snackbar
+    const snackbar = document.getElementById("snackbar");
+    snackbar.classList.add("show");
+
+    // Restore text color after 1 second
+    setTimeout(function () {
+      copyText.classList.remove("copied");
+    }, 1000);
+
+    // Hide snackbar after 2 seconds
+    setTimeout(function () {
+      snackbar.classList.remove("show");
+    }, 2000);
+  };
+});
+</script>
+
+ <!-- address munging script by Steve Clay http://mrclay.org/2010/11/14/tiny-email-munging-script/
  <script>(function(){
   var a, i = 0, o = this.onload;
   onload = function(){
@@ -738,7 +783,7 @@ These impossible shapes visually represent the design mindsets honoured througho
   };
 })();
 
-</script>
+</script> -->
 <script>
 /*to make image click to next image*/
 let slideIndex = 1;
